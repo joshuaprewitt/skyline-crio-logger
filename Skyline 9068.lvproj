@@ -14,18 +14,25 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Build IPK.vi" Type="VI" URL="../ipkgbuilder/Build IPK.vi"/>
+		<Item Name="Control File.vi" Type="VI" URL="../ipkgbuilder/Control File.vi"/>
 		<Item Name="File Viewer.vi" Type="VI" URL="../File Viewer.vi"/>
+		<Item Name="Package Directory.vi" Type="VI" URL="../ipkgbuilder/Package Directory.vi"/>
+		<Item Name="Package Name.vi" Type="VI" URL="../ipkgbuilder/Package Name.vi"/>
+		<Item Name="Package Payload.vi" Type="VI" URL="../ipkgbuilder/Package Payload.vi"/>
 		<Item Name="Tag Example.vi" Type="VI" URL="../Tag Example.vi"/>
 		<Item Name="Tag Viewer.vi" Type="VI" URL="../Tag Viewer.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="FileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/FileIngestion/FileIngestion.lvlib"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="Tag Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/Tag Library.lvlib"/>
 			</Item>
 			<Item Name="FileIngestion.dll" Type="Document" URL="FileIngestion.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Get Build Version.vi" Type="VI" URL="../ipkgbuilder/Get Build Version.vi"/>
 			<Item Name="TagLibrary.dll" Type="Document" URL="TagLibrary.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -60,7 +67,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -220,50 +227,7 @@ AddOutputFilter chunkFilter
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="cRIO Monitor" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{6E1B4BAC-B23E-4A32-82C0-97098C52E76A}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{783808D1-F65F-47B8-8393-7C13C8EBE6F6}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{F07FC31F-DAB6-434A-A923-DBE657A39C95}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">cRIO Monitor</Property>
-				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/jprewitt.AMER/Documents/LabVIEW Projects/cRIO Health Monitor</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{0A6C92CC-D3DD-47C1-940B-24FD93011FC2}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
-				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{1501D1B6-6A2E-4625-8BFF-ABAD99C86EC4}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">NI</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">cRIO Monitor</Property>
-				<Property Name="TgtF_internalName" Type="Str">cRIO Monitor</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2016 NI</Property>
-				<Property Name="TgtF_productName" Type="Str">cRIO Monitor</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{9E5FA382-1A41-453E-A59F-AA27309F79A9}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
-			</Item>
-			<Item Name="cRIO Temp Logger" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
+			<Item Name="crio temp logger" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{506124D4-571D-4516-BAF2-2591B59A75D6}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{1F9FFACE-88A3-4C39-A6CC-7300CEE59D5D}</Property>
@@ -271,17 +235,21 @@ AddOutputFilter chunkFilter
 				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{A2A59E7A-34C0-44E2-AFFC-804F870D6C5F}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">cRIO Temp Logger</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">crio temp logger</Property>
 				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/jprewitt.AMER/Documents/LabVIEW Projects/cRIO Temp Logger</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../export</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build IPK.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">17</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">2</Property>
+				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -291,7 +259,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{56F37D0B-F9E1-4288-945D-EFFFA360F3DB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35B3F641-586C-4D6B-A00E-7A568EF45B8C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>
@@ -299,10 +267,10 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">NI</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">cRIO Temp Logger</Property>
-				<Property Name="TgtF_internalName" Type="Str">cRIO Temp Logger</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">crio temp logger</Property>
+				<Property Name="TgtF_internalName" Type="Str">crio temp logger</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2016 NI</Property>
-				<Property Name="TgtF_productName" Type="Str">cRIO Temp Logger</Property>
+				<Property Name="TgtF_productName" Type="Str">crio temp logger</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{E5FD18B0-FFEB-49EE-8E62-33F15C8EFCE8}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 			</Item>

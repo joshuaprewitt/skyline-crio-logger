@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+This files contains common error codes used in Espotel Poland.
+
+
+
+
+<nifamily familyname="Espotel Errors" displayname="Espotel Errors">
+</nifamily>
+</nicomment>
+<nierror code="7600">
+Data size exceeded.
+</nierror>
+<nierror code="7601">
+Incorrect value.
+</nierror>
+<nierror code="7602">
+Connection refused.
+</nierror>
+</nidocument>
