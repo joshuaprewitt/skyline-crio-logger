@@ -1,1 +1,3 @@
 /etc/init.d/nilvrt start
+echo RTTarget.ApplicationPath=/home/lvuser/natinst/bin/startup.rtexe >> /etc/natinst/share/lvrt.conf
+echo RTTarget.LaunchAppAtBoot=True >> /etc/natinst/share/lvrt.conf
