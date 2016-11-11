@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="15008000">
+<Project Type="Project" LVVersion="16008000">
 	<Property Name="varPersistentID:{4123C157-0E29-44E1-BA3D-8BA392806068}" Type="Ref">/RT CompactRIO Target/Chassis/Mod1/AI2</Property>
 	<Property Name="varPersistentID:{52871651-1DE4-415B-A980-D6110E5E1938}" Type="Ref">/RT CompactRIO Target/Chassis/Mod1/AI3</Property>
 	<Property Name="varPersistentID:{E1C6E684-34B3-48D8-94D4-8B4BBC05E106}" Type="Ref">/RT CompactRIO Target/Chassis/Mod1/AI1</Property>
@@ -25,6 +25,7 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="FileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/FileIngestion/FileIngestion.lvlib"/>
+				<Item Name="Read Double Values.vi" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Read Double Values.vi"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="Tag Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/Tag Library.lvlib"/>
 			</Item>
@@ -40,7 +41,7 @@
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
-		<Property Name="alias.value" Type="Str">10.2.33.85</Property>
+		<Property Name="alias.value" Type="Str">Josh-9068</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76D6;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76D6</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
@@ -66,7 +67,7 @@
 		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -154,7 +155,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Network:UseBuffering" Type="Str">False</Property>
 					<Property Name="numTypedefs" Type="UInt">0</Property>
 					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"5!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					<Property Name="typeDesc" Type="Bin">(1!!!"9!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 				</Item>
 				<Item Name="AI1" Type="Variable">
 					<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -168,7 +169,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Network:UseBuffering" Type="Str">False</Property>
 					<Property Name="numTypedefs" Type="UInt">0</Property>
 					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"5!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					<Property Name="typeDesc" Type="Bin">(1!!!"9!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 				</Item>
 				<Item Name="AI2" Type="Variable">
 					<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -182,7 +183,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Network:UseBuffering" Type="Str">False</Property>
 					<Property Name="numTypedefs" Type="UInt">0</Property>
 					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"5!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					<Property Name="typeDesc" Type="Bin">(1!!!"9!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 				</Item>
 				<Item Name="AI3" Type="Variable">
 					<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -196,7 +197,7 @@ AddOutputFilter chunkFilter
 					<Property Name="Network:UseBuffering" Type="Str">False</Property>
 					<Property Name="numTypedefs" Type="UInt">0</Property>
 					<Property Name="type" Type="Str">Industrial</Property>
-					<Property Name="typeDesc" Type="Bin">(1!!!"5!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+					<Property Name="typeDesc" Type="Bin">(1!!!"9!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 				</Item>
 			</Item>
 		</Item>
@@ -210,7 +211,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Tag Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/Tag Library.lvlib"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="FileIngestion.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/FileIngestion.ctl"/>
 				<Item Name="FileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/FileIngestion/FileIngestion.lvlib"/>
 				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
 				<Item Name="WDT Number of Waveform Samples I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I8.vi"/>
@@ -255,14 +255,12 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build IPK.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">37</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">2</Property>
-				<Property Name="Bld_version.patch" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">44</Property>
+				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="CDF_Comp.Count" Type="Int">1</Property>
 				<Property Name="CDF_Comp[0].ID" Type="Str">{899452D2-C085-430B-B76D-7FDB33BB324A}</Property>
 				<Property Name="CDF_Comp[0].Title" Type="Str">LabVIEW Real-Time</Property>
-				<Property Name="CDF_Comp[0].Version" Type="Str">15.0.1</Property>
+				<Property Name="CDF_Comp[0].Version" Type="Str">16.0.0</Property>
 				<Property Name="CDF_enabled" Type="Bool">true</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -273,7 +271,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BCE4F1FB-514B-4572-A3EB-95056C4D3387}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{49FA8988-EF4F-4C95-9349-A53CF6C8697A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>

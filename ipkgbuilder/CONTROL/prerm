@@ -1,3 +1,2 @@
 /etc/init.d/nilvrt stop
-sed -i '/RTTarget.ApplicationPath/,$d' /etc/natinst/share/lvrt.conf
 sed -i '/RTTarget.LaunchAppAtBoot=True/,$d' /etc/natinst/share/lvrt.conf
