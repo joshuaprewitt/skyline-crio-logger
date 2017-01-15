@@ -27,7 +27,10 @@
 				<Item Name="FileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/FileIngestion/FileIngestion.lvlib"/>
 				<Item Name="Read Double Values.vi" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Read Double Values.vi"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
-				<Item Name="Tag Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/Tag Library.lvlib"/>
+				<Item Name="TagLibrary.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/TagLibrary.lvlib"/>
+				<Item Name="Timestamped Double.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Double.ctl"/>
+				<Item Name="Timestamped Int.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Int.ctl"/>
+				<Item Name="Timestamped String.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped String.ctl"/>
 			</Item>
 			<Item Name="FileIngestion.dll" Type="Document" URL="FileIngestion.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -37,7 +40,34 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="My Package" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+				<Property Name="NIPKG_bitness" Type="Int">32</Property>
+				<Property Name="NIPKG_displayName" Type="Str">My Package</Property>
+				<Property Name="NIPKG_displayVersion" Type="Str">1.0.0</Property>
+				<Property Name="NIPKG_license" Type="Ref"></Property>
+				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
+				<Property Name="PKG_buildNumber" Type="Int">0</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">My Package</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_description" Type="Str"></Property>
+				<Property Name="PKG_destinations.Count" Type="Int">1</Property>
+				<Property Name="PKG_destinations[0].ID" Type="Str">{B9D66799-602C-41DD-AF0E-5ED574CC5180}</Property>
+				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">Skyline 9068</Property>
+				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_homepage" Type="Str"></Property>
+				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;support@ni.com&gt;</Property>
+				<Property Name="PKG_output" Type="Path">/C/Users/jprewitt.AMER/Documents/GitHub/builds/Skyline 9068/My Package</Property>
+				<Property Name="PKG_packageName" Type="Str">skyline-9068</Property>
+				<Property Name="PKG_section" Type="Str">Application</Property>
+				<Property Name="PKG_sources.Count" Type="Int">0</Property>
+				<Property Name="PKG_synopsis" Type="Str">Skyline 9068</Property>
+				<Property Name="PKG_version" Type="Str">1.0.0</Property>
+			</Item>
+		</Item>
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
@@ -208,7 +238,6 @@ AddOutputFilter chunkFilter
 				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
 				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
-				<Item Name="Tag Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/Tag Library.lvlib"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="FileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/FileIngestion/FileIngestion.lvlib"/>
@@ -220,6 +249,10 @@ AddOutputFilter chunkFilter
 				<Item Name="WDT Number of Waveform Samples CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples CDB.vi"/>
 				<Item Name="WDT Number of Waveform Samples DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples DBL.vi"/>
 				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
+				<Item Name="TagLibrary.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/TagLibrary.lvlib"/>
+				<Item Name="Timestamped Double.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Double.ctl"/>
+				<Item Name="Timestamped Int.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Int.ctl"/>
+				<Item Name="Timestamped String.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped String.ctl"/>
 			</Item>
 			<Item Name="TagLibrary.dll" Type="Document" URL="TagLibrary.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -255,7 +288,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build IPK.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">44</Property>
+				<Property Name="Bld_version.build" Type="Int">46</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="CDF_Comp.Count" Type="Int">1</Property>
 				<Property Name="CDF_Comp[0].ID" Type="Str">{899452D2-C085-430B-B76D-7FDB33BB324A}</Property>
@@ -285,6 +318,29 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_productName" Type="Str">cRIO Temp Logger</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{E5FD18B0-FFEB-49EE-8E62-33F15C8EFCE8}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
+			</Item>
+			<Item Name="My Package" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
+				<Property Name="IPK_startup.Child" Type="Str">{E5FD18B0-FFEB-49EE-8E62-33F15C8EFCE8}</Property>
+				<Property Name="IPK_startup.Destination" Type="Str">root_0</Property>
+				<Property Name="IPK_startup.Source" Type="Ref">/RT CompactRIO Target/Build Specifications/cRIO Temp Logger</Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
+				<Property Name="PKG_buildNumber" Type="Int">3</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">My Package</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_description" Type="Str"></Property>
+				<Property Name="PKG_destinations.Count" Type="Int">0</Property>
+				<Property Name="PKG_homepage" Type="Str"></Property>
+				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;support@ni.com&gt;</Property>
+				<Property Name="PKG_output" Type="Path">/C/Users/jprewitt.AMER/Documents/GitHub/builds/cRIO Temp Logger</Property>
+				<Property Name="PKG_packageName" Type="Str">crio-temp-logger</Property>
+				<Property Name="PKG_section" Type="Str">Application</Property>
+				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">root_0</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/Build Specifications/cRIO Temp Logger</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
+				<Property Name="PKG_synopsis" Type="Str">Logs temperature on 4 channels</Property>
+				<Property Name="PKG_version" Type="Str">16.5.0</Property>
 			</Item>
 		</Item>
 	</Item>
