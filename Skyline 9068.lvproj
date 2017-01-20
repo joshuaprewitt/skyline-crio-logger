@@ -288,7 +288,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build IPK.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">46</Property>
+				<Property Name="Bld_version.build" Type="Int">51</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="CDF_Comp.Count" Type="Int">1</Property>
 				<Property Name="CDF_Comp[0].ID" Type="Str">{899452D2-C085-430B-B76D-7FDB33BB324A}</Property>
@@ -304,7 +304,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{49FA8988-EF4F-4C95-9349-A53CF6C8697A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2124050E-1548-4B3B-97A4-76B873A752FA}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>
@@ -330,11 +330,11 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
 				<Property Name="PKG_destinations.Count" Type="Int">0</Property>
-				<Property Name="PKG_displayName" Type="Str"></Property>
+				<Property Name="PKG_displayName" Type="Str">cRIO Temperature Logger</Property>
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;support@ni.com&gt;</Property>
-				<Property Name="PKG_output" Type="Path">/C/Users/jprewitt.AMER/Documents/GitHub/builds/cRIO Temp Logger</Property>
+				<Property Name="PKG_output" Type="Path">/C/Users/asttest/Documents/GitHub/skyline-crio-logger/exports</Property>
 				<Property Name="PKG_packageName" Type="Str">crio-temp-logger</Property>
 				<Property Name="PKG_ProviderVersion" Type="Int">17</Property>
 				<Property Name="PKG_section" Type="Str">Application</Property>
@@ -344,7 +344,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/Build Specifications/cRIO Temp Logger</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">Logs temperature on 4 channels</Property>
-				<Property Name="PKG_version" Type="Str">16.5.0</Property>
+				<Property Name="PKG_version" Type="Str">16.6.0</Property>
 			</Item>
 		</Item>
 	</Item>
