@@ -325,16 +325,20 @@ AddOutputFilter chunkFilter
 				<Property Name="IPK_startup.Source" Type="Ref">/RT CompactRIO Target/Build Specifications/cRIO Temp Logger</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">3</Property>
+				<Property Name="PKG_buildNumber" Type="Int">4</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">My Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
 				<Property Name="PKG_destinations.Count" Type="Int">0</Property>
+				<Property Name="PKG_displayName" Type="Str"></Property>
+				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;support@ni.com&gt;</Property>
 				<Property Name="PKG_output" Type="Path">/C/Users/jprewitt.AMER/Documents/GitHub/builds/cRIO Temp Logger</Property>
 				<Property Name="PKG_packageName" Type="Str">crio-temp-logger</Property>
+				<Property Name="PKG_ProviderVersion" Type="Int">17</Property>
 				<Property Name="PKG_section" Type="Str">Application</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
 				<Property Name="PKG_sources.Count" Type="Int">1</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">root_0</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/Build Specifications/cRIO Temp Logger</Property>
