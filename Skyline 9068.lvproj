@@ -14,28 +14,16 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Build IPK.vi" Type="VI" URL="../ipkgbuilder/Build IPK.vi"/>
-		<Item Name="Control File.vi" Type="VI" URL="../ipkgbuilder/Control File.vi"/>
-		<Item Name="File Viewer.vi" Type="VI" URL="../File Viewer.vi"/>
-		<Item Name="Package Directory.vi" Type="VI" URL="../ipkgbuilder/Package Directory.vi"/>
-		<Item Name="Package Name.vi" Type="VI" URL="../ipkgbuilder/Package Name.vi"/>
-		<Item Name="Package Payload.vi" Type="VI" URL="../ipkgbuilder/Package Payload.vi"/>
 		<Item Name="Tag Viewer.vi" Type="VI" URL="../Tag Viewer.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="FileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/FileIngestion/FileIngestion.lvlib"/>
 				<Item Name="Read Double Values.vi" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Read Double Values.vi"/>
-				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagLibrary.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/TagLibrary.lvlib"/>
 				<Item Name="Timestamped Double.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Double.ctl"/>
 				<Item Name="Timestamped Int.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Int.ctl"/>
 				<Item Name="Timestamped String.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped String.ctl"/>
 			</Item>
-			<Item Name="FileIngestion.dll" Type="Document" URL="FileIngestion.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Get Build Version.vi" Type="VI" URL="../ipkgbuilder/Get Build Version.vi"/>
 			<Item Name="TagLibrary.dll" Type="Document" URL="TagLibrary.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -71,7 +59,7 @@
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
-		<Property Name="alias.value" Type="Str">Josh-9068</Property>
+		<Property Name="alias.value" Type="Str">10.2.33.125</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76D6;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76D6</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
@@ -148,7 +136,13 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Tag Example.vi" Type="VI" URL="../Tag Example.vi"/>
+		<Item Name="Utilities" Type="Folder">
+			<Item Name="Tag Example.vi" Type="VI" URL="../Tag Example.vi"/>
+			<Item Name="Append Value To Waveform.vi" Type="VI" URL="../helpers/Append Value To Waveform.vi"/>
+			<Item Name="Generate File Name.vi" Type="VI" URL="../helpers/Generate File Name.vi"/>
+			<Item Name="Build Tag Name.vi" Type="VI" URL="../helpers/Build Tag Name.vi"/>
+			<Item Name="Skyline Send Waveform File.vi" Type="VI" URL="../helpers/Skyline Send Waveform File.vi"/>
+		</Item>
 		<Item Name="cRIO Temp Monitor.vi" Type="VI" URL="../cRIO Temp Monitor.vi"/>
 		<Item Name="Chassis" Type="cRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">express</Property>
@@ -231,7 +225,11 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="Append Value To Waveform.vi" Type="VI" URL="../helpers/Append Value To Waveform.vi"/>
+		<Item Name="Get System Name.vi" Type="VI" URL="../helpers/Get System Name.vi"/>
+		<Item Name="postinst.sh" Type="Document" URL="../IPK/postinst.sh"/>
+		<Item Name="postrm.sh" Type="Document" URL="../IPK/postrm.sh"/>
+		<Item Name="preinst.sh" Type="Document" URL="../IPK/preinst.sh"/>
+		<Item Name="prerm.sh" Type="Document" URL="../IPK/prerm.sh"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -257,9 +255,6 @@ AddOutputFilter chunkFilter
 			<Item Name="TagLibrary.dll" Type="Document" URL="TagLibrary.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Build Tag Name.vi" Type="VI" URL="../helpers/Build Tag Name.vi"/>
-			<Item Name="Generate File Name.vi" Type="VI" URL="../helpers/Generate File Name.vi"/>
-			<Item Name="Skyline Send Waveform File.vi" Type="VI" URL="../helpers/Skyline Send Waveform File.vi"/>
 			<Item Name="FileIngestion.dll" Type="Document" URL="FileIngestion.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -282,13 +277,12 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../export</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build IPK.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">51</Property>
+				<Property Name="Bld_version.build" Type="Int">53</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="CDF_Comp.Count" Type="Int">1</Property>
 				<Property Name="CDF_Comp[0].ID" Type="Str">{899452D2-C085-430B-B76D-7FDB33BB324A}</Property>
@@ -304,7 +298,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2124050E-1548-4B3B-97A4-76B873A752FA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2C640B72-0CEC-459F-A280-D994C903FFC1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>
@@ -324,8 +318,28 @@ AddOutputFilter chunkFilter
 				<Property Name="IPK_startup.Destination" Type="Str">root_0</Property>
 				<Property Name="IPK_startup.Source" Type="Ref">/RT CompactRIO Target/Build Specifications/cRIO Temp Logger</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_actions[0].Arguments" Type="Str"></Property>
+				<Property Name="PKG_actions[0].IPK.IgnoreErrors" Type="Bool">true</Property>
+				<Property Name="PKG_actions[0].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/preinst.sh</Property>
+				<Property Name="PKG_actions[0].IPK.Schedule" Type="Str">Pre-install</Property>
+				<Property Name="PKG_actions[0].Type" Type="Str">IPK.InlineScript</Property>
+				<Property Name="PKG_actions[1].Arguments" Type="Str"></Property>
+				<Property Name="PKG_actions[1].IPK.IgnoreErrors" Type="Bool">true</Property>
+				<Property Name="PKG_actions[1].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/postinst.sh</Property>
+				<Property Name="PKG_actions[1].IPK.Schedule" Type="Str">Post-install</Property>
+				<Property Name="PKG_actions[1].Type" Type="Str">IPK.InlineScript</Property>
+				<Property Name="PKG_actions[2].Arguments" Type="Str"></Property>
+				<Property Name="PKG_actions[2].IPK.IgnoreErrors" Type="Bool">true</Property>
+				<Property Name="PKG_actions[2].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/prerm.sh</Property>
+				<Property Name="PKG_actions[2].IPK.Schedule" Type="Str">Pre-uninstall</Property>
+				<Property Name="PKG_actions[2].Type" Type="Str">IPK.InlineScript</Property>
+				<Property Name="PKG_actions[3].Arguments" Type="Str"></Property>
+				<Property Name="PKG_actions[3].IPK.IgnoreErrors" Type="Bool">true</Property>
+				<Property Name="PKG_actions[3].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/postrm.sh</Property>
+				<Property Name="PKG_actions[3].IPK.Schedule" Type="Str">Post-uninstall</Property>
+				<Property Name="PKG_actions[3].Type" Type="Str">IPK.InlineScript</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">4</Property>
+				<Property Name="PKG_buildNumber" Type="Int">7</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">My Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
@@ -334,7 +348,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;support@ni.com&gt;</Property>
-				<Property Name="PKG_output" Type="Path">/C/Users/asttest/Documents/GitHub/skyline-crio-logger/exports</Property>
+				<Property Name="PKG_output" Type="Path">/C/Users/jprewitt.AMER/Documents/GitHub/skyline-crio-logger/packages</Property>
 				<Property Name="PKG_packageName" Type="Str">crio-temp-logger</Property>
 				<Property Name="PKG_ProviderVersion" Type="Int">17</Property>
 				<Property Name="PKG_section" Type="Str">Application</Property>

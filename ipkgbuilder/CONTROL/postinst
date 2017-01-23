@@ -1,2 +1,0 @@
-echo RTTarget.LaunchAppAtBoot=True >> /etc/natinst/share/lvrt.conf
-#/etc/init.d/nilvrt start
