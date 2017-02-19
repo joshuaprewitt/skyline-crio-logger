@@ -15,14 +15,18 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Tag Viewer.vi" Type="VI" URL="../Tag Viewer.vi"/>
+		<Item Name="Trigger Send File.vi" Type="VI" URL="../Trigger Send File.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Read Double Values.vi" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Read Double Values.vi"/>
+				<Item Name="Message.lvlib" Type="Library" URL="/&lt;vilib&gt;/Message/Message.lvlib"/>
 				<Item Name="TagLibrary.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/TagLibrary.lvlib"/>
 				<Item Name="Timestamped Double.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Double.ctl"/>
 				<Item Name="Timestamped Int.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Int.ctl"/>
 				<Item Name="Timestamped String.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped String.ctl"/>
+			</Item>
+			<Item Name="Message.dll" Type="Document" URL="Message.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="TagLibrary.dll" Type="Document" URL="TagLibrary.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -250,9 +254,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WDT Number of Waveform Samples DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples DBL.vi"/>
 				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
 				<Item Name="TagLibrary.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/TagLibrary.lvlib"/>
-				<Item Name="Timestamped Double.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Double.ctl"/>
-				<Item Name="Timestamped Int.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Int.ctl"/>
-				<Item Name="Timestamped String.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped String.ctl"/>
+				<Item Name="Message.lvlib" Type="Library" URL="/&lt;vilib&gt;/Message/Message.lvlib"/>
 			</Item>
 			<Item Name="TagLibrary.dll" Type="Document" URL="TagLibrary.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -260,7 +262,7 @@ AddOutputFilter chunkFilter
 			<Item Name="FileIngestion.dll" Type="Document" URL="FileIngestion.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+			<Item Name="Message.dll" Type="Document" URL="Message.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
@@ -284,7 +286,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">56</Property>
+				<Property Name="Bld_version.build" Type="Int">58</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="CDF_Comp.Count" Type="Int">1</Property>
 				<Property Name="CDF_Comp[0].ID" Type="Str">{899452D2-C085-430B-B76D-7FDB33BB324A}</Property>
@@ -300,7 +302,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2C640B72-0CEC-459F-A280-D994C903FFC1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9108378F-35FE-442C-8D5D-97F7B2A576DE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>
@@ -341,7 +343,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions[3].IPK.Schedule" Type="Str">Post-uninstall</Property>
 				<Property Name="PKG_actions[3].Type" Type="Str">IPK.InlineScript</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">13</Property>
+				<Property Name="PKG_buildNumber" Type="Int">15</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">My Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
@@ -350,7 +352,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;support@ni.com&gt;</Property>
-				<Property Name="PKG_output" Type="Path">/C/Users/jprewitt.AMER/Documents/GitHub/skyline-crio-logger/packages</Property>
+				<Property Name="PKG_output" Type="Path">/C/Users/Public/GitHub/skyline-crio-logger/packages</Property>
 				<Property Name="PKG_packageName" Type="Str">crio-temp-logger</Property>
 				<Property Name="PKG_ProviderVersion" Type="Int">17</Property>
 				<Property Name="PKG_section" Type="Str">Application</Property>
