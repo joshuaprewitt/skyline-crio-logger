@@ -59,7 +59,7 @@
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
-		<Property Name="alias.value" Type="Str">10.2.33.125</Property>
+		<Property Name="alias.value" Type="Str">Josh-9068</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76D6;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76D6</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
@@ -142,6 +142,12 @@ AddOutputFilter chunkFilter
 			<Item Name="Generate File Name.vi" Type="VI" URL="../helpers/Generate File Name.vi"/>
 			<Item Name="Build Tag Name.vi" Type="VI" URL="../helpers/Build Tag Name.vi"/>
 			<Item Name="Skyline Send Waveform File.vi" Type="VI" URL="../helpers/Skyline Send Waveform File.vi"/>
+		</Item>
+		<Item Name="scripts" Type="Folder">
+			<Item Name="postinst.sh" Type="Document" URL="../IPK/postinst.sh"/>
+			<Item Name="postrm.sh" Type="Document" URL="../IPK/postrm.sh"/>
+			<Item Name="preinst.sh" Type="Document" URL="../IPK/preinst.sh"/>
+			<Item Name="prerm.sh" Type="Document" URL="../IPK/prerm.sh"/>
 		</Item>
 		<Item Name="cRIO Temp Monitor.vi" Type="VI" URL="../cRIO Temp Monitor.vi"/>
 		<Item Name="Chassis" Type="cRIO Chassis">
@@ -226,10 +232,6 @@ AddOutputFilter chunkFilter
 			</Item>
 		</Item>
 		<Item Name="Get System Name.vi" Type="VI" URL="../helpers/Get System Name.vi"/>
-		<Item Name="postinst.sh" Type="Document" URL="../IPK/postinst.sh"/>
-		<Item Name="postrm.sh" Type="Document" URL="../IPK/postrm.sh"/>
-		<Item Name="preinst.sh" Type="Document" URL="../IPK/preinst.sh"/>
-		<Item Name="prerm.sh" Type="Document" URL="../IPK/prerm.sh"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -282,7 +284,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">53</Property>
+				<Property Name="Bld_version.build" Type="Int">56</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="CDF_Comp.Count" Type="Int">1</Property>
 				<Property Name="CDF_Comp[0].ID" Type="Str">{899452D2-C085-430B-B76D-7FDB33BB324A}</Property>
@@ -320,26 +322,26 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_actions[0].Arguments" Type="Str"></Property>
 				<Property Name="PKG_actions[0].IPK.IgnoreErrors" Type="Bool">true</Property>
-				<Property Name="PKG_actions[0].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/preinst.sh</Property>
+				<Property Name="PKG_actions[0].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/scripts/preinst.sh</Property>
 				<Property Name="PKG_actions[0].IPK.Schedule" Type="Str">Pre-install</Property>
 				<Property Name="PKG_actions[0].Type" Type="Str">IPK.InlineScript</Property>
 				<Property Name="PKG_actions[1].Arguments" Type="Str"></Property>
 				<Property Name="PKG_actions[1].IPK.IgnoreErrors" Type="Bool">true</Property>
-				<Property Name="PKG_actions[1].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/postinst.sh</Property>
+				<Property Name="PKG_actions[1].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/scripts/postinst.sh</Property>
 				<Property Name="PKG_actions[1].IPK.Schedule" Type="Str">Post-install</Property>
 				<Property Name="PKG_actions[1].Type" Type="Str">IPK.InlineScript</Property>
 				<Property Name="PKG_actions[2].Arguments" Type="Str"></Property>
 				<Property Name="PKG_actions[2].IPK.IgnoreErrors" Type="Bool">true</Property>
-				<Property Name="PKG_actions[2].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/prerm.sh</Property>
+				<Property Name="PKG_actions[2].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/scripts/prerm.sh</Property>
 				<Property Name="PKG_actions[2].IPK.Schedule" Type="Str">Pre-uninstall</Property>
 				<Property Name="PKG_actions[2].Type" Type="Str">IPK.InlineScript</Property>
 				<Property Name="PKG_actions[3].Arguments" Type="Str"></Property>
 				<Property Name="PKG_actions[3].IPK.IgnoreErrors" Type="Bool">true</Property>
-				<Property Name="PKG_actions[3].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/postrm.sh</Property>
+				<Property Name="PKG_actions[3].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/scripts/postrm.sh</Property>
 				<Property Name="PKG_actions[3].IPK.Schedule" Type="Str">Post-uninstall</Property>
 				<Property Name="PKG_actions[3].Type" Type="Str">IPK.InlineScript</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">7</Property>
+				<Property Name="PKG_buildNumber" Type="Int">13</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">My Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
