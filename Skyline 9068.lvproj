@@ -265,6 +265,9 @@ AddOutputFilter chunkFilter
 			<Item Name="Message.dll" Type="Document" URL="Message.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="cRIO Temp Logger" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -286,7 +289,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">58</Property>
+				<Property Name="Bld_version.build" Type="Int">59</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="CDF_Comp.Count" Type="Int">1</Property>
 				<Property Name="CDF_Comp[0].ID" Type="Str">{899452D2-C085-430B-B76D-7FDB33BB324A}</Property>
@@ -343,7 +346,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions[3].IPK.Schedule" Type="Str">Post-uninstall</Property>
 				<Property Name="PKG_actions[3].Type" Type="Str">IPK.InlineScript</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">15</Property>
+				<Property Name="PKG_buildNumber" Type="Int">16</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">My Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
