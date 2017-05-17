@@ -1,7 +1,15 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="16008000">
+	<Property Name="varPersistentID:{0B426A69-9454-4E84-8FCC-9F8511011C22}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DO5</Property>
+	<Property Name="varPersistentID:{17A2B531-B9FC-424B-AF7D-2AC79E3FE034}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DO7</Property>
+	<Property Name="varPersistentID:{2722BB6B-FE32-472A-B158-1E1E08057BAB}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DO1</Property>
+	<Property Name="varPersistentID:{2A26F933-9C32-4FBE-B86E-25E30139DC6C}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DO3</Property>
+	<Property Name="varPersistentID:{2F17EAA9-7F7B-47AB-8DE1-E608C0500628}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DO0</Property>
 	<Property Name="varPersistentID:{4123C157-0E29-44E1-BA3D-8BA392806068}" Type="Ref">/RT CompactRIO Target/Chassis/Mod1/AI2</Property>
+	<Property Name="varPersistentID:{46F8FF8B-C54B-4F1F-9F3A-789E194A7136}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DO2</Property>
 	<Property Name="varPersistentID:{52871651-1DE4-415B-A980-D6110E5E1938}" Type="Ref">/RT CompactRIO Target/Chassis/Mod1/AI3</Property>
+	<Property Name="varPersistentID:{765460E1-18D3-4632-B37C-54C66CF471D2}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DO6</Property>
+	<Property Name="varPersistentID:{7E6AACB7-974C-4D4B-9AB9-649E109D180F}" Type="Ref">/RT CompactRIO Target/Chassis/Mod2/DO4</Property>
 	<Property Name="varPersistentID:{E1C6E684-34B3-48D8-94D4-8B4BBC05E106}" Type="Ref">/RT CompactRIO Target/Chassis/Mod1/AI1</Property>
 	<Property Name="varPersistentID:{F43BA261-8B02-4ADE-9ACE-DF5EB22D2966}" Type="Ref">/RT CompactRIO Target/Chassis/Mod1/AI0</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -14,16 +22,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="simple tag.vi" Type="VI" URL="../simple tag.vi"/>
 		<Item Name="Tag Viewer.vi" Type="VI" URL="../Tag Viewer.vi"/>
 		<Item Name="Trigger Send File.vi" Type="VI" URL="../Trigger Send File.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Message.lvlib" Type="Library" URL="/&lt;vilib&gt;/Message/Message.lvlib"/>
+				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="TagLibrary.lvlib" Type="Library" URL="/&lt;vilib&gt;/TagLibrary/TagLibrary.lvlib"/>
 				<Item Name="Timestamped Double.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Double.ctl"/>
 				<Item Name="Timestamped Int.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped Int.ctl"/>
 				<Item Name="Timestamped String.ctl" Type="VI" URL="/&lt;vilib&gt;/TagLibrary/Timestamped String.ctl"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Message.dll" Type="Document" URL="Message.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -63,9 +75,10 @@
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
-		<Property Name="alias.value" Type="Str">Josh-9068</Property>
+		<Property Name="alias.value" Type="Str">josh-9068</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76D6;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76D6</Property>
+		<Property Name="DisableAutoDeployVariables" Type="Bool">false</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -146,6 +159,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Generate File Name.vi" Type="VI" URL="../helpers/Generate File Name.vi"/>
 			<Item Name="Build Tag Name.vi" Type="VI" URL="../helpers/Build Tag Name.vi"/>
 			<Item Name="Skyline Send Waveform File.vi" Type="VI" URL="../helpers/Skyline Send Waveform File.vi"/>
+			<Item Name="Get System Name.vi" Type="VI" URL="../helpers/Get System Name.vi"/>
 		</Item>
 		<Item Name="scripts" Type="Folder">
 			<Item Name="postinst.sh" Type="Document" URL="../IPK/postinst.sh"/>
@@ -177,6 +191,7 @@ AddOutputFilter chunkFilter
 				<Property Name="cRIOModule.AI3.TCoupleType" Type="Str">0</Property>
 				<Property Name="cRIOModule.DigitalIOMode" Type="Str">0</Property>
 				<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+				<Property Name="FPGA.PersistentID" Type="Str">{75B1B92A-12BD-474B-BFDD-AF7C6D419DB7}</Property>
 				<Item Name="AI0" Type="Variable">
 					<Property Name="featurePacks" Type="Str">Industrial</Property>
 					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
@@ -234,16 +249,148 @@ AddOutputFilter chunkFilter
 					<Property Name="typeDesc" Type="Bin">(1!!!"9!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 				</Item>
 			</Item>
+			<Item Name="Mod2" Type="RIO C Series Module">
+				<Property Name="crio.Calibration" Type="Str">1</Property>
+				<Property Name="crio.Location" Type="Str">Slot 2</Property>
+				<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
+				<Property Name="crio.SDcounterSlaveChannelMask" Type="Str">0</Property>
+				<Property Name="crio.SDCounterSlaveMasterSlot" Type="Str">0</Property>
+				<Property Name="crio.SDInputFilter" Type="Str">128</Property>
+				<Property Name="crio.SDPWMPeriod0" Type="Str">0</Property>
+				<Property Name="crio.SDPWMPeriod1" Type="Str">0</Property>
+				<Property Name="crio.SDPWMPeriod2" Type="Str">0</Property>
+				<Property Name="crio.SDPWMPeriod3" Type="Str">0</Property>
+				<Property Name="crio.SDPWMPeriod4" Type="Str">0</Property>
+				<Property Name="crio.SDPWMPeriod5" Type="Str">0</Property>
+				<Property Name="crio.SDPWMPeriod6" Type="Str">0</Property>
+				<Property Name="crio.SDPWMPeriod7" Type="Str">0</Property>
+				<Property Name="crio.SupportsDynamicRes" Type="Bool">false</Property>
+				<Property Name="crio.Type" Type="Str">NI 9474</Property>
+				<Property Name="cRIOModule.DigitalIOMode" Type="Str">0</Property>
+				<Property Name="cRIOModule.DIO3_0InitialDir" Type="Str">0</Property>
+				<Property Name="cRIOModule.DIO7_4InitialDir" Type="Str">0</Property>
+				<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+				<Property Name="cRIOModule.NumSyncRegs" Type="Str">11111111</Property>
+				<Item Name="DO0" Type="Variable">
+					<Property Name="featurePacks" Type="Str">Industrial</Property>
+					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+					<Property Name="Industrial:ChannelIndex" Type="Str">0</Property>
+					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+					<Property Name="Industrial:Mode" Type="Str">1</Property>
+					<Property Name="Industrial:PhysicalName" Type="Str">DO0</Property>
+					<Property Name="Network:UseBinding" Type="Str">False</Property>
+					<Property Name="Network:UseBuffering" Type="Str">False</Property>
+					<Property Name="numTypedefs" Type="UInt">0</Property>
+					<Property Name="type" Type="Str">Industrial</Property>
+					<Property Name="typeDesc" Type="Bin">&amp;1!!!"9!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				</Item>
+				<Item Name="DO1" Type="Variable">
+					<Property Name="featurePacks" Type="Str">Industrial</Property>
+					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+					<Property Name="Industrial:ChannelIndex" Type="Str">1</Property>
+					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+					<Property Name="Industrial:Mode" Type="Str">1</Property>
+					<Property Name="Industrial:PhysicalName" Type="Str">DO1</Property>
+					<Property Name="Network:UseBinding" Type="Str">False</Property>
+					<Property Name="Network:UseBuffering" Type="Str">False</Property>
+					<Property Name="numTypedefs" Type="UInt">0</Property>
+					<Property Name="type" Type="Str">Industrial</Property>
+					<Property Name="typeDesc" Type="Bin">&amp;1!!!"9!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				</Item>
+				<Item Name="DO2" Type="Variable">
+					<Property Name="featurePacks" Type="Str">Industrial</Property>
+					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+					<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
+					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+					<Property Name="Industrial:Mode" Type="Str">1</Property>
+					<Property Name="Industrial:PhysicalName" Type="Str">DO2</Property>
+					<Property Name="Network:UseBinding" Type="Str">False</Property>
+					<Property Name="Network:UseBuffering" Type="Str">False</Property>
+					<Property Name="numTypedefs" Type="UInt">0</Property>
+					<Property Name="type" Type="Str">Industrial</Property>
+					<Property Name="typeDesc" Type="Bin">&amp;1!!!"9!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				</Item>
+				<Item Name="DO3" Type="Variable">
+					<Property Name="featurePacks" Type="Str">Industrial</Property>
+					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+					<Property Name="Industrial:ChannelIndex" Type="Str">3</Property>
+					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+					<Property Name="Industrial:Mode" Type="Str">1</Property>
+					<Property Name="Industrial:PhysicalName" Type="Str">DO3</Property>
+					<Property Name="Network:UseBinding" Type="Str">False</Property>
+					<Property Name="Network:UseBuffering" Type="Str">False</Property>
+					<Property Name="numTypedefs" Type="UInt">0</Property>
+					<Property Name="type" Type="Str">Industrial</Property>
+					<Property Name="typeDesc" Type="Bin">&amp;1!!!"9!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				</Item>
+				<Item Name="DO4" Type="Variable">
+					<Property Name="featurePacks" Type="Str">Industrial</Property>
+					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+					<Property Name="Industrial:ChannelIndex" Type="Str">4</Property>
+					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+					<Property Name="Industrial:Mode" Type="Str">1</Property>
+					<Property Name="Industrial:PhysicalName" Type="Str">DO4</Property>
+					<Property Name="Network:UseBinding" Type="Str">False</Property>
+					<Property Name="Network:UseBuffering" Type="Str">False</Property>
+					<Property Name="numTypedefs" Type="UInt">0</Property>
+					<Property Name="type" Type="Str">Industrial</Property>
+					<Property Name="typeDesc" Type="Bin">&amp;1!!!"9!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				</Item>
+				<Item Name="DO5" Type="Variable">
+					<Property Name="featurePacks" Type="Str">Industrial</Property>
+					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+					<Property Name="Industrial:ChannelIndex" Type="Str">5</Property>
+					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+					<Property Name="Industrial:Mode" Type="Str">1</Property>
+					<Property Name="Industrial:PhysicalName" Type="Str">DO5</Property>
+					<Property Name="Network:UseBinding" Type="Str">False</Property>
+					<Property Name="Network:UseBuffering" Type="Str">False</Property>
+					<Property Name="numTypedefs" Type="UInt">0</Property>
+					<Property Name="type" Type="Str">Industrial</Property>
+					<Property Name="typeDesc" Type="Bin">&amp;1!!!"9!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				</Item>
+				<Item Name="DO6" Type="Variable">
+					<Property Name="featurePacks" Type="Str">Industrial</Property>
+					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+					<Property Name="Industrial:ChannelIndex" Type="Str">6</Property>
+					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+					<Property Name="Industrial:Mode" Type="Str">1</Property>
+					<Property Name="Industrial:PhysicalName" Type="Str">DO6</Property>
+					<Property Name="Network:UseBinding" Type="Str">False</Property>
+					<Property Name="Network:UseBuffering" Type="Str">False</Property>
+					<Property Name="numTypedefs" Type="UInt">0</Property>
+					<Property Name="type" Type="Str">Industrial</Property>
+					<Property Name="typeDesc" Type="Bin">&amp;1!!!"9!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				</Item>
+				<Item Name="DO7" Type="Variable">
+					<Property Name="featurePacks" Type="Str">Industrial</Property>
+					<Property Name="Industrial:BufferingEnabled" Type="Str">False</Property>
+					<Property Name="Industrial:ChannelIndex" Type="Str">7</Property>
+					<Property Name="Industrial:IODirection" Type="Str">Output</Property>
+					<Property Name="Industrial:IsNetworkPublished" Type="Str">True</Property>
+					<Property Name="Industrial:Mode" Type="Str">1</Property>
+					<Property Name="Industrial:PhysicalName" Type="Str">DO7</Property>
+					<Property Name="Network:UseBinding" Type="Str">False</Property>
+					<Property Name="Network:UseBuffering" Type="Str">False</Property>
+					<Property Name="numTypedefs" Type="UInt">0</Property>
+					<Property Name="type" Type="Str">Industrial</Property>
+					<Property Name="typeDesc" Type="Bin">&amp;1!!!"9!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+				</Item>
+			</Item>
 		</Item>
-		<Item Name="Get System Name.vi" Type="VI" URL="../helpers/Get System Name.vi"/>
+		<Item Name="Logger.lvclass" Type="LVClass" URL="../Logger.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
 				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
-				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="FileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/FileIngestion/FileIngestion.lvlib"/>
 				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
 				<Item Name="WDT Number of Waveform Samples I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I8.vi"/>
@@ -263,9 +410,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Message.dll" Type="Document" URL="Message.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
@@ -289,13 +433,8 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">59</Property>
+				<Property Name="Bld_version.build" Type="Int">88</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
-				<Property Name="CDF_Comp.Count" Type="Int">1</Property>
-				<Property Name="CDF_Comp[0].ID" Type="Str">{899452D2-C085-430B-B76D-7FDB33BB324A}</Property>
-				<Property Name="CDF_Comp[0].Title" Type="Str">LabVIEW Real-Time</Property>
-				<Property Name="CDF_Comp[0].Version" Type="Str">16.0.0</Property>
-				<Property Name="CDF_enabled" Type="Bool">true</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -305,7 +444,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{9108378F-35FE-442C-8D5D-97F7B2A576DE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{06E5F509-686B-4E8A-AAF4-089D2D05BFEA}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>
@@ -323,49 +462,31 @@ AddOutputFilter chunkFilter
 			<Item Name="My Package" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
 				<Property Name="IPK_startup.Child" Type="Str">{E5FD18B0-FFEB-49EE-8E62-33F15C8EFCE8}</Property>
 				<Property Name="IPK_startup.Destination" Type="Str">root_0</Property>
+				<Property Name="IPK_startup.Restart" Type="Bool">true</Property>
 				<Property Name="IPK_startup.Source" Type="Ref">/RT CompactRIO Target/Build Specifications/cRIO Temp Logger</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
-				<Property Name="PKG_actions[0].Arguments" Type="Str"></Property>
-				<Property Name="PKG_actions[0].IPK.IgnoreErrors" Type="Bool">true</Property>
-				<Property Name="PKG_actions[0].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/scripts/preinst.sh</Property>
-				<Property Name="PKG_actions[0].IPK.Schedule" Type="Str">Pre-install</Property>
-				<Property Name="PKG_actions[0].Type" Type="Str">IPK.InlineScript</Property>
-				<Property Name="PKG_actions[1].Arguments" Type="Str"></Property>
-				<Property Name="PKG_actions[1].IPK.IgnoreErrors" Type="Bool">true</Property>
-				<Property Name="PKG_actions[1].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/scripts/postinst.sh</Property>
-				<Property Name="PKG_actions[1].IPK.Schedule" Type="Str">Post-install</Property>
-				<Property Name="PKG_actions[1].Type" Type="Str">IPK.InlineScript</Property>
-				<Property Name="PKG_actions[2].Arguments" Type="Str"></Property>
-				<Property Name="PKG_actions[2].IPK.IgnoreErrors" Type="Bool">true</Property>
-				<Property Name="PKG_actions[2].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/scripts/prerm.sh</Property>
-				<Property Name="PKG_actions[2].IPK.Schedule" Type="Str">Pre-uninstall</Property>
-				<Property Name="PKG_actions[2].Type" Type="Str">IPK.InlineScript</Property>
-				<Property Name="PKG_actions[3].Arguments" Type="Str"></Property>
-				<Property Name="PKG_actions[3].IPK.IgnoreErrors" Type="Bool">true</Property>
-				<Property Name="PKG_actions[3].IPK.Inline.Script" Type="Ref">/RT CompactRIO Target/scripts/postrm.sh</Property>
-				<Property Name="PKG_actions[3].IPK.Schedule" Type="Str">Post-uninstall</Property>
-				<Property Name="PKG_actions[3].Type" Type="Str">IPK.InlineScript</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">16</Property>
+				<Property Name="PKG_buildNumber" Type="Int">36</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">My Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
 				<Property Name="PKG_destinations.Count" Type="Int">0</Property>
-				<Property Name="PKG_displayName" Type="Str">cRIO Temperature Logger</Property>
+				<Property Name="PKG_displayName" Type="Str">Temperature Test Logger</Property>
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
-				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;support@ni.com&gt;</Property>
-				<Property Name="PKG_output" Type="Path">/C/Users/Public/GitHub/skyline-crio-logger/packages</Property>
+				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;&gt;</Property>
+				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/My Package</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="PKG_packageName" Type="Str">crio-temp-logger</Property>
 				<Property Name="PKG_ProviderVersion" Type="Int">17</Property>
-				<Property Name="PKG_section" Type="Str">Application</Property>
+				<Property Name="PKG_section" Type="Str">Application Software</Property>
 				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
 				<Property Name="PKG_sources.Count" Type="Int">1</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">root_0</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/Build Specifications/cRIO Temp Logger</Property>
-				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
-				<Property Name="PKG_synopsis" Type="Str">Logs temperature on 4 channels</Property>
-				<Property Name="PKG_version" Type="Str">16.6.0</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">RTEXE Build</Property>
+				<Property Name="PKG_synopsis" Type="Str">Reports test cell temperature data</Property>
+				<Property Name="PKG_version" Type="Str">17.0.1</Property>
 			</Item>
 		</Item>
 	</Item>
