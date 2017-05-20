@@ -10,10 +10,10 @@ Cache_Path[Path] Line0001 = "/C/Users/jprewitt.AMER/AppData/Local/Temp/AB_Cache"
 Cache_Path[Path] Line0002 = "_{DE70E756-F38C-4268-B303-A7FD5EBD824D}.txt"
 
 [AB_Cache_{A2A59E7A-34C0-44E2-AFFC-804F870D6C5F}]
-Cache_Path[Path] Line0001 = "/C/Users/jprewitt.AMER/AppData/Local/Temp/AB_Cache"
-Cache_Path[Path] Line0002 = "_{A2A59E7A-34C0-44E2-AFFC-804F870D6C5F}.txt"
+Cache_Path[Path] Line0001 = "/C/Users/nitest/AppData/Local/Temp/AB_Cache_{A2A59"
+Cache_Path[Path] Line0002 = "E7A-34C0-44E2-AFFC-804F870D6C5F}.txt"
 
 [AB_Cache_{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}]
-Cache_Path[Path] Line0001 = "/C/Users/jprewitt.AMER/AppData/Local/Temp/AB_Cache"
-Cache_Path[Path] Line0002 = "_{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}.txt"
+Cache_Path[Path] Line0001 = "/C/Users/nitest/AppData/Local/Temp/AB_Cache_{5CE62"
+Cache_Path[Path] Line0002 = "C77-2D7D-41B8-B6CE-6D2E7B0897D9}.txt"
 

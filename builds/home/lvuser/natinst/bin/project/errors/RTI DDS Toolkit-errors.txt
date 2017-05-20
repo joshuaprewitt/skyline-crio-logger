@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+RTI DDS Error Codes  by Real-Time Innovations
+
+Copyright (c) Real-Time Innovations, 2011.
+</nicomment>
+<nierror code="5001">
+RTI DDS Toolkit found an error status in the input error cluster. It might be due to an error in the previous stage.
+</nierror>
+<nierror code="5002">
+Check that the type of all transferred/received data is the same and is similar to the one connected to the data type in the Create Reader/Writer subVIs.
+</nierror>
+<nierror code="5003">
+It is likely that another application is still using an entity of that Participant. Close all the instances before trying to delete the contained entities.
+</nierror>
+<nierror code="5004">
+It is likely that another application is still using that Participant. Close all the instances before trying to delete it.
+</nierror>
+<nierror code="5005">
+It is likely that another application is still using the Domain Participant Factory. Close all the instances before trying to delete it.
+</nierror>
+<nierror code="5006">
+Loading QoS from XML file the QoS setting format is incorrect or does not match with any of the ones existing in the XML file. Check that format is correct (Library::Profile), the XML file exists, and it contains a correct configuration.
+</nierror>
+<nierror code="5007">
+Possible error in the QoS configuration. You can also use the default configuration by attaching an empty string as input to the CreateReader/Writer subVI. This might be caused because there is no active network interface in the system. If the monitoring library is being used, it needs to be in the PATH.
+</nierror>
+<nierror code="5008">
+This might be caused by an unused entity that has not been released. Close the current VI and release unused entities using the Release Unused Entities" subVI (in RTI DDS Toolkit, Tools). Then re-open the current VI.
+</nierror>
+<nierror code="5009">
+Possible error in the QoS configuration. If it is a Custom Security Profile, check that it exists. Otherwise check that format is correct (Library::Profile), the XML file exists and it contains that profile. You can also use the default configuration by attaching an empty string as input to the Create Reader/Writer subVI.
+</nierror>
+<nierror code="5010">
+This might cause a memory leak when releasing the participant.
+</nierror>
+<nierror code="5011">
+Check that the QoS configuration provided is correct. You can also use the default configuration by attaching an empty string as input to the Create Reader/Writer subVI.
+</nierror>
+<nierror code="5012">
+Check that the Reader/Writer was correctly created (no previous errors).
+</nierror>
+<nierror code="5013">
+Check that the correct type is connected to the Create subVI. A correct Type Definition is (Library::Type). String length and array size need to be compatible between the Create and the Read/Write subVIs.
+</nierror>
+<nierror code="5014">
+Check that the QoS profile exists in the XML file and that configuration provided is correct. You can also use the default configuration by attaching an empty string as input to the Create Reader/Writer subVI. 
+</nierror>
+<nierror code="5015">
+Implicit publisher is needed to create the Writer. Check that the participant configuration is correct and that there are no previous errors.
+</nierror>
+<nierror code="5016">
+It might be due to a memory restriction (not enough memory available to recover the existing Data Writers). Using the Release unused entitiessubVI (in RTI DDS Toolkit, Tools) might fix this problem.
+</nierror>
+<nierror code="5017">
+Check that the QoS configuration provided for the Data Writer is correct.
+</nierror>
+<nierror code="5018">
+Check that Create Writer was successful and that the reference passed to the Write function is the one provided as output from the Create function. It might also be a problem in the QoS setting provided (use default ones as a safest option).
+</nierror>
+<nierror code="5019">
+Check that Create Writer was successful and that the reference passed to the Write/Set_QoS_Setting function is the correct one. It might also be a problem in the QoS setting provided (use default ones as a safest option).
+</nierror>
+<nierror code="5020">
+This might cause a memory leak when releasing the Data Writer.
+</nierror>
+<nierror code="5021">
+This is an unexpected error. Contact labview@rti.com or visit our Community Portal at http://community.rti.comto view current solutions and forum entries.
+</nierror>
+<nierror code="5022">
+Implicit subscriber is needed to create the Reader. Check that the participant configuration is correct and that there are no previous errors.
+</nierror>
+<nierror code="5023">
+It might be due to a memory restriction (not enough memory available to recover the existing Data Writers). Using the Release unused entitiessubVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5024">
+Check that the QoS configuration provided for the Data Reader is correct.
+</nierror>
+<nierror code="5025">
+Check that Create Reader was successful and that the reference passed to the Read function is the correct one. It might also be a problem in the QoS setting provided (use default ones as a safest option).
+</nierror>
+<nierror code="5026">
+Check that Create Reader was successful and that the reference passed to the Read function is the correct one. It might also be a problem in the QoS setting provided (use default ones as a safest option).
+</nierror>
+<nierror code="5027">
+This might cause a memory leak when releasing the Data Reader.
+</nierror>
+<nierror code="5028">
+This is an unexpected error. Contact labview@rti.com or visit our Community Portal at http://community.rti.comto view current solutions and forum entries.
+</nierror>
+<nierror code="5029">
+It is likely that another instance of LabVIEW is still using that Topic. Close all LabVIEW instances before trying to delete it.
+</nierror>
+<nierror code="5030">
+It is likely that another instance of LabVIEW is still using that Data Reader or its entities. Close all LabVIEW instances before trying to delete it.
+</nierror>
+<nierror code="5031">
+It is likely that another instance of LabVIEW is still using that Data Writer or its entities. Close all LabVIEW instances before trying to delete it.
+</nierror>
+<nierror code="5032">
+There was a problem when allocating memory. Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5033">
+There was a problem when allocating memory. Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5034">
+Check that the DLL was correctly loaded (a message can be found in the Debug Window).
+</nierror>
+<nierror code="5035">
+Please use the appropriate CreatesubVI to generate a correct reference and connect it to the Read/Write subVI.
+</nierror>
+<nierror code="5036">
+Check that the Query Condition is correctly set.
+</nierror>
+<nierror code="5037">
+There was a problem when allocating memory. Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5038">
+Data Writer timed out or ran out of resources. Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this. Check that you attached a valid indicator/storage to the write output.
+</nierror>
+<nierror code="5039">
+There was a problem when allocating memory. Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5040">
+Check that the Query Condition is correctly set. To read everything, set it to * or leave it empty.
+</nierror>
+<nierror code="5041">
+The Getting Started Guide provides more information about the supported types.
+</nierror>
+<nierror code="5042">
+Other applications might be using it. Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5043">
+The LabVIEW Type changed but was not correctly initialized (using Create subVI). You might need to close the VI and re-open it to removed unused entities.
+</nierror>
+<nierror code="5044">
+It might be due to a memory restriction (not enough memory available to recover the existing Topics). Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5045">
+Other instances of LabVIEW are currently using one or several of the DDS Entities.
+</nierror>
+<nierror code="5046">
+Check that the Topic's QoS provided was correct and that the Topic was initialized using the Create Reader or Create Writer subVI.
+</nierror>
+<nierror code="5047">
+Check that the Topic's QoS provided was correct and that the Topic was initialized using the Create Reader or Create Writer subVI.
+</nierror>
+<nierror code="5048">
+Possible error in the QoS properties provided. The RTI DDS Toolkit Dynamic Library was not correctly loaded. 
+</nierror>
+<nierror code="5049">
+Another thread might be already using the DLL.
+</nierror>
+<nierror code="5050">
+Internal error due to default configuration issues. Contact labview@rti.com or visit our Community Portal at http://community.rti.com to view current solutions and forum entries.
+</nierror>
+<nierror code="5051">
+Possible error in the QoS properties provided. Verify all profiles loaded by NDDS_QOS_PROFILES environment variable. 
+</nierror>
+<nierror code="5052">
+Usual format is Library::Type. Avoid using spaces.
+</nierror>
+<nierror code="5053">
+Required parameters for Create subVIs: domain_id, topic_name, type_name, data_type; for Read/Write subVIs: ref_in and data; for Release: ref_in.  
+</nierror>
+<nierror code="5054">
+Another application has finalized the TypeCode Factory and there was an error while reinitializing it. Retry.
+</nierror>
+<nierror code="5055">
+The cluster used is incompatible. Make sure all field labels exist and are compatible with text-based languages: no spaces. Make sure all used types are supported.
+</nierror>
+<nierror code="5056">
+The attached cluster is incompatible with the supported one and cannot be created.
+</nierror>
+<nierror code="5057">
+Check that the correct data type is connected to the subVI (pay special attention to Create Reader/Writer ones).
+</nierror>
+<nierror code="5058">
+Check that the correct data type is connected to the subVI (pay special attention to Read/Write ones).
+</nierror>
+<nierror code="5059">
+There may be an incompatible QoS Policy. Check that the provided profile exists. Once created, some QoS settings cannot be modified. Try using that QoS Policy in the Create subVI.
+</nierror>
+<nierror code="5060">
+This might block another threads using the LabVIEW Toolkit API.
+</nierror>
+<nierror code="5061">
+Another application was already deleting the Participant. Removing unused entities or closing the VIs might fix this problem.
+</nierror>
+<nierror code="5062">
+Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this. 
+</nierror>
+<nierror code="5063">
+This is an unexpected error. Contact labview@rti.com or visit our Community Portal at http://community.rti.comto view current solutions and forum entries.
+</nierror>
+<nierror code="5064">
+There was a problem when allocating memory. Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5065">
+The type name provided is already registered and used by some entities. Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5066">
+The current implementation only supports 32-bit enumerators. Change the enumerator representation or use an 8-bit or 16-bit integer.
+</nierror>
+<nierror code="5067">
+KeyName should be a string containing the key names separated by semicolons (';'). The fields inside a cluster can be provided in the form 'cluster.field'.
+</nierror>
+<nierror code="5068">
+Use the shipped profile 'LabVIEWLibrary::ReliableProfile' to use Reliable Communication with Shared Readers. If you need Strict Reliability, use Exclusive Readers.
+</nierror>
+<nierror code="5069">
+Using a depth bigger than 1 for the history property and not setting the 'only_new_samples' could cause that samples stayed unread. Change the QoS configuration or set the flag to 'true'.
+</nierror>
+<nierror code="5070">
+Make sure you are using the cluster 'RTI DDS Advanced Writer Configuration.ctl' contained in LVDDS_library.
+</nierror>
+<nierror code="5071">
+Make sure you are using the cluster 'RTI DDS Advanced Reader Configuration.ctl' contained in LVDDS_library.
+</nierror>
+<nierror code="5072">
+Make sure the size of the Local Logger is not a negative number.
+</nierror>
+<nierror code="5073">
+Make sure there is enough memory to log a new message. You could need to use a lower queue size.
+</nierror>
+<nierror code="5074">
+Check the Distributed Logger Queue Size is a positive number and the QoS setting format is correct (Library::Profile), the XML file exists, and it contains a correct configuration. 
+</nierror>
+<nierror code="5075">
+Make sure Distributed Logger has not been deleted previously.
+</nierror>
+<nierror code="5076">
+The Custom QoS Secure Profiles list has not been able to be allocated. Free memory and try again. 
+</nierror>
+<nierror code="5077">
+The Custom QoS Profile cannot be created. Make sure the provided name is not already in use, does not contain whitespaces and the input parameters are correctly set.
+</nierror>
+<nierror code="5078">
+The Custom QoS Profile cannot be deleted. Make sure the provided name exists and does not contain whitespaces.
+</nierror>
+<nierror code="5079">
+Unable to allocate memory for showing the created custom QoS profiles.
+</nierror>
+<nierror code="5080">
+Unable to assert a Secure Participant. This might be caused by an error in the QoS configuration or because there is no active network interface in the system. Also, make sure the provided domainID is allowed by the Security Permissions and the nddssecurity library is in the toolkit installation path or the execution path.
+</nierror>
+<nierror code="5081">
+Unable to assert a Secure Topic. Check that the QoS profile exists and the TopicName is allowed by the Security Permissions. 
+</nierror>
+<nierror code="5082">
+Unable to assert a Secure DataReader. Check that the QoS configuration provided for the DataReader is correct and make sure that the provided DataReader is allowed in that Topic and domainID by the Security Permissions.
+</nierror>
+<nierror code="5083">
+Unable to assert a Secure DataWriter. Check that the QoS configuration provided for the DataWriter is correct and make sure that the provided DataWriter is allowed in that Topic and domainID by the Security Permissions.
+</nierror>
+<nierror code="5084">
+The Custom QoS Profile cannot be loaded. Make sure the provided name exists and does not contain whitespaces.
+</nierror>
+<nierror code="5085">
+Unable to assert a ContentFilteredTopic. Check that there is not a different ContentFilteredTopic or any Topic with the same name. Also check that the Filter is supported.
+</nierror>
+<nierror code="5086">
+Unable to delete a ContentFilteredTopic. Check that no DataReaders are using it.
+</nierror>
+<nierror code="5087">
+It might be due to a memory restriction (not enough memory available to recover the existing ContentFilteredTopics). Using the Release unused entities subVI (in RTI DDS Toolkit, Tools) might fix this.
+</nierror>
+<nierror code="5088">
+The ContentFilteredTopic cannot be deleted because a DataReader is still using it. The Filter Expression of a ContentFilteredTopic cannot be modified while a DataReader is using it.
+</nierror>
+<nierror code="5089">
+The DDS Object Ref that is being used is not a Reader. Make sure that this DDS Object Ref has been created by a Create Advanced/Simple Reader.
+</nierror>
+<nierror code="5090">
+The DDS Object Ref that is being used is not a Writer. Make sure that this DDS Object Ref has been created by a Create Advanced/Simple Writer.
+</nierror>
+</nidocument>
