@@ -1,5 +1,5 @@
 [My Computer]
-My Computer="172.16.15.129"
+My Computer="172.22.11.1"
 
 [RT CompactRIO Target]
 RT CompactRIO Target="localhost"
