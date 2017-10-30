@@ -35,8 +35,8 @@
 				<Item Name="NI Skyline Configuration AMQP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration AMQP_class/NI Skyline Configuration AMQP.lvclass"/>
 				<Item Name="NI Skyline Configuration HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration HTTP_class/NI Skyline Configuration HTTP.lvclass"/>
 				<Item Name="NI Skyline Configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_class/NI Skyline Configuration.lvclass"/>
+				<Item Name="NI Skyline Configuration.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Configuration/HTTP/NI Skyline Configuration.lvlib"/>
 				<Item Name="NI Skyline JSON.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/JSON/NI Skyline JSON.lvlib"/>
-				<Item Name="NI Skyline Message (Sync).lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/NI Skyline Message (Sync).lvclass"/>
 				<Item Name="NI Skyline Message AMQP (Async).lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/AMQP/NI Skyline Message AMQP (Async).lvclass"/>
 				<Item Name="NI Skyline Message AMQP (Sync).lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/AMQP/NI Skyline Message AMQP (Sync).lvclass"/>
 				<Item Name="NI Skyline Message HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/HTTP Wrapper/NI Skyline Message HTTP.lvclass"/>
@@ -50,7 +50,6 @@
 				<Item Name="NI Skyline Tag.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Tag/Shared/NI Skyline Tag.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="Open (Sync).vi" Type="VI" URL="/&lt;vilib&gt;/Skyline/Message/sync/Open (Sync).vi"/>
 				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
@@ -441,6 +440,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NI Skyline Message AMQP (Async).lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/AMQP/NI Skyline Message AMQP (Async).lvclass"/>
 				<Item Name="NI Skyline Message AMQP (Sync).lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/AMQP/NI Skyline Message AMQP (Sync).lvclass"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
+				<Item Name="NI Skyline Configuration.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Configuration/HTTP/NI Skyline Configuration.lvlib"/>
 			</Item>
 			<Item Name="niskyline_message.dll" Type="Document" URL="niskyline_message.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -474,7 +474,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">100</Property>
+				<Property Name="Bld_version.build" Type="Int">108</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -485,7 +485,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C5FFF32C-6BBC-47DE-A0C4-72C27F618DEC}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A6D971B7-C4B7-4A2C-AF84-851E1720C5DE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>
@@ -510,7 +510,7 @@ AddOutputFilter chunkFilter
 				<Property Name="IPK_startup.Target.Source" Type="Ref">/RT CompactRIO Target/Build Specifications/Temp Logger Application</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">56</Property>
+				<Property Name="PKG_buildNumber" Type="Int">70</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Temp Logger Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
