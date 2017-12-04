@@ -84,6 +84,7 @@
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;support@ni.com&gt;</Property>
 				<Property Name="PKG_output" Type="Path">/C/Users/jprewitt.AMER/Documents/GitHub/builds/Skyline 9068/My Package</Property>
 				<Property Name="PKG_packageName" Type="Str">skyline-9068</Property>
+				<Property Name="PKG_ProviderVersion" Type="Int">1810</Property>
 				<Property Name="PKG_section" Type="Str">Application</Property>
 				<Property Name="PKG_sources.Count" Type="Int">0</Property>
 				<Property Name="PKG_synopsis" Type="Str">Skyline 9068</Property>
@@ -172,6 +173,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="cRIO Temp Monitor.vi" Type="VI" URL="../cRIO Temp Monitor.vi"/>
+		<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 		<Item Name="Chassis" Type="cRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">express</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
@@ -397,8 +399,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
-				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
 				<Item Name="WDT Number of Waveform Samples I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I8.vi"/>
 				<Item Name="WDT Number of Waveform Samples I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I32.vi"/>
@@ -474,7 +474,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">108</Property>
+				<Property Name="Bld_version.build" Type="Int">113</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -510,7 +510,8 @@ AddOutputFilter chunkFilter
 				<Property Name="IPK_startup.Target.Source" Type="Ref">/RT CompactRIO Target/Build Specifications/Temp Logger Application</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">70</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
+				<Property Name="PKG_buildNumber" Type="Int">75</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Temp Logger Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
@@ -518,11 +519,12 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_displayName" Type="Str">Temperature Test Logger</Property>
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
+				<Property Name="PKG_lvrteTracking" Type="Bool">false</Property>
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Temp Logger Package</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="PKG_packageName" Type="Str">crio-temp-logger</Property>
-				<Property Name="PKG_ProviderVersion" Type="Int">17</Property>
+				<Property Name="PKG_ProviderVersion" Type="Int">1810</Property>
 				<Property Name="PKG_section" Type="Str">Application Software</Property>
 				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
 				<Property Name="PKG_sources.Count" Type="Int">1</Property>
