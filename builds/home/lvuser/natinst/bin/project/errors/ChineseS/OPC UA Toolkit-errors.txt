@@ -1,0 +1,385 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="OPC UA Toolkit" displayname="OPC UA Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-356740">
+OPC UA Toolkit:  输入的LV变体为空或无效。
+</nierror>
+<nierror code="-356739">
+OPC UA Toolkit:  OPC UA服务器已创建。LabVIEW OPC UA工具包仅支持每个进程一个服务器应用程序。
+</nierror>
+<nierror code="-356738">
+OPC UA Toolkit:  常态节点的数据类型或节点类型无效。
+</nierror>
+<nierror code="-356737">
+OPC UA Toolkit:  输入节点的数据类型或节点类型无效。
+</nierror>
+<nierror code="-356736">
+OPC UA Toolkit:  设置点的数据类型或节点类型无效。
+</nierror>
+<nierror code="-356735">
+OPC UA Toolkit:  源节点的数据类型或节点类型无效。
+</nierror>
+<nierror code="-356734">
+OPC UA Toolkit:  通知器的节点ID不存在。
+</nierror>
+<nierror code="-356733">
+OPC UA Toolkit:  节点名称无效。可能原因：节点名称为空，或节点名称中包含字符'@'。
+</nierror>
+<nierror code="-356732">
+OPC UA Toolkit:  输入节点的数据类型与常态节点的数据类型不匹配。
+</nierror>
+<nierror code="-356731">
+OPC UA Toolkit:  输入节点的ID无效。
+</nierror>
+<nierror code="-356730">
+OPC UA Toolkit:  常态节点的ID无效。
+</nierror>
+<nierror code="-356729">
+OPC UA Toolkit:  设定节点的ID无效。
+</nierror>
+<nierror code="-356727">
+OPC UA Toolkit:  许可证未激活。
+</nierror>
+<nierror code="-356726">
+OPC UA Toolkit:  限值不符合下列原则：highhighLimit > highLimit > lowLimit > lowlowLimit。
+</nierror>
+<nierror code="-356725">
+OPC UA Toolkit:  历史数据队列大小必须大于0。
+</nierror>
+<nierror code="-356724">
+OPC UA Toolkit:  不支持该条件类型。
+</nierror>
+<nierror code="-356723">
+OPC UA Toolkit:  条件类型未知。
+</nierror>
+<nierror code="-356722">
+OPC UA Toolkit:  事件ID无效。
+</nierror>
+<nierror code="-356721">
+OPC UA Toolkit:  父节点不是通知器节点。
+</nierror>
+<nierror code="-356720">
+OPC UA Toolkit:  父节点不是文件夹节点。
+</nierror>
+<nierror code="-356719">
+OPC UA Toolkit:  取消注册引用句柄失败。
+</nierror>
+<nierror code="-356718">
+OPC UA Toolkit:  注册引用句柄失败。
+</nierror>
+<nierror code="-356717">
+OPC UA Toolkit:  OPC UA服务器启动后，无法写入属性值。
+</nierror>
+<nierror code="-356716">
+OPC UA Toolkit:  内部错误。属性节点ID无效。
+</nierror>
+<nierror code="-356715">
+OPC UA Toolkit:  内部错误。条件节点引用句柄无效。
+</nierror>
+<nierror code="-356714">
+OPC UA Toolkit:  订阅ID指向另一种类型的订阅。
+</nierror>
+<nierror code="-356706">
+OPC UA Toolkit:  将证书文件复制到证书存储区失败，访问被拒绝。
+</nierror>
+<nierror code="-356705">
+OPC UA Toolkit:  创建证书存储区失败，访问被拒绝。
+</nierror>
+<nierror code="-356704">
+OPC UA Toolkit:  创建证书文件失败，访问被拒绝。请检查是否仅存在一个公钥/私钥文件，文件是否不可写入。
+</nierror>
+<nierror code="-356702">
+OPC UA Toolkit:  (Hex 0xFFFA8EA2) OPC UA服务器已到达订阅量允许的最大的数量。 
+</nierror>
+<nierror code="-356701">
+OPC UA Toolkit:  (Hex 0xFFFA8EA3) 指定用于创建服务器的端口已被占用。
+</nierror>
+<nierror code="-356700">
+OPC UA Toolkit:  (Hex 0xFFFA8EA4) OPC UA服务器未运行。
+</nierror>
+<nierror code="-356699">
+OPC UA Toolkit:  (Hex 0xFFFA8EA5) LabVIEW无法找到证书或私钥文件。确保文件存在，且指定的文件路径有效。
+</nierror>
+<nierror code="-356698">
+OPC UA Toolkit:  (Hex 0xFFFA8EA6) 无法找到主机。保证主机名有效或改用IP地址。
+</nierror>
+<nierror code="-356697">
+OPC UA Toolkit:  (Hex 0xFFFA8EA7) OPC UA客户端无法建立安全连接至OPC UA服务器。OPC UA服务器不信任OPC UA客户端使用的证书文件，或者，服务器的系统时间在OPC UA客户端使用的证书文件的有效时间范围以外。确保OPC UA服务器信任OPC UA客户端使用的证书文件。如未指定OPC UA客户端使用的证书文件，确保OPC UA服务器信任OPC UA客户端的默认证书文件。还必须确保服务器的系统时间在证书文件的有效时间范围内。打开证书文件，可找到有效时间范围。
+</nierror>
+<nierror code="-356696">
+OPC UA Toolkit:  (Hex 0xFFFA8EA8) OPC UA服务器中的值有语法错误。
+</nierror>
+<nierror code="-356695">
+OPC UA Toolkit:  (Hex 0xFFFA8EA9) OPC UA服务器不支持指定的安全策略。
+</nierror>
+<nierror code="-356694">
+OPC UA Toolkit:  (Hex 0xFFFA8EAA) OPC UA服务器不支持指定的消息模式。
+</nierror>
+<nierror code="-356688">
+OPC UA Toolkit:  源节点ID无效。
+</nierror>
+<nierror code="-356683">
+OPC UA Toolkit:  (Hex 0xFFFA8EB5) 不支持请求的操作，或者，请求的操作中一个或多个参数不受支持。
+</nierror>
+<nierror code="-356677">
+OPC UA Toolkit:  (Hex 0xFFFA8EBB) 节点路径指向服务器地址空间中不存在的节点。
+</nierror>
+<nierror code="-356676">
+OPC UA Toolkit:  (Hex 0xFFFA8EBC) OPC UA服务器无法识别OPC UA客户端请求中的节点。
+</nierror>
+<nierror code="-356659">
+OPC UA Toolkit:  输入连续点无效。
+</nierror>
+<nierror code="-356653">
+OPC UA Toolkit:  (Hex 0xFFFA8ED3) OPC UA服务器的状态未知。
+</nierror>
+<nierror code="-356650">
+OPC UA Toolkit:  (Hex 0xFFFA8ED6) 视图版本不可用或不受支持。
+</nierror>
+<nierror code="-356649">
+OPC UA Toolkit:  (Hex 0xFFFA8ED7) 视图参数必须相互一致。
+</nierror>
+<nierror code="-356648">
+OPC UA Toolkit:  (Hex 0xFFFA8ED8) 视图时间标识不可用或不受支持。
+</nierror>
+<nierror code="-356647">
+OPC UA Toolkit:  (Hex 0xFFFA8ED9) 视图ID未指向有效的视图节点。
+</nierror>
+<nierror code="-356646">
+OPC UA Toolkit:  (Hex 0xFFFA8EDA) 用户无权限执行请求的操作。
+</nierror>
+<nierror code="-356645">
+OPC UA Toolkit:  (Hex 0xFFFA8EDB) OPC UA客户端无法识别OPC UA服务器的响应。
+</nierror>
+<nierror code="-356644">
+OPC UA Toolkit:  (Hex 0xFFFA8EDC) 发生非预期错误。
+</nierror>
+<nierror code="-356643">
+OPC UA Toolkit:  (Hex 0xFFFA8EDD) 请求指定了过多的操作，因此无法处理该请求。
+</nierror>
+<nierror code="-356642">
+OPC UA Toolkit:  (Hex 0xFFFA8EDE) OPC UA客户端请求的时间标识无效。
+</nierror>
+<nierror code="-356641">
+OPC UA Toolkit:  (Hex 0xFFFA8EDF) 操作超时。
+</nierror>
+<nierror code="-356640">
+OPC UA Toolkit:  (Hex 0xFFFA8EE0) 订阅ID无效。确保ID指向已创建的订阅。
+</nierror>
+<nierror code="-356639">
+OPC UA Toolkit:  (Hex 0xFFFA8EE1) 应用程序正在关闭，所以操作取消。
+</nierror>
+<nierror code="-356638">
+OPC UA Toolkit:  (Hex 0xFFFA8EE2) 会话未激活，所以无法使用。
+</nierror>
+<nierror code="-356637">
+OPC UA Toolkit:  (Hex 0xFFFA8EE3) OPC UA客户端关闭了会话。
+</nierror>
+<nierror code="-356636">
+OPC UA Toolkit:  (Hex 0xFFFA8EE4) OPC UA客户端关闭会话句柄失败。验证会话是否为活动状态。
+</nierror>
+<nierror code="-356635">
+OPC UA Toolkit:  (Hex 0xFFFA8EE5) OPC UA服务器不支持请求的服务。
+</nierror>
+<nierror code="-356634">
+OPC UA Toolkit:  (Hex 0xFFFA8EE6) 服务器URI无效。
+</nierror>
+<nierror code="-356633">
+OPC UA Toolkit:  (Hex 0xFFFA8EE7) OPC UA客户端连接至OPC UA服务器前，无法完成操作。
+</nierror>
+<nierror code="-356632">
+OPC UA Toolkit:  (Hex 0xFFFA8EE8) OPC UA服务器已停止，因此无法处理任何请求。
+</nierror>
+<nierror code="-356631">
+OPC UA Toolkit:  (Hex 0xFFFA8EE9) OPC UA服务器验证安全策略时出错。
+</nierror>
+<nierror code="-356630">
+OPC UA Toolkit:  (Hex 0xFFFA8EEA) 指定的安全通道不再有效。
+</nierror>
+<nierror code="-356629">
+OPC UA Toolkit:  (Hex 0xFFFA8EEB) 操作系统资源不可用。
+</nierror>
+<nierror code="-356628">
+OPC UA Toolkit:  (Hex 0xFFFA8EEC) 请求的标头无效或丢失。
+</nierror>
+<nierror code="-356627">
+OPC UA Toolkit:  (Hex 0xFFFA8EED) 来源于OPC UA服务器的响应消息超过限定的大小，OPC UA客户端无法读取该消息。
+</nierror>
+<nierror code="-356626">
+OPC UA Toolkit:  (Hex 0xFFFA8EEE) 来源于OPC UA客户端的请求消息超过限定的大小，OPC UA服务器无法读取该消息。
+</nierror>
+<nierror code="-356625">
+OPC UA Toolkit:  (Hex 0xFFFA8EEF) OPC UA客户端已取消请求。
+</nierror>
+<nierror code="-356624">
+OPC UA Toolkit:  (Hex 0xFFFA8EF0) 完成该操作所需内存不足。
+</nierror>
+<nierror code="-356623">
+OPC UA Toolkit:  (Hex 0xFFFA8EF1) 操作未执行，因为OPC UA客户端传入不包含任何元素的一组操作。
+</nierror>
+<nierror code="-356622">
+OPC UA Toolkit:  (Hex 0xFFFA8EF2) Nonce不是一个随机值，或长度不符合要求。
+</nierror>
+<nierror code="-356621">
+OPC UA Toolkit:  (Hex 0xFFFA8EF3) 时间标识在OPC UA服务器允许的范围之外。
+</nierror>
+<nierror code="-356620">
+OPC UA Toolkit:  (Hex 0xFFFA8EF4) 无法完成该操作。可能原因是OPC UA服务器已关闭。
+</nierror>
+<nierror code="-356619">
+OPC UA Toolkit:  (Hex 0xFFFA8EF5) OPC UA服务器无法验证OPC UA客户端请求中的一个或多个参数。
+</nierror>
+<nierror code="-356618">
+OPC UA Toolkit:  (Hex 0xFFFA8EF6) OPC UA服务器拒绝了安全策略、用户名或密码，OPC UA客户端无法连接至OPC UA服务器。
+</nierror>
+<nierror code="-356617">
+OPC UA Toolkit:  (Hex 0xFFFA8EF7) 安全策略、用户名或密码无效，OPC UA客户端无法连接至OPC UA服务器。
+</nierror>
+<nierror code="-356616">
+OPC UA Toolkit:  (Hex 0xFFFA8EF8) 栈应用的消息编码和解码限制已超出。
+</nierror>
+<nierror code="-356615">
+OPC UA Toolkit:  (Hex 0xFFFA8EF9) 序列化对象中有非法数据，编码暂停。
+</nierror>
+<nierror code="-356614">
+OPC UA Toolkit:  (Hex 0xFFFA8EFA) 数据流中有非法数据，解码暂停。
+</nierror>
+<nierror code="-356613">
+OPC UA Toolkit:  (Hex 0xFFFA8EFB) 扩展对象无法序列化或解序列化，无法识别数据类型ID。
+</nierror>
+<nierror code="-356612">
+OPC UA Toolkit:  (Hex 0xFFFA8EFC) 发生通信错误。确保在服务器端点URL中指定的OPC UA服务器正在运行，OPC UA服务器和OPC UA客户端之间的网络是可连接的。 
+</nierror>
+<nierror code="-356611">
+OPC UA Toolkit:  (Hex 0xFFFA8EFD) 无法将证书用于指定的操作。
+</nierror>
+<nierror code="-356610">
+OPC UA Toolkit:  (Hex 0xFFFA8EFE) 证书未被信任。
+</nierror>
+<nierror code="-356609">
+OPC UA Toolkit:  (Hex 0xFFFA8EFF) OPC UA客户端请求中的证书URI不符合OPC UA服务器预期的证书URI。
+</nierror>
+<nierror code="-356608">
+OPC UA Toolkit:  (Hex 0xFFFA8F00) 证书已过期或尚未生效。
+</nierror>
+<nierror code="-356607">
+OPC UA Toolkit:  (Hex 0xFFFA8F01) 证书已被吊销。
+</nierror>
+<nierror code="-356606">
+OPC UA Toolkit:  (Hex 0xFFFA8F02) 无法确定证书是否已被吊销。
+</nierror>
+<nierror code="-356605">
+OPC UA Toolkit:  (Hex 0xFFFA8F03) OPC UA服务器提供的证书无效。确保OPC UA客户端信任OPC UA服务器证书。
+</nierror>
+<nierror code="-356604">
+OPC UA Toolkit:  (Hex 0xFFFA8F04) 发布方证书已被吊销。
+</nierror>
+<nierror code="-356603">
+OPC UA Toolkit:  (Hex 0xFFFA8F05) 发布方证书已过期或尚未生效。
+</nierror>
+<nierror code="-356602">
+OPC UA Toolkit:  (Hex 0xFFFA8F06) 无法将发布方证书用于请求的操作。
+</nierror>
+<nierror code="-356601">
+OPC UA Toolkit:  (Hex 0xFFFA8F07) 无法确定发布方证书是否已被吊销。
+</nierror>
+<nierror code="-356600">
+OPC UA Toolkit:  (Hex 0xFFFA8F08) 用于连接OPC UA服务器的主机名与证书中的主机名不匹配。
+</nierror>
+<nierror code="-356530">
+OPC UA Toolkit:  (Hex 0xFFFA8F4E) <b>节点路径</b>语法不正确。 
+</nierror>
+<nierror code="-356529">
+OPC UA Toolkit:  (Hex 0xFFFA8F4F) 必须选择至少一个安全策略。
+</nierror>
+<nierror code="-356528">
+OPC UA Toolkit:  (Hex 0xFFFA8F50) OPC UA服务器运行时，无法删除证书。
+</nierror>
+<nierror code="-356527">
+OPC UA Toolkit:  (Hex 0xFFFA8F51) OPC UA服务器运行时，无法添加证书。
+</nierror>
+<nierror code="-356526">
+OPC UA Toolkit:  (Hex 0xFFFA8F52) OPC UA服务器地址空间中的节点的初始值未确定。
+</nierror>
+<nierror code="-356525">
+OPC UA Toolkit:  (Hex 0xFFFA8F53) 负责向设备或数据源提供数据值的传感器出现故障。
+</nierror>
+<nierror code="-356524">
+OPC UA Toolkit:  (Hex 0xFFFA8F54) 生成值的设备或数据源发生问题。
+</nierror>
+<nierror code="-356523">
+OPC UA Toolkit:  (Hex 0xFFFA8F55) 要删除的节点不存在于地址空间内。
+</nierror>
+<nierror code="-356522">
+OPC UA Toolkit:  (Hex 0xFFFA8F56) OPC UA服务器运行时，无法添加节点。
+</nierror>
+<nierror code="-356521">
+OPC UA Toolkit:  (Hex 0xFFFA8F57) OPC UA服务器运行时，无法删除节点。
+</nierror>
+<nierror code="-356520">
+OPC UA Toolkit:  (Hex 0xFFFA8F58) 无法删除一个或多个证书文件。
+</nierror>
+<nierror code="-356519">
+OPC UA Toolkit:  (Hex 0xFFFA8F59) 无法添加一个或多个证书文件。
+</nierror>
+<nierror code="-356517">
+OPC UA Toolkit:  (Hex 0xFFFA8F5B) <b>OPC UA客户端引用句柄输入</b>无效。
+</nierror>
+<nierror code="-356516">
+OPC UA Toolkit:  (Hex 0xFFFA8F5C) <b>OPC UA服务器引用句柄输入</b>无效。
+</nierror>
+<nierror code="-356515">
+OPC UA Toolkit:  (Hex 0xFFFA8F5D) 节点的数据类型与要写入值的数据类型不匹配。
+</nierror>
+<nierror code="-356514">
+OPC UA Toolkit:  (Hex 0xFFFA8F5E) 节点的数据类型与预期数据类型不匹配。
+</nierror>
+<nierror code="-356512">
+OPC UA Toolkit:  (Hex 0xFFFA8F60) 写入节点时出错。
+</nierror>
+<nierror code="-356511">
+OPC UA Toolkit:  (Hex 0xFFFA8F61) 读取节点时出错。
+</nierror>
+<nierror code="-356510">
+OPC UA Toolkit:  (Hex 0xFFFA8F62) OPC UA服务器不支持该功能。
+</nierror>
+<nierror code="-356509">
+OPC UA Toolkit:  (Hex 0xFFFA8F63) 要添加的节点已存在于地址空间内。
+</nierror>
+<nierror code="-356508">
+OPC UA Toolkit:  (Hex 0xFFFA8F64) 无法添加节点至地址空间。
+</nierror>
+<nierror code="-356507">
+OPC UA Toolkit:  (Hex 0xFFFA8F65) 无法添加属性至地址空间。
+</nierror>
+<nierror code="-356506">
+OPC UA Toolkit:  (Hex 0xFFFA8F66) 无法添加项至地址空间。
+</nierror>
+<nierror code="-356505">
+OPC UA Toolkit:  (Hex 0xFFFA8F67) 无法添加文件夹至地址空间。
+</nierror>
+<nierror code="-356504">
+OPC UA Toolkit:  (Hex 0xFFFA8F68) 无法在地址空间找到节点。
+</nierror>
+<nierror code="-356503">
+OPC UA Toolkit:  (Hex 0xFFFA8F69) 该节点不支持读取和写入操作。
+</nierror>
+<nierror code="-356502">
+OPC UA Toolkit:  (Hex 0xFFFA8F6A) 完成该操作所需内存不足。
+</nierror>
+<nierror code="-356500">
+OPC UA Toolkit:  (Hex 0xFFFA8F6C) 编程或配置错误时发生内部错误。
+</nierror>
+<nierror code="356501">
+OPC UA Toolkit:  由于未启用历史访问，设置队列大小不能激活历史访问。
+</nierror>
+<nierror code="356502">
+OPC UA Toolkit:  严重性水平(severity level)的范围是1～1000。任何小于1的值都将强制转换为1，任何大于1000的值都将强制转换为1000。
+</nierror>
+<nierror code="356503">
+OPC UA Toolkit:  严重程度为high high时，严重性应大于high。严重程度为low low时，严重性应小于low。
+</nierror>
+</nidocument>

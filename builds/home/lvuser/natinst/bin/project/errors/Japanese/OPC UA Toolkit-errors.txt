@@ -1,0 +1,385 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="OPC UA Toolkit" displayname="OPC UA Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-356740">
+OPC UA Toolkit:  入力LVバリアントがNULLまたは無効です。
+</nierror>
+<nierror code="-356739">
+OPC UA Toolkit:  OPC UAサーバはすでに作成されています。LabVIEW OPC UAツールキットは、1つのプロセスにつき1つのサーバアプリケーションのみをサポートします。
+</nierror>
+<nierror code="-356738">
+OPC UA Toolkit:  正常状態ノードのデータタイプまたはノードタイプが無効です。
+</nierror>
+<nierror code="-356737">
+OPC UA Toolkit:  入力ノードのデータタイプまたはノードタイプが無効です。
+</nierror>
+<nierror code="-356736">
+OPC UA Toolkit:  目標値ノードのデータタイプまたはノードタイプが無効です。
+</nierror>
+<nierror code="-356735">
+OPC UA Toolkit:  ソースノードのデータタイプまたはノードタイプが無効です。
+</nierror>
+<nierror code="-356734">
+OPC UA Toolkit:  ノーティファイアのノードIDがありません。
+</nierror>
+<nierror code="-356733">
+OPC UA Toolkit:  ノード名がが無効です。考えられる理由: ノード名が空か、ノード名に「@」が含まれています。
+</nierror>
+<nierror code="-356732">
+OPC UA Toolkit:  入力ノードのデータタイプが標準状態ノードのデータタイプと一致しません。
+</nierror>
+<nierror code="-356731">
+OPC UA Toolkit:  入力ノードのIDが無効です。
+</nierror>
+<nierror code="-356730">
+OPC UA Toolkit:  標準状態ノードのIDが無効です。
+</nierror>
+<nierror code="-356729">
+OPC UA Toolkit:  目標値ノードのIDが無効です。
+</nierror>
+<nierror code="-356727">
+OPC UA Toolkit:  ライセンスがアクティブ化されていません。
+</nierror>
+<nierror code="-356726">
+OPC UA Toolkit:  リミット値が、上上限 > 上限 > 下限 > 下下限になっていません。
+</nierror>
+<nierror code="-356725">
+OPC UA Toolkit:  履歴データキューサイズは0より大きくなくてはなりません。
+</nierror>
+<nierror code="-356724">
+OPC UA Toolkit:  コンディションタイプがサポートされていません。
+</nierror>
+<nierror code="-356723">
+OPC UA Toolkit:  コンディションタイプが不明です。
+</nierror>
+<nierror code="-356722">
+OPC UA Toolkit:  イベントIDが無効です。
+</nierror>
+<nierror code="-356721">
+OPC UA Toolkit:  親ノードがノーティファイアノードではありません。
+</nierror>
+<nierror code="-356720">
+OPC UA Toolkit:  親ノードがフォルダノードではありません。
+</nierror>
+<nierror code="-356719">
+OPC UA Toolkit:  登録解除refnumが失敗しました。
+</nierror>
+<nierror code="-356718">
+OPC UA Toolkit:  登録refnumが失敗しました。
+</nierror>
+<nierror code="-356717">
+OPC UA Toolkit:  OPC UAサーバ開始後、プロパティ値は書き込めません。
+</nierror>
+<nierror code="-356716">
+OPC UA Toolkit:  内部エラーです。プロパティノードIDが無効です。
+</nierror>
+<nierror code="-356715">
+OPC UA Toolkit:  内部エラーです。コンディションノードrefnumが無効です。
+</nierror>
+<nierror code="-356714">
+OPC UA Toolkit:  サブスクリプションIDは、他のタイプのサブスクリプションを参照しています。
+</nierror>
+<nierror code="-356706">
+OPC UA Toolkit:  アクセスが拒否されたため、証明書ファイルを証明書ストアにコピーできませんでした。
+</nierror>
+<nierror code="-356705">
+OPC UA Toolkit:  アクセスが拒否されたため、証明書ストアを作成できませんでした。
+</nierror>
+<nierror code="-356704">
+OPC UA Toolkit:  アクセスが拒否されたため、証明書ファイルを作成できませんでした。存在するパブリック/キーファイルが1つのみであり、それが書き込み可能でないかどうかを確認してください。
+</nierror>
+<nierror code="-356702">
+OPC UA Toolkit:  (Hex 0xFFFA8EA2) OPC UAサーバで許可されているサブスクリプションの上限に達しました。 
+</nierror>
+<nierror code="-356701">
+OPC UA Toolkit:  (Hex 0xFFFA8EA3) サーバの作成用に指定されたポートは使用されています。
+</nierror>
+<nierror code="-356700">
+OPC UA Toolkit:  (Hex 0xFFFA8EA4) OPC UAサーバは稼動していません。
+</nierror>
+<nierror code="-356699">
+OPC UA Toolkit:  (Hex 0xFFFA8EA5) 証明書またはプライベートキーファイルが見つかりません。ファイルが存在し、指定されたファイルパスが有効なことを確認してください。
+</nierror>
+<nierror code="-356698">
+OPC UA Toolkit:  (Hex 0xFFFA8EA6) ホストを見つけることができません。ホスト名が有効であることを確認するか、IPアドレスを使用します。
+</nierror>
+<nierror code="-356697">
+OPC UA Toolkit:  (Hex 0xFFFA8EA7) OPC UAクライアントは、OPC UAサーバへの接続を確立できませんでした。OPC UAクライアントが使用する証明書ファイルをOPC UAサーバが信頼しない、またはサーバのシステム時間がOPC UAクライアントが使用する証明書ファイルの有効時間範囲外にあります。OPC UAサーバがOPC UAクライアントが使用する証明書ファイルを信頼していることを確認する必要があります。OPC UAクライアントが使用する証明書ファイルを指定しない場合は、OPC UAサーバがOPC UAクライアントのデフォルト証明書ファイルを信頼するように設定してください。また、サーバのシステム時間がOPC UAクライアントが使用する証明書ファイルの有効時間範囲内にあることも確認してください。有効時間範囲は証明書ファイルを開いて確認できます。
+</nierror>
+<nierror code="-356696">
+OPC UA Toolkit:  (Hex 0xFFFA8EA8) OPC UAサーバの値に構文エラーがあります。
+</nierror>
+<nierror code="-356695">
+OPC UA Toolkit:  (Hex 0xFFFA8EA9) OPC UAサーバは指定されたセキュリティポリシーをサポートしていません。
+</nierror>
+<nierror code="-356694">
+OPC UA Toolkit:  (Hex 0xFFFA8EAA) OPC UAサーバは指定されたメッセージモードをサポートしていません。
+</nierror>
+<nierror code="-356688">
+OPC UA Toolkit:  ソースノードのIDが無効です。
+</nierror>
+<nierror code="-356683">
+OPC UA Toolkit:  (Hex 0xFFFA8EB5) 要求された操作はサポートされていない、または要求された操作内で指定された1つ以上のパラメータがサポートされていません。
+</nierror>
+<nierror code="-356677">
+OPC UA Toolkit:  (Hex 0xFFFA8EBB) ノードパスは、サーバのアドレス空間にないノードを参照しています。
+</nierror>
+<nierror code="-356676">
+OPC UA Toolkit:  (Hex 0xFFFA8EBC) OPC UAサーバがOPC UAクライアント要求のノードを認識できません。
+</nierror>
+<nierror code="-356659">
+OPC UA Toolkit:  入力継続ポイントが無効です。
+</nierror>
+<nierror code="-356653">
+OPC UA Toolkit:  (Hex 0xFFFA8ED3) OPC UAサーバのステータスが不明です。
+</nierror>
+<nierror code="-356650">
+OPC UA Toolkit:  (Hex 0xFFFA8ED6) 表示のバージョンが存在しないかサポートされていません。
+</nierror>
+<nierror code="-356649">
+OPC UA Toolkit:  (Hex 0xFFFA8ED7) 表示パラメータには矛盾があってはなりません。
+</nierror>
+<nierror code="-356648">
+OPC UA Toolkit:  (Hex 0xFFFA8ED8) 表示のタイムスタンプが存在しないかサポートされていません。
+</nierror>
+<nierror code="-356647">
+OPC UA Toolkit:  (Hex 0xFFFA8ED9) 表示IDが有効な表示であるノードを参照していません。
+</nierror>
+<nierror code="-356646">
+OPC UA Toolkit:  (Hex 0xFFFA8EDA) ユーザには要求された操作を実行する権限がありません。
+</nierror>
+<nierror code="-356645">
+OPC UA Toolkit:  (Hex 0xFFFA8EDB) OPC UAクライアントはOPC UAサーバからの応答を認識できません。
+</nierror>
+<nierror code="-356644">
+OPC UA Toolkit:  (Hex 0xFFFA8EDC) 予期しないエラーが発生しました。
+</nierror>
+<nierror code="-356643">
+OPC UA Toolkit:  (Hex 0xFFFA8EDD) 要求が多すぎる操作を指定したため、要求を処理できません。
+</nierror>
+<nierror code="-356642">
+OPC UA Toolkit:  (Hex 0xFFFA8EDE) OPC UAクライアント要求のタイムスタンプが無効です。
+</nierror>
+<nierror code="-356641">
+OPC UA Toolkit:  (Hex 0xFFFA8EDF) 操作がタイムアウトしました。
+</nierror>
+<nierror code="-356640">
+OPC UA Toolkit:  (Hex 0xFFFA8EE0) サブスクリプションIDが無効です。IDが作成済みのサブスクリプションを参照していることを確認してください。
+</nierror>
+<nierror code="-356639">
+OPC UA Toolkit:  (Hex 0xFFFA8EE1) アプリケーションがシャットダウン中であるため、操作がキャンセルされました。
+</nierror>
+<nierror code="-356638">
+OPC UA Toolkit:  (Hex 0xFFFA8EE2) このセッションがアクティブ化されていないため、セッションを使用できません。
+</nierror>
+<nierror code="-356637">
+OPC UA Toolkit:  (Hex 0xFFFA8EE3) OPC UAクライアントがセッションを閉じました。
+</nierror>
+<nierror code="-356636">
+OPC UA Toolkit:  (Hex 0xFFFA8EE4) OPC UAクライアントはセッションを閉じることができませんでした。セッションがアクティブであることを確認してください。
+</nierror>
+<nierror code="-356635">
+OPC UA Toolkit:  (Hex 0xFFFA8EE5) OPC UAサーバは要求されたサービスをサポートしていません。
+</nierror>
+<nierror code="-356634">
+OPC UA Toolkit:  (Hex 0xFFFA8EE6) サーバURIが有効ではありません。
+</nierror>
+<nierror code="-356633">
+OPC UA Toolkit:  (Hex 0xFFFA8EE7) OPC UAサーバにOPC UAクライアントが接続する前に操作を完了できません。
+</nierror>
+<nierror code="-356632">
+OPC UA Toolkit:  (Hex 0xFFFA8EE8) OPC UAサーバが停止したため要求を処理できません。
+</nierror>
+<nierror code="-356631">
+OPC UA Toolkit:  (Hex 0xFFFA8EE9) OPC UAサーバによるセキュリティポリシーの検証中にエラーが発生しました。
+</nierror>
+<nierror code="-356630">
+OPC UA Toolkit:  (Hex 0xFFFA8EEA) 指定されたセキュリティチャンネルは有効ではありません。
+</nierror>
+<nierror code="-356629">
+OPC UA Toolkit:  (Hex 0xFFFA8EEB) オペレーティングシステムリソースが使用できません。
+</nierror>
+<nierror code="-356628">
+OPC UA Toolkit:  (Hex 0xFFFA8EEC) 要求のヘッダがないか無効です。
+</nierror>
+<nierror code="-356627">
+OPC UA Toolkit:  (Hex 0xFFFA8EED) メッセージサイズが指定範囲を超えているため、OPC UAクライアントはOPC UAサーバからの応答メッセージを読み取れません。
+</nierror>
+<nierror code="-356626">
+OPC UA Toolkit:  (Hex 0xFFFA8EEE) メッセージサイズが指定範囲を超えているため、OPC UAサーバはOPC UAクライアントの要求メッセージを読み取れません。
+</nierror>
+<nierror code="-356625">
+OPC UA Toolkit:  (Hex 0xFFFA8EEF) OPC UAクライアントは要求をキャンセルしました。
+</nierror>
+<nierror code="-356624">
+OPC UA Toolkit:  (Hex 0xFFFA8EF0) この作業を完了するためにはメモリが足りません。
+</nierror>
+<nierror code="-356623">
+OPC UA Toolkit:  (Hex 0xFFFA8EF1) OPC UAクライアントが要素のない操作のリストを渡したため、操作は何も実行されませんでした。
+</nierror>
+<nierror code="-356622">
+OPC UA Toolkit:  (Hex 0xFFFA8EF2) NONCEが乱数ではない可能性があるか、長さが正しくありません。
+</nierror>
+<nierror code="-356621">
+OPC UA Toolkit:  (Hex 0xFFFA8EF3) タイムスタンプはOPC UAサーバが許可する範囲外です。
+</nierror>
+<nierror code="-356620">
+OPC UA Toolkit:  (Hex 0xFFFA8EF4) 操作を完了できません。このエラーは、OPC UAサーバがシャットダウンされたために発生した可能性があります。
+</nierror>
+<nierror code="-356619">
+OPC UA Toolkit:  (Hex 0xFFFA8EF5) OPC UAサーバは、OPC UAクライアント要求の1つ以上のパラメータを検証できませんでした。
+</nierror>
+<nierror code="-356618">
+OPC UA Toolkit:  (Hex 0xFFFA8EF6) OPC UAサーバは、セキュリティポリシー、ユーザ名、またはパスワードを拒否したため、OPC UAクライアントはOPC UAサーバに接続できません。
+</nierror>
+<nierror code="-356617">
+OPC UA Toolkit:  (Hex 0xFFFA8EF7) セキュリティポリシー、ユーザ名、またはパスワードが無効なため、OPC UAクライアントはOPC UAサーバに接続できません。
+</nierror>
+<nierror code="-356616">
+OPC UA Toolkit:  (Hex 0xFFFA8EF8) スタックによるメッセージのエンコードおよびデコードの制限を超えました。
+</nierror>
+<nierror code="-356615">
+OPC UA Toolkit:  (Hex 0xFFFA8EF9) シリアル化されたオブジェクトに無効なデータがあるため、エンコードが中断されました。
+</nierror>
+<nierror code="-356614">
+OPC UA Toolkit:  (Hex 0xFFFA8EFA) ストリームに無効なデータがあるため、デコードが中断されました。
+</nierror>
+<nierror code="-356613">
+OPC UA Toolkit:  (Hex 0xFFFA8EFB) 拡張オブジェクトは、データタイプIDを認識できないため、シリアル化または非シリアル化できません。
+</nierror>
+<nierror code="-356612">
+OPC UA Toolkit:  (Hex 0xFFFA8EFC) 通信で問題が発生しました。サーバエンドポイントURLで指定したOPC UAサーバが稼動していること、およびOPC UAサーバとOPC UAクライアント間のネットワークが接続可能であることを確認してください。 
+</nierror>
+<nierror code="-356611">
+OPC UA Toolkit:  (Hex 0xFFFA8EFD) 要求された操作に証明書を使用できません。
+</nierror>
+<nierror code="-356610">
+OPC UA Toolkit:  (Hex 0xFFFA8EFE) 証明書が信頼されていません。
+</nierror>
+<nierror code="-356609">
+OPC UA Toolkit:  (Hex 0xFFFA8EFF) OPC UAクライアント要求の証明書URIは、OPC UAサーバが予期している証明書URIに一致していません。
+</nierror>
+<nierror code="-356608">
+OPC UA Toolkit:  (Hex 0xFFFA8F00) 証明書は期限切れか、まだ有効になっていません。
+</nierror>
+<nierror code="-356607">
+OPC UA Toolkit:  (Hex 0xFFFA8F01) 認証は失効しています。
+</nierror>
+<nierror code="-356606">
+OPC UA Toolkit:  (Hex 0xFFFA8F02) 証明書が無効にされているかどうかを確認できませんでした。
+</nierror>
+<nierror code="-356605">
+OPC UA Toolkit:  (Hex 0xFFFA8F03) OPC UAサーバから提供された証明書が有効ではありません。OPC UAクライアントがOPC UAサーバ証明書を信頼するように設定してください。
+</nierror>
+<nierror code="-356604">
+OPC UA Toolkit:  (Hex 0xFFFA8F04) 発行者認証は失効しています。
+</nierror>
+<nierror code="-356603">
+OPC UA Toolkit:  (Hex 0xFFFA8F05) 発行者証明書は期限切れか、まだ有効になっていません。
+</nierror>
+<nierror code="-356602">
+OPC UA Toolkit:  (Hex 0xFFFA8F06) 発行者証明書は要求された操作に使用できません。
+</nierror>
+<nierror code="-356601">
+OPC UA Toolkit:  (Hex 0xFFFA8F07) 発行者証明書が無効にされているかどうかを確認できませんでした。
+</nierror>
+<nierror code="-356600">
+OPC UA Toolkit:  (Hex 0xFFFA8F08) OPC UAサーバへ接続するために使用しているホスト名が証明書に記載されているホスト名と一致していません。
+</nierror>
+<nierror code="-356530">
+OPC UA Toolkit:  (Hex 0xFFFA8F4E) <b>ノードパス</b>の構文が正しくありません。 
+</nierror>
+<nierror code="-356529">
+OPC UA Toolkit:  (Hex 0xFFFA8F4F) セキュリティポリシーを1つ以上選択する必要があります。
+</nierror>
+<nierror code="-356528">
+OPC UA Toolkit:  (Hex 0xFFFA8F50) OPC UAサーバが実行中は証明書を削除できません。
+</nierror>
+<nierror code="-356527">
+OPC UA Toolkit:  (Hex 0xFFFA8F51) OPC UAサーバが実行中は証明書を追加できません。
+</nierror>
+<nierror code="-356526">
+OPC UA Toolkit:  (Hex 0xFFFA8F52) OPC UAサーバアドレス空間のノードの初期値が不明です。
+</nierror>
+<nierror code="-356525">
+OPC UA Toolkit:  (Hex 0xFFFA8F53) デバイスまたはデータソースが値を生成するセンサでエラーが発生しました。
+</nierror>
+<nierror code="-356524">
+OPC UA Toolkit:  (Hex 0xFFFA8F54) 値を生成するデバイスまたはデータソースでエラーが発生しました。
+</nierror>
+<nierror code="-356523">
+OPC UA Toolkit:  (Hex 0xFFFA8F55) 削除したいノードはアドレス空間に存在しません。
+</nierror>
+<nierror code="-356522">
+OPC UA Toolkit:  (Hex 0xFFFA8F56) OPC UAサーバが実行中はノードを追加できません。
+</nierror>
+<nierror code="-356521">
+OPC UA Toolkit:  (Hex 0xFFFA8F57) OPC UAサーバが実行中はノードを削除できません。
+</nierror>
+<nierror code="-356520">
+OPC UA Toolkit:  (Hex 0xFFFA8F58) 1つまたは複数の証明書ファイルを削除できません。
+</nierror>
+<nierror code="-356519">
+OPC UA Toolkit:  (Hex 0xFFFA8F59) 1つまたは複数の証明書ファイルを追加できません。
+</nierror>
+<nierror code="-356517">
+OPC UA Toolkit:  (Hex 0xFFFA8F5B) <b>OPC UAクライアントrefnum入力</b>が無効です。
+</nierror>
+<nierror code="-356516">
+OPC UA Toolkit:  (Hex 0xFFFA8F5C) <b>OPC UAサーバrefnum入力</b>が無効です。
+</nierror>
+<nierror code="-356515">
+OPC UA Toolkit:  (Hex 0xFFFA8F5D) ノードのデータタイプが書き込む値のデータタイプと一致していません。
+</nierror>
+<nierror code="-356514">
+OPC UA Toolkit:  (Hex 0xFFFA8F5E) ノードのデータタイプは予期したデータタイプと一致していません。
+</nierror>
+<nierror code="-356512">
+OPC UA Toolkit:  (Hex 0xFFFA8F60) ノードを書き込み中にエラーが発生しました。
+</nierror>
+<nierror code="-356511">
+OPC UA Toolkit:  (Hex 0xFFFA8F61) ノードを読み取り中にエラーが発生しました。
+</nierror>
+<nierror code="-356510">
+OPC UA Toolkit:  (Hex 0xFFFA8F62) OPC UAサーバはこの機能をサポートしません。
+</nierror>
+<nierror code="-356509">
+OPC UA Toolkit:  (Hex 0xFFFA8F63) 追加したいノードはすでにアドレス空間に存在します。
+</nierror>
+<nierror code="-356508">
+OPC UA Toolkit:  (Hex 0xFFFA8F64) アドレス空間にノードを追加できません。
+</nierror>
+<nierror code="-356507">
+OPC UA Toolkit:  (Hex 0xFFFA8F65) アドレス空間にプロパティを追加できません。
+</nierror>
+<nierror code="-356506">
+OPC UA Toolkit:  (Hex 0xFFFA8F66) アドレス空間に項目を追加できません。
+</nierror>
+<nierror code="-356505">
+OPC UA Toolkit:  (Hex 0xFFFA8F67) アドレス空間にフォルダを追加できません。
+</nierror>
+<nierror code="-356504">
+OPC UA Toolkit:  (Hex 0xFFFA8F68) アドレス空間でノードを検出できません。
+</nierror>
+<nierror code="-356503">
+OPC UA Toolkit:  (Hex 0xFFFA8F69) このノードは読み取りおよび書き込み操作をサポートしません。
+</nierror>
+<nierror code="-356502">
+OPC UA Toolkit:  (Hex 0xFFFA8F6A) この作業を完了するためにはメモリが足りません。
+</nierror>
+<nierror code="-356500">
+OPC UA Toolkit:  (Hex 0xFFFA8F6C) プログラミングエラーまたは構成エラーのために内部エラーが発生しました。
+</nierror>
+<nierror code="356501">
+OPC UA Toolkit:  履歴アクセスが有効になっていないため、キューサイズを設定しても、履歴アクセスはアクティブ化されません。
+</nierror>
+<nierror code="356502">
+OPC UA Toolkit:  重大度レベルの範囲は1～1000です。1未満の値は1に、1000を超える値は1000に強制的に変換されます。
+</nierror>
+<nierror code="356503">
+OPC UA Toolkit:  上上重大度は上重大度よりも重大度が高く、下下重大度は下重大度よりも重大度が低くなります。
+</nierror>
+</nidocument>

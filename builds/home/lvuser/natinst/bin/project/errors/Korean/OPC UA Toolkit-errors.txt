@@ -1,0 +1,385 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="OPC UA Toolkit" displayname="OPC UA Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-356740">
+OPC UA Toolkit:  입력 LV 배리언트가 NULL이거나 유효하지 않습니다.
+</nierror>
+<nierror code="-356739">
+OPC UA Toolkit:  OPC UA 서버가 이미 생성되어 있습니다. LabVIEW OPC UA Toolkit은 프로세스당 한 개의 서버 어플리케이션만 지원합니다.
+</nierror>
+<nierror code="-356738">
+OPC UA Toolkit:  정상 상태 노드의 데이터 타입 또는 노드 타입이 유효하지 않습니다.
+</nierror>
+<nierror code="-356737">
+OPC UA Toolkit:  입력 노드의 데이터 타입 또는 노드 타입이 유효하지 않습니다.
+</nierror>
+<nierror code="-356736">
+OPC UA Toolkit:  셋포인트 노드의 데이터 타입 또는 노드 타입이 유효하지 않습니다.
+</nierror>
+<nierror code="-356735">
+OPC UA Toolkit:  소스 노드의 데이터 타입 또는 노드 타입이 유효하지 않습니다.
+</nierror>
+<nierror code="-356734">
+OPC UA Toolkit:  알림자의 노드 ID가 존재하지 않습니다.
+</nierror>
+<nierror code="-356733">
+OPC UA Toolkit:  노드 이름이 유효하지 않습니다. 가능한 이유: 노드 이름이 비어 있거나 노드 이름에 '@'가 있습니다.
+</nierror>
+<nierror code="-356732">
+OPC UA Toolkit:  입력 노드의 데이터 타입이 정상 상태 노드의 데이터 타입과 일치하지 않습니다.
+</nierror>
+<nierror code="-356731">
+OPC UA Toolkit:  입력 노드의 ID가 유효하지 않습니다
+</nierror>
+<nierror code="-356730">
+OPC UA Toolkit:  정상 상태 노드의 ID가 유효하지 않습니다
+</nierror>
+<nierror code="-356729">
+OPC UA Toolkit:  셋포인트 노드의 ID가 유효하지 않습니다.
+</nierror>
+<nierror code="-356727">
+OPC UA Toolkit:  라이센스가 활성화되지 않았습니다.
+</nierror>
+<nierror code="-356726">
+OPC UA Toolkit:  리미트 값이 다음과 같지 않습니다: highhighLimit > highLimit > lowLimit > lowlowLimit.
+</nierror>
+<nierror code="-356725">
+OPC UA Toolkit:  히스토리 데이터 큐 크기가 반드시 0보다 커야 합니다.
+</nierror>
+<nierror code="-356724">
+OPC UA Toolkit:  조건 타입이 지원되지 않습니다.
+</nierror>
+<nierror code="-356723">
+OPC UA Toolkit:  조건 타입을 알 수 없습니다.
+</nierror>
+<nierror code="-356722">
+OPC UA Toolkit:  이벤트 ID가 유효하지 않습니다.
+</nierror>
+<nierror code="-356721">
+OPC UA Toolkit:  직상위 노드가 알림자 노드가 아닙니다.
+</nierror>
+<nierror code="-356720">
+OPC UA Toolkit:  직상위 노드가 폴더 노드가 아닙니다.
+</nierror>
+<nierror code="-356719">
+OPC UA Toolkit:  참조 번호 할당 해제에 실패했습니다.
+</nierror>
+<nierror code="-356718">
+OPC UA Toolkit:  참조 번호 할당에 실패했습니다.
+</nierror>
+<nierror code="-356717">
+OPC UA Toolkit:  OPC UA 서버 시작 후에는 프로퍼티 값을 쓸 수 없습니다.
+</nierror>
+<nierror code="-356716">
+OPC UA Toolkit:  내부 에러. 프로퍼티 노드 ID가 유효하지 않습니다.
+</nierror>
+<nierror code="-356715">
+OPC UA Toolkit:  내부 에러. 조건 노드 참조 번호가 유효하지 않습니다.
+</nierror>
+<nierror code="-356714">
+OPC UA Toolkit:  예약 ID가 다른 타입의 예약을 가리킵니다.
+</nierror>
+<nierror code="-356706">
+OPC UA Toolkit:  접근이 거부되어, 인증 저장소에 인증 파일 복사가 실패했습니다.
+</nierror>
+<nierror code="-356705">
+OPC UA Toolkit:  접근이 거부되어, 인증 저장소 생성이 실패했습니다.
+</nierror>
+<nierror code="-356704">
+OPC UA Toolkit:  접근이 거부되어, 인증 파일 생성이 실패했습니다. 퍼블릭/프라이빗 키 파일이 단 한 개 존재하고 이것이 쓸 수 없는 파일인지 확인하십시오.
+</nierror>
+<nierror code="-356702">
+OPC UA Toolkit:  (Hex 0xFFFA8EA2) OPC UA 서버가 허용되는 최대 구독수에 도달했습니다. 
+</nierror>
+<nierror code="-356701">
+OPC UA Toolkit:  (Hex 0xFFFA8EA3) 서버를 생성하도록 지정한 포트가 사용 중입니다.
+</nierror>
+<nierror code="-356700">
+OPC UA Toolkit:  (Hex 0xFFFA8EA4) OPC UA 서버가 실행 중이 아닙니다.
+</nierror>
+<nierror code="-356699">
+OPC UA Toolkit:  (Hex 0xFFFA8EA5) LabVIEW가 인증서 또는 프라이빗 키 파일을 찾을 수 없습니다. 파일이 존재하는지 및 지정된 파일 경로가 유효한지 확인하십시오.
+</nierror>
+<nierror code="-356698">
+OPC UA Toolkit:  (Hex 0xFFFA8EA6) 호스트를 찾을 수 없습니다. 호스트 이름이 유효한지 확인하거나 IP 주소를 사용하십시오.
+</nierror>
+<nierror code="-356697">
+OPC UA Toolkit:  (Hex 0xFFFA8EA7) OPC UA 클라이언트가 OPC UA 서버에 대한 보안 연결 설정에 실패했습니다. OPC UA 서버가 OPC UA 클라이언트가 사용하는 인증서 파일을 신뢰하지 못하거나 서버 머신의 시스템 시간이 OPC UA 클라이언트가 사용하는 인증서 파일의 유효한 시간 범위 밖에 있습니다. OPC UA 클라이언트가 사용하는 인증서 파일을 OPC UA 서버가 신뢰하도록 해야 합니다. OPC UA 클라이언트가 사용하는 인증서 파일을 지정하지 않으면, OPC UA 서버가 OPC UA 클라이언트의 기본 인증서 파일을 신뢰해야 합니다. 또한 서버 머신의 시스템 시간이 인증서 파일의 유효한 시간 범위 내에 있도록 해야 합니다. 인증서 파일을 열어서 유효한 시간 범위를 확인할 수 있습니다.
+</nierror>
+<nierror code="-356696">
+OPC UA Toolkit:  (Hex 0xFFFA8EA8) OPC UA 서버의 값에 구문 에러가 있습니다.
+</nierror>
+<nierror code="-356695">
+OPC UA Toolkit:  (Hex 0xFFFA8EA9) OPC UA 서버는 지정된 보안 정책을 지원하지 않습니다.
+</nierror>
+<nierror code="-356694">
+OPC UA Toolkit:  (Hex 0xFFFA8EAA) OPC UA 서버는 지정된 메시지 모드를 지원하지 않습니다.
+</nierror>
+<nierror code="-356688">
+OPC UA Toolkit:  소스 노드의 ID가 유효하지 않습니다
+</nierror>
+<nierror code="-356683">
+OPC UA Toolkit:  (Hex 0xFFFA8EB5) 요청한 작업을 지원하지 않거나, 요청한 작업에서 지정된 하나 또는 그 이상의 파라미터를 지원하지 않습니다.
+</nierror>
+<nierror code="-356677">
+OPC UA Toolkit:  (Hex 0xFFFA8EBB) 노드 경로가 서버 주소 공간에 존재하지 않는 노드를 가리킵니다.
+</nierror>
+<nierror code="-356676">
+OPC UA Toolkit:  (Hex 0xFFFA8EBC) OPC UA 서버가 OPC UA 클라이언트 요청에서 노드를 인식할 수 없습니다.
+</nierror>
+<nierror code="-356659">
+OPC UA Toolkit:  입력 연속 포인트가 유효하지 않습니다.
+</nierror>
+<nierror code="-356653">
+OPC UA Toolkit:  (Hex 0xFFFA8ED3) OPC UA 서버의 상태가 확실치 않습니다.
+</nierror>
+<nierror code="-356650">
+OPC UA Toolkit:  (Hex 0xFFFA8ED6) 보기 버전이 사용 불가능하거나 지원되지 않습니다.
+</nierror>
+<nierror code="-356649">
+OPC UA Toolkit:  (Hex 0xFFFA8ED7) 보기 파라미터가 서로 일치해야 합니다.
+</nierror>
+<nierror code="-356648">
+OPC UA Toolkit:  (Hex 0xFFFA8ED8) 보기 타임스탬프가 사용 불가능하거나 지원되지 않습니다.
+</nierror>
+<nierror code="-356647">
+OPC UA Toolkit:  (Hex 0xFFFA8ED9) 보기 ID가 유효한 보기 노드를 가리키지 않습니다.
+</nierror>
+<nierror code="-356646">
+OPC UA Toolkit:  (Hex 0xFFFA8EDA) 사용자는 요청된 작업을 수행할 권한이 없습니다.
+</nierror>
+<nierror code="-356645">
+OPC UA Toolkit:  (Hex 0xFFFA8EDB) OPC UA 클라이언트가 OPC UA 서버의 응답을 인식할 수 없습니다.
+</nierror>
+<nierror code="-356644">
+OPC UA Toolkit:  (Hex 0xFFFA8EDC) 예상치 못한 에러가 발생했습니다.
+</nierror>
+<nierror code="-356643">
+OPC UA Toolkit:  (Hex 0xFFFA8EDD) 너무 많은 작업을 지정했기 때문에 요청을 처리할 수 없습니다.
+</nierror>
+<nierror code="-356642">
+OPC UA Toolkit:  (Hex 0xFFFA8EDE) OPC UA 클라이언트 요청의 타임 스탬프가 유효하지 않습니다.
+</nierror>
+<nierror code="-356641">
+OPC UA Toolkit:  (Hex 0xFFFA8EDF) 작업이 타임아웃되었습니다
+</nierror>
+<nierror code="-356640">
+OPC UA Toolkit:  (Hex 0xFFFA8EE0) 예약 ID가 유효하지 않습니다. ID가 생성이 완료된 예약을 가리키는지 확인하십시오.
+</nierror>
+<nierror code="-356639">
+OPC UA Toolkit:  (Hex 0xFFFA8EE1) 어플리케이션이 종료 중이기 때문에 작업이 취소되었습니다.
+</nierror>
+<nierror code="-356638">
+OPC UA Toolkit:  (Hex 0xFFFA8EE2) 해당 세션을 활성화하지 않았기 때문에 사용할 수 없습니다.
+</nierror>
+<nierror code="-356637">
+OPC UA Toolkit:  (Hex 0xFFFA8EE3) 세션이 OPC UA 클라이언트에 의해 종료되었습니다.
+</nierror>
+<nierror code="-356636">
+OPC UA Toolkit:  (Hex 0xFFFA8EE4) OPC UA 클라이언트가 셰션을 종료하는데 실패했습니다. 세션이 활성화 상태인지 확인하십시오.
+</nierror>
+<nierror code="-356635">
+OPC UA Toolkit:  (Hex 0xFFFA8EE5) OPC UA 서버가 요청된 서비스를 지원하지 않습니다.
+</nierror>
+<nierror code="-356634">
+OPC UA Toolkit:  (Hex 0xFFFA8EE6) 서버 URI가 유효하지 않습니다.
+</nierror>
+<nierror code="-356633">
+OPC UA Toolkit:  (Hex 0xFFFA8EE7) OPC UA 클라이언트를 OPC UA 서버에 연결하기 전에 작업을 완료할 수 없습니다.
+</nierror>
+<nierror code="-356632">
+OPC UA Toolkit:  (Hex 0xFFFA8EE8) OPC UA 서버가 정지했으며 요청을 처리할 수 없습니다.
+</nierror>
+<nierror code="-356631">
+OPC UA Toolkit:  (Hex 0xFFFA8EE9) OPC UA 서버가 보안 정책을 확인하는 동안 에러가 발생했습니다.
+</nierror>
+<nierror code="-356630">
+OPC UA Toolkit:  (Hex 0xFFFA8EEA) 지정한 보안 채널이 더 이상 유효하지 않습니다.
+</nierror>
+<nierror code="-356629">
+OPC UA Toolkit:  (Hex 0xFFFA8EEB) OS 리소스를 사용할 수 없습니다.
+</nierror>
+<nierror code="-356628">
+OPC UA Toolkit:  (Hex 0xFFFA8EEC) 요청에 헤더가 없거나 유효하지 않습니다.
+</nierror>
+<nierror code="-356627">
+OPC UA Toolkit:  (Hex 0xFFFA8EED) 메시지 크기가 지정한 한계를 초과하여 OPC UA 클라이언트가 OPC UA 서버로부터 응답 메시지를 읽을 수 없습니다.
+</nierror>
+<nierror code="-356626">
+OPC UA Toolkit:  (Hex 0xFFFA8EEE) 메시지 크기가 지정한 한계를 초과하여 OPC UA 서버가 OPC UA 클라이언트로부터 요청 메시지를 읽을 수 없습니다.
+</nierror>
+<nierror code="-356625">
+OPC UA Toolkit:  (Hex 0xFFFA8EEF) OPC UA 클라이언트가 요청을 취소했습니다.
+</nierror>
+<nierror code="-356624">
+OPC UA Toolkit:  (Hex 0xFFFA8EF0) 메모리가 부족하여 이 작업을 완료할 수 없습니다.
+</nierror>
+<nierror code="-356623">
+OPC UA Toolkit:  (Hex 0xFFFA8EF1) OPC UA 클라이언트가 원소 없는 작업 리스트를 전달하여 실행된 작업이 없습니다.
+</nierror>
+<nierror code="-356622">
+OPC UA Toolkit:  (Hex 0xFFFA8EF2) 임시 번호가 임의의 값이 아니거나 길이가 맞지 않습니다.
+</nierror>
+<nierror code="-356621">
+OPC UA Toolkit:  (Hex 0xFFFA8EF3) 타임스탬프가 OPC UA 서버의 허용 범위를 벗어납니다.
+</nierror>
+<nierror code="-356620">
+OPC UA Toolkit:  (Hex 0xFFFA8EF4) 작업을 완료할 수 없습니다. OPC UA 서버의 종료 때문일 수 있습니다.
+</nierror>
+<nierror code="-356619">
+OPC UA Toolkit:  (Hex 0xFFFA8EF5) OPC UA 서버가 OPC UA 클라이언트 요청에서 하나 이상의 파라미터를 검증하는데 실패했습니다.
+</nierror>
+<nierror code="-356618">
+OPC UA Toolkit:  (Hex 0xFFFA8EF6) OPC UA 서버가 보안 정책, 사용자 이름 또는 암호를 거부하였기 때문에 OPC UA 클라이언트가 OPC UA 서버에 연결할 수 없습니다.
+</nierror>
+<nierror code="-356617">
+OPC UA Toolkit:  (Hex 0xFFFA8EF7) 보안 정책, 사용자 이름 또는 암호가 유효하지 않기 때문에 OPC UA 클라이언트가 OPC UA 서버에 연결할 수 없습니다.
+</nierror>
+<nierror code="-356616">
+OPC UA Toolkit:  (Hex 0xFFFA8EF8) 스택이 지정한 메시지 인코딩 및 디코딩 한계를 초과했습니다.
+</nierror>
+<nierror code="-356615">
+OPC UA Toolkit:  (Hex 0xFFFA8EF9) 직렬화된 객체에 유효하지 않은 데이터가 있어 인코딩이 중단되었습니다.
+</nierror>
+<nierror code="-356614">
+OPC UA Toolkit:  (Hex 0xFFFA8EFA) 스트림에 유효하지 않은 데이터가 있어 디코딩이 중단되었습니다.
+</nierror>
+<nierror code="-356613">
+OPC UA Toolkit:  (Hex 0xFFFA8EFB) 데이터 타입 ID가 인식되지 않아 확장자 객체를 직렬화하거나 역직렬화할 수 없습니다.
+</nierror>
+<nierror code="-356612">
+OPC UA Toolkit:  (Hex 0xFFFA8EFC) 통신 문제가 발생했습니다. 서버 끝포인트 URL에 지정한 OPC UA 서버가 실행 중인지 및 OPC UA 서버와 OPC UA 클라이언트 사이의 네트워크가 연결 가능한지 확인하십시오. 
+</nierror>
+<nierror code="-356611">
+OPC UA Toolkit:  (Hex 0xFFFA8EFD) 요청된 작업에 이 인증서를 사용할 수 없습니다.
+</nierror>
+<nierror code="-356610">
+OPC UA Toolkit:  (Hex 0xFFFA8EFE) 신뢰할 수 없는 인증서입니다.
+</nierror>
+<nierror code="-356609">
+OPC UA Toolkit:  (Hex 0xFFFA8EFF) OPC UA 클라이언트 요청의 인증서 URI가 OPC UA 서버에 필요한 인증서 URI와 일치하지 않습니다.
+</nierror>
+<nierror code="-356608">
+OPC UA Toolkit:  (Hex 0xFFFA8F00) 이 인증서는 만료되었거나 아직 유효하지 않습니다.
+</nierror>
+<nierror code="-356607">
+OPC UA Toolkit:  (Hex 0xFFFA8F01) 이 인증서는 취소되었습니다.
+</nierror>
+<nierror code="-356606">
+OPC UA Toolkit:  (Hex 0xFFFA8F02) 이 인증서가 취소되었는지 확인할 수 없습니다.
+</nierror>
+<nierror code="-356605">
+OPC UA Toolkit:  (Hex 0xFFFA8F03) OPC UA 서버에서 제공하는 인증서가 유효하지 않습니다. OPC UA 클라이언트가 OPC UA 서버 인증서를 신뢰하는지 확인하십시오.
+</nierror>
+<nierror code="-356604">
+OPC UA Toolkit:  (Hex 0xFFFA8F04) 이 발급자 인증서는 취소되었습니다.
+</nierror>
+<nierror code="-356603">
+OPC UA Toolkit:  (Hex 0xFFFA8F05) 이 발급자 인증서는 만료되었거나 아직 유효하지 않습니다.
+</nierror>
+<nierror code="-356602">
+OPC UA Toolkit:  (Hex 0xFFFA8F06) 요청된 작업에 이 발급자 인증서를 사용할 수 없습니다.
+</nierror>
+<nierror code="-356601">
+OPC UA Toolkit:  (Hex 0xFFFA8F07) 이 발급자 인증서가 취소되었는지 확인할 수 없습니다.
+</nierror>
+<nierror code="-356600">
+OPC UA Toolkit:  (Hex 0xFFFA8F08) OPC UA 서버 연결에 사용하는 호스트 이름이 인증서의 호스트 이름과 일치하지 않습니다.
+</nierror>
+<nierror code="-356530">
+OPC UA Toolkit:  (Hex 0xFFFA8F4E) <b>노드 경로</b>의 구문이 올바르지 않습니다. 
+</nierror>
+<nierror code="-356529">
+OPC UA Toolkit:  (Hex 0xFFFA8F4F) 적어도 하나의 보안 정책을 선택해야 합니다.
+</nierror>
+<nierror code="-356528">
+OPC UA Toolkit:  (Hex 0xFFFA8F50) OPC UA 서버가 실행되는 동안에는 인증서를 제거할 수 없습니다.
+</nierror>
+<nierror code="-356527">
+OPC UA Toolkit:  (Hex 0xFFFA8F51) OPC UA 서버가 실행되는 동안에는 인증서를 추가할 수 없습니다.
+</nierror>
+<nierror code="-356526">
+OPC UA Toolkit:  (Hex 0xFFFA8F52) OPC UA 서버 주소 공간에 있는 노드의 초기값이 확실치 않습니다.
+</nierror>
+<nierror code="-356525">
+OPC UA Toolkit:  (Hex 0xFFFA8F53) 센서에서 디바이스 또는 데이터 소스가 값을 얻어내는데 실패했습니다.
+</nierror>
+<nierror code="-356524">
+OPC UA Toolkit:  (Hex 0xFFFA8F54) 디바이스 또는 데이터 소스에서 값을 생성하는데 실패했습니다.
+</nierror>
+<nierror code="-356523">
+OPC UA Toolkit:  (Hex 0xFFFA8F55) 삭제하려는 노드가 주소 공간에 존재하지 않습니다.
+</nierror>
+<nierror code="-356522">
+OPC UA Toolkit:  (Hex 0xFFFA8F56) OPC UA 서버가 실행되는 동안에는 노드를 추가할 수 없습니다.
+</nierror>
+<nierror code="-356521">
+OPC UA Toolkit:  (Hex 0xFFFA8F57) OPC UA 서버가 실행되는 동안에는 노드를 삭제할 수 없습니다.
+</nierror>
+<nierror code="-356520">
+OPC UA Toolkit:  (Hex 0xFFFA8F58) 한 개 이상의 인증서 파일을 제거할 수 없습니다.
+</nierror>
+<nierror code="-356519">
+OPC UA Toolkit:  (Hex 0xFFFA8F59) 한 개 이상의 인증서 파일을 추가할 수 없습니다.
+</nierror>
+<nierror code="-356517">
+OPC UA Toolkit:  (Hex 0xFFFA8F5B) <b>클라이언트 참조 번호</b> 입력이 유효하지 않습니다.
+</nierror>
+<nierror code="-356516">
+OPC UA Toolkit:  (Hex 0xFFFA8F5C) <b>서버 참조 번호</b> 입력이 유효하지 않습니다.
+</nierror>
+<nierror code="-356515">
+OPC UA Toolkit:  (Hex 0xFFFA8F5D) 노드의 데이터 타입이 쓰려는 값의 데이터 타입과 일치하지 않습니다.
+</nierror>
+<nierror code="-356514">
+OPC UA Toolkit:  (Hex 0xFFFA8F5E) 노드의 데이터 타입이 예상 데이터 타입과 일치하지 않습니다.
+</nierror>
+<nierror code="-356512">
+OPC UA Toolkit:  (Hex 0xFFFA8F60) 노드에 쓰기 중 에러가 발생했습니다.
+</nierror>
+<nierror code="-356511">
+OPC UA Toolkit:  (Hex 0xFFFA8F61) 노드 읽기 중 에러가 발생했습니다.
+</nierror>
+<nierror code="-356510">
+OPC UA Toolkit:  (Hex 0xFFFA8F62) OPC UA 서버가 이 기능을 지원하지 않습니다.
+</nierror>
+<nierror code="-356509">
+OPC UA Toolkit:  (Hex 0xFFFA8F63) 추가하려는 노드가 주소 공간에 이미 존재합니다.
+</nierror>
+<nierror code="-356508">
+OPC UA Toolkit:  (Hex 0xFFFA8F64) 주소 공간에 노드를 추가할 수 없습니다.
+</nierror>
+<nierror code="-356507">
+OPC UA Toolkit:  (Hex 0xFFFA8F65) 주소 공간에 프로퍼티를 추가할 수 없습니다.
+</nierror>
+<nierror code="-356506">
+OPC UA Toolkit:  (Hex 0xFFFA8F66) 주소 공간에 아이템을 추가할 수 없습니다.
+</nierror>
+<nierror code="-356505">
+OPC UA Toolkit:  (Hex 0xFFFA8F67) 주소 공간에 폴더를 추가할 수 없습니다.
+</nierror>
+<nierror code="-356504">
+OPC UA Toolkit:  (Hex 0xFFFA8F68) 주소 공간에서 노드를 찾을 수 없습니다.
+</nierror>
+<nierror code="-356503">
+OPC UA Toolkit:  (Hex 0xFFFA8F69) 이 노드는 읽기 및 쓰기 작업을 지원하지 않습니다.
+</nierror>
+<nierror code="-356502">
+OPC UA Toolkit:  (Hex 0xFFFA8F6A) 메모리가 부족하여 이 작업을 완료할 수 없습니다.
+</nierror>
+<nierror code="-356500">
+OPC UA Toolkit:  (Hex 0xFFFA8F6C) 프로그래밍 또는 설정 에러로 인해 내부 에러가 발생했습니다.
+</nierror>
+<nierror code="356501">
+OPC UA Toolkit:  히스토리 접근이 활성화되어 있지 않기 때문에, 큐 크기를 설정해도 히스토리 접근이 활성화되지 않습니다.
+</nierror>
+<nierror code="356502">
+OPC UA Toolkit:  심각성 레벨의 범위는 1부터 1000까지입니다. 1보다 작은 값은 모두 1로 강제 변환되고, 1000보다 큰 값은 모두 1000으로 강제 변환됩니다.
+</nierror>
+<nierror code="356503">
+OPC UA Toolkit:  더블 하이 심각성 레벨은 하이 심각성 레벨보다 커야 하고, 더블 로우 심각성 레벨은 로우 심각성 레벨보다 작아야 합니다.
+</nierror>
+</nidocument>

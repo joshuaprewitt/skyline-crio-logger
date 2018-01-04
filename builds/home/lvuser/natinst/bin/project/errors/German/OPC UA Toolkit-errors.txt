@@ -1,0 +1,385 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="OPC UA Toolkit" displayname="OPC UA Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-356740">
+OPC UA Toolkit:  Der eingegebene LV-Variant ist NULL oder ungültig.
+</nierror>
+<nierror code="-356739">
+OPC UA Toolkit:  Es wurde bereits ein OPC-UA-Server erzeugt. Das LabVIEW OPC UA Toolkit unterstützt nur eine Server-Anwendung pro Prozess.
+</nierror>
+<nierror code="-356738">
+OPC UA Toolkit:  Der Daten- oder Knotentyp des Normalzustand-Knotens ist ungültig.
+</nierror>
+<nierror code="-356737">
+OPC UA Toolkit:  Der Daten- oder Knotentyp des Eingangsknotens ist ungültig.
+</nierror>
+<nierror code="-356736">
+OPC UA Toolkit:  Der Daten- oder Knotentyp des Sollwertknotens ist ungültig.
+</nierror>
+<nierror code="-356735">
+OPC UA Toolkit:  Der Daten- oder Knotentyp des Quellknotens ist ungültig.
+</nierror>
+<nierror code="-356734">
+OPC UA Toolkit:  Die Knoten-ID des Melders ist nicht vorhanden.
+</nierror>
+<nierror code="-356733">
+OPC UA Toolkit:  Der Knotenname ist ungültig. Mögliche Ursachen: Der Knotenname ist entweder leer oder der Name des Knotens enthält das Zeichen "@".
+</nierror>
+<nierror code="-356732">
+OPC UA Toolkit:  Der Datentyp des Eingangsknotens entspricht nicht dem Datentyp des Knotens im Normalzustand.
+</nierror>
+<nierror code="-356731">
+OPC UA Toolkit:  Die ID des Eingangsknotens ist ungültig.
+</nierror>
+<nierror code="-356730">
+OPC UA Toolkit:  Die ID des Knotens im Normalzustand ist ungültig.
+</nierror>
+<nierror code="-356729">
+OPC UA Toolkit:  Die ID des Sollwertknotens ist ungültig.
+</nierror>
+<nierror code="-356727">
+OPC UA Toolkit:  Die Lizenz ist nicht aktiviert.
+</nierror>
+<nierror code="-356726">
+OPC UA Toolkit:  Die Grenzwerte folgen nicht der Regel: hohe Obergrenze > Obergrenze > Untergrenze > niedrige Untergrenze.
+</nierror>
+<nierror code="-356725">
+OPC UA Toolkit:  Die Queue für die historischen Daten muss größer als 0 sein.
+</nierror>
+<nierror code="-356724">
+OPC UA Toolkit:  Die Bedingungsart wird nicht unterstützt.
+</nierror>
+<nierror code="-356723">
+OPC UA Toolkit:  Die Bedingungsart ist unbekannt.
+</nierror>
+<nierror code="-356722">
+OPC UA Toolkit:  Ungültige Ereigniskennung.
+</nierror>
+<nierror code="-356721">
+OPC UA Toolkit:  Der Elternknoten ist kein Melderknoten.
+</nierror>
+<nierror code="-356720">
+OPC UA Toolkit:  Der Elternknoten ist kein Ordnerknoten.
+</nierror>
+<nierror code="-356719">
+OPC UA Toolkit:  Das Aufheben der Registrierung der Referenz ist fehlgeschlagen.
+</nierror>
+<nierror code="-356718">
+OPC UA Toolkit:  Das Registrieren der Referenz ist fehlgeschlagen.
+</nierror>
+<nierror code="-356717">
+OPC UA Toolkit:  Der Eigenschaftswert kann nach dem Start des OPC-UA-Servers nicht übertragen werden.
+</nierror>
+<nierror code="-356716">
+OPC UA Toolkit:  Interner Fehler. Die ID des Eigenschaftsknotens ist ungültig.
+</nierror>
+<nierror code="-356715">
+OPC UA Toolkit:  Interner Fehler. Die Referenz des Bedingungsknotens ist ungültig.
+</nierror>
+<nierror code="-356714">
+OPC UA Toolkit:  Die Empfänger-ID verweist auf andere Arten von Empfängern.
+</nierror>
+<nierror code="-356706">
+OPC UA Toolkit:  Beim Kopieren der Zertifikatsdatei in den Zertifikatsspeicher ist ein Fehler aufgetreten, da der Zugriff verweigert wurde.
+</nierror>
+<nierror code="-356705">
+OPC UA Toolkit:  Fehler beim Erstellen des Zertifikatsspeichers, da der Zugriff verweigert wurde.
+</nierror>
+<nierror code="-356704">
+OPC UA Toolkit:  Fehler beim Erstellen der Zertifikatsdateien, da der Zugriff verweigert wurde. Bitte prüfen Sie, ob nur eine öffentliche/private Schlüsseldatei vorhanden ist und diese schreibgeschützt ist.
+</nierror>
+<nierror code="-356702">
+OPC UA Toolkit:  (Hex 0xFFFA8EA2) Der OPC-UA-Server hat die maximale Anzahl an erlaubten Vorgängen erreicht. 
+</nierror>
+<nierror code="-356701">
+OPC UA Toolkit:  (Hex 0xFFFA8EA3) Der zum Erstellen des Servers angegebene Port ist belegt.
+</nierror>
+<nierror code="-356700">
+OPC UA Toolkit:  (Hex 0xFFFA8EA4) Der OPC-UA-Server ist nicht in Betrieb.
+</nierror>
+<nierror code="-356699">
+OPC UA Toolkit:  (Hex 0xFFFA8EA5) Datei für den privaten Schlüssel oder Zertifikat wurde nicht gefunden. Prüfen Sie, ob die Datei existiert und der angegebene Pfad gültig ist.
+</nierror>
+<nierror code="-356698">
+OPC UA Toolkit:  (Hex 0xFFFA8EA6) Host konnte nicht gefunden werden. Prüfen Sie den Host-Namen oder nutzen Sie die IP-Adresse.
+</nierror>
+<nierror code="-356697">
+OPC UA Toolkit:  (Hex 0xFFFA8EA7) Der OPC-UA-Client konnte keine sichere Verbindung mit dem OPC-UA-Server herstellen. Entweder traut der Server dem Zertifikat des Clients nicht oder die Systemzeit des Servercomputers liegt außerhalb des gültigen Zeitrahmens für das Zertifikat des Clients. Vergewissern Sie sich, dass die Zertifikatsdatei des Clients vom OPC-UA-Server angenommen wird. Wenn Sie keine Zertifikatsdatei für den OPC-UA-Client festlegen, sorgen Sie dafür, dass der OPC-UA-Server dem Standardzertifikat des OPC-UA-Clients traut. Vergewissern Sie sich außerdem, dass die Systemzeit des Servercomputers im gültigen Zeitrahmen der Zertifikatsdatei liegt. Der gültige Zeitrahmen wird angezeigt, wenn Sie die Zertifikatsdatei öffnen.
+</nierror>
+<nierror code="-356696">
+OPC UA Toolkit:  (Hex 0xFFFA8EA8) Wert im OPC-UA-Server enthält einen Syntaxfehler.
+</nierror>
+<nierror code="-356695">
+OPC UA Toolkit:  (Hex 0xFFFA8EA9) Die angegebenen Sicherheitsrichtlinien werden vom OPC-UA-Server nicht unterstützt.
+</nierror>
+<nierror code="-356694">
+OPC UA Toolkit:  (Hex 0xFFFA8EAA) Der angegebene Nachrichtenmodus wird vom OPC-UA-Server nicht unterstützt.
+</nierror>
+<nierror code="-356688">
+OPC UA Toolkit:  Die ID des Quellknotens ist ungültig.
+</nierror>
+<nierror code="-356683">
+OPC UA Toolkit:  (Hex 0xFFFA8EB5) Dieser Vorgang wird nicht unterstützt oder von den angegebenen Parametern werden nicht alle unterstützt.
+</nierror>
+<nierror code="-356677">
+OPC UA Toolkit:  (Hex 0xFFFA8EBB) Die Knotenpfad bezieht sich auf einen Knoten, der im Server-Adressraum nicht existiert.
+</nierror>
+<nierror code="-356676">
+OPC UA Toolkit:  (Hex 0xFFFA8EBC) Der Knoten in der Anfrage des OPC-UA-Clients wurde vom OPC-UA-Server nicht erkannt.
+</nierror>
+<nierror code="-356659">
+OPC UA Toolkit:  Der eingegebene Fortsetzungspunkt ist ungültig.
+</nierror>
+<nierror code="-356653">
+OPC UA Toolkit:  (Hex 0xFFFA8ED3) Unsicherer Status des OPC-UA-Servers.
+</nierror>
+<nierror code="-356650">
+OPC UA Toolkit:  (Hex 0xFFFA8ED6) Die Version der Ansicht ist nicht verfügbar oder wird nicht unterstützt.
+</nierror>
+<nierror code="-356649">
+OPC UA Toolkit:  (Hex 0xFFFA8ED7) Die Ansichtsparameter passen nicht zueinander.
+</nierror>
+<nierror code="-356648">
+OPC UA Toolkit:  (Hex 0xFFFA8ED8) Der Zeitstempel der Ansicht ist nicht vorhanden oder wird nicht unterstützt.
+</nierror>
+<nierror code="-356647">
+OPC UA Toolkit:  (Hex 0xFFFA8ED9) Die Kennung der Ansicht bezieht sich auf keinen gültigen Ansichtsknoten.
+</nierror>
+<nierror code="-356646">
+OPC UA Toolkit:  (Hex 0xFFFA8EDA) Zugriffsrechte für den gewünschten Vorgang nicht ausreichend.
+</nierror>
+<nierror code="-356645">
+OPC UA Toolkit:  (Hex 0xFFFA8EDB) Die Antwort vom OPC-UA-Server wurde vom OPC-UA-Client nicht erkannt.
+</nierror>
+<nierror code="-356644">
+OPC UA Toolkit:  (Hex 0xFFFA8EDC) Es trat ein unerwarteter Fehler auf.
+</nierror>
+<nierror code="-356643">
+OPC UA Toolkit:  (Hex 0xFFFA8EDD) Die Anfrage konnte nicht bearbeitet werden, da sie zu viele Vorgänge umfasst.
+</nierror>
+<nierror code="-356642">
+OPC UA Toolkit:  (Hex 0xFFFA8EDE) Ungültiger Zeitstempel in der Anfrage des OPC-UA-Clients.
+</nierror>
+<nierror code="-356641">
+OPC UA Toolkit:  (Hex 0xFFFA8EDF) Es ist ein Timeout aufgetreten.
+</nierror>
+<nierror code="-356640">
+OPC UA Toolkit:  (Hex 0xFFFA8EE0) Die Empfänger-ID ist ungültig. Vergewissern Sie sich, dass sich die ID auf einen bereits erstellten Empfänger bezieht.
+</nierror>
+<nierror code="-356639">
+OPC UA Toolkit:  (Hex 0xFFFA8EE1) Der Vorgang wurde abgebrochen, da das Programm gerade beendet wird.
+</nierror>
+<nierror code="-356638">
+OPC UA Toolkit:  (Hex 0xFFFA8EE2) Die Session wurde nicht aktiviert und kann daher nicht verwendet werden.
+</nierror>
+<nierror code="-356637">
+OPC UA Toolkit:  (Hex 0xFFFA8EE3) Die Session wurde vom OPC-UA-Client geschlossen.
+</nierror>
+<nierror code="-356636">
+OPC UA Toolkit:  (Hex 0xFFFA8EE4) Der OPC-UA-Client konnte die Session nicht schließen. Vergewissern Sie sich, dass die Session aktiv ist.
+</nierror>
+<nierror code="-356635">
+OPC UA Toolkit:  (Hex 0xFFFA8EE5) Der angegebene Dienst wird vom OPC-UA-Server nicht unterstützt.
+</nierror>
+<nierror code="-356634">
+OPC UA Toolkit:  (Hex 0xFFFA8EE6) Der Server-URI ist ungültig.
+</nierror>
+<nierror code="-356633">
+OPC UA Toolkit:  (Hex 0xFFFA8EE7) Der Vorgang kann erst abgeschlossen werden, wenn eine Verbindung zwischen OPC-UA-Client und OPC-UA-Server hergestellt ist.
+</nierror>
+<nierror code="-356632">
+OPC UA Toolkit:  (Hex 0xFFFA8EE8) Der OPC-UA-Server hat die Ausführung beendet und kann keine Anfragen bearbeiten.
+</nierror>
+<nierror code="-356631">
+OPC UA Toolkit:  (Hex 0xFFFA8EE9) Beim Verifizieren der Sicherheitsrichtlinie durch den OPC-UA-Server trat ein Fehler auf.
+</nierror>
+<nierror code="-356630">
+OPC UA Toolkit:  (Hex 0xFFFA8EEA) Der angegebene sichere Kanal ist nicht mehr gültig.
+</nierror>
+<nierror code="-356629">
+OPC UA Toolkit:  (Hex 0xFFFA8EEB) Fehlende Betriebssystemressource
+</nierror>
+<nierror code="-356628">
+OPC UA Toolkit:  (Hex 0xFFFA8EEC) Der Header der Anfragenachricht fehlt oder ist ungültig.
+</nierror>
+<nierror code="-356627">
+OPC UA Toolkit:  (Hex 0xFFFA8EED) Der OPC-UA-Client kann die Anfragenachricht des OPC-UA-Servers nicht lesen, da die Größe der Nachricht den zulässigen Bereich überschreitet.
+</nierror>
+<nierror code="-356626">
+OPC UA Toolkit:  (Hex 0xFFFA8EEE) Der OPC-UA-Server kann die Anfragenachricht des OPC-UA-Clients nicht lesen, da die Größe der Nachricht den zulässigen Bereich überschreitet.
+</nierror>
+<nierror code="-356625">
+OPC UA Toolkit:  (Hex 0xFFFA8EEF) Die Anfrage wurde vom OPC-UA-Client abgebrochen.
+</nierror>
+<nierror code="-356624">
+OPC UA Toolkit:  (Hex 0xFFFA8EF0) Nicht genügend Speicher zum Abschließen dieser Operation.
+</nierror>
+<nierror code="-356623">
+OPC UA Toolkit:  (Hex 0xFFFA8EF1) Es wurde keine Operation ausgeführt, da der OPC-UA-Client eine Liste ohne Elemente weitergeleitet hat.
+</nierror>
+<nierror code="-356622">
+OPC UA Toolkit:  (Hex 0xFFFA8EF2) Der eindeutige Wert ist entweder nicht zufällig oder hat die falsche Länge.
+</nierror>
+<nierror code="-356621">
+OPC UA Toolkit:  (Hex 0xFFFA8EF3) Der Zeitstempel liegt außerhalb des vom OPC-UA-Server zugelassenen Bereichs.
+</nierror>
+<nierror code="-356620">
+OPC UA Toolkit:  (Hex 0xFFFA8EF4) Die Operation konnte nicht abgeschlossen werden. Möglicherweise wurde der OPC-UA-Server heruntergefahren.
+</nierror>
+<nierror code="-356619">
+OPC UA Toolkit:  (Hex 0xFFFA8EF5) Der OPC-UA-Server konnte mindestens einen Parameter in der Anfrage des OPC-UA-Clients nicht validieren.
+</nierror>
+<nierror code="-356618">
+OPC UA Toolkit:  (Hex 0xFFFA8EF6) Der OPC-UA-Client kann keine Verbindung zum OPC-UA-Server herstellen, da der Server die Sicherheitsrichtlinie, den Benutzernamen oder das Passwort abgelehnt hat.
+</nierror>
+<nierror code="-356617">
+OPC UA Toolkit:  (Hex 0xFFFA8EF7) Der OPC-UA-Client kann keine Verbindung zum OPC-UA-Server herstellen, da die Sicherheitsrichtlinie, der Benutzername oder das Passwort ungültig ist.
+</nierror>
+<nierror code="-356616">
+OPC UA Toolkit:  (Hex 0xFFFA8EF8) Die vom Stack vorgegebenen Grenzwerte für das Kodieren oder Dekodieren von Meldungen wurden überschritten.
+</nierror>
+<nierror code="-356615">
+OPC UA Toolkit:  (Hex 0xFFFA8EF9) Die Kodierung wurde aufgrund ungültiger Daten in den serialisierten Objekten angehalten.
+</nierror>
+<nierror code="-356614">
+OPC UA Toolkit:  (Hex 0xFFFA8EFA) Die Dekodierung wurde aufgrund ungültiger Daten im Stream angehalten.
+</nierror>
+<nierror code="-356613">
+OPC UA Toolkit:  (Hex 0xFFFA8EFB) Das Erweiterungsobjekt kann nicht (de)serialisiert werden, da die Datentypkennung nicht erkannt wird.
+</nierror>
+<nierror code="-356612">
+OPC UA Toolkit:  (Hex 0xFFFA8EFC) Es ist ein Kommunikationsproblem aufgetreten. Kontrollieren Sie, ob der in der Server-Endpunkt-URL angegebene OPC-UA-Server ausgeführt wird und ob das Netzwerk zwischen dem OPC-UA-Server und -Client eine Verbindung zulässt. 
+</nierror>
+<nierror code="-356611">
+OPC UA Toolkit:  (Hex 0xFFFA8EFD) Das Zertifikat kann für den gewünschten Vorgang nicht genutzt werden.
+</nierror>
+<nierror code="-356610">
+OPC UA Toolkit:  (Hex 0xFFFA8EFE) Das Zertifikat ist nicht vertrauenswürdig.
+</nierror>
+<nierror code="-356609">
+OPC UA Toolkit:  (Hex 0xFFFA8EFF) Die Zertifikats-URI in der Anfrage des OPC-UA-Clients stimmt nicht mit der Zertifikats-URI überein, die der OPC-UA-Server erwartet.
+</nierror>
+<nierror code="-356608">
+OPC UA Toolkit:  (Hex 0xFFFA8F00) Ein Zertifikat ist abgelaufen oder noch nicht gültig.
+</nierror>
+<nierror code="-356607">
+OPC UA Toolkit:  (Hex 0xFFFA8F01) Das Zertifikat wurde zurückgezogen.
+</nierror>
+<nierror code="-356606">
+OPC UA Toolkit:  (Hex 0xFFFA8F02) Es konnte nicht festgestellt werden, ob das Zertifikat zurückgezogen wurde.
+</nierror>
+<nierror code="-356605">
+OPC UA Toolkit:  (Hex 0xFFFA8F03) Das vom OPC-UA-Server bereitgestellte Zertifikat ist ungültig. Gewährleisten Sie, dass der OPC-UA-Client dem Zertifikat des OPC-UA-Servers traut.
+</nierror>
+<nierror code="-356604">
+OPC UA Toolkit:  (Hex 0xFFFA8F04) Das Herausgeberzertifikat wurde zurückgezogen.
+</nierror>
+<nierror code="-356603">
+OPC UA Toolkit:  (Hex 0xFFFA8F05) Ein Herausgeberzertifikat ist abgelaufen oder noch nicht gültig.
+</nierror>
+<nierror code="-356602">
+OPC UA Toolkit:  (Hex 0xFFFA8F06) Das Herausgeberzertifikat kann für den gewünschten Vorgang nicht genutzt werden.
+</nierror>
+<nierror code="-356601">
+OPC UA Toolkit:  (Hex 0xFFFA8F07) Es konnte nicht festgestellt werden, ob das Herausgeberzertifikat zurückgezogen wurde.
+</nierror>
+<nierror code="-356600">
+OPC UA Toolkit:  (Hex 0xFFFA8F08) Der Host-Name, über den eine Verbindung zum OPC-UA-Server hergestellt werden soll, entspricht nicht dem Host-Namen im Zertifikat.
+</nierror>
+<nierror code="-356530">
+OPC UA Toolkit:  (Hex 0xFFFA8F4E) Die Syntax des Knotenpfads ist falsch. 
+</nierror>
+<nierror code="-356529">
+OPC UA Toolkit:  (Hex 0xFFFA8F4F) Sie müssen mindestens eine Sicherheitsrichtlinie auswählen.
+</nierror>
+<nierror code="-356528">
+OPC UA Toolkit:  (Hex 0xFFFA8F50) Sie können Zertifikate nicht entfernen, wenn der OPC-UA-Server ausgeführt wird.
+</nierror>
+<nierror code="-356527">
+OPC UA Toolkit:  (Hex 0xFFFA8F51) Sie können Zertifikate nicht hinzufügen, wenn der OPC-UA-Server ausgeführt wird.
+</nierror>
+<nierror code="-356526">
+OPC UA Toolkit:  (Hex 0xFFFA8F52) Der Anfangswert eines Knotens im Adressraum des OPC-UA-Servers ist unsicher.
+</nierror>
+<nierror code="-356525">
+OPC UA Toolkit:  (Hex 0xFFFA8F53) Fehler im Sensor, von dem das Gerät oder die Datenquelle den Wert ableitet.
+</nierror>
+<nierror code="-356524">
+OPC UA Toolkit:  (Hex 0xFFFA8F54) Fehler am Gerät oder an der Datenquelle, die diesen Wert erzeugt.
+</nierror>
+<nierror code="-356523">
+OPC UA Toolkit:  (Hex 0xFFFA8F55) Der zu löschende Knoten befindet sich nicht im Adressraum.
+</nierror>
+<nierror code="-356522">
+OPC UA Toolkit:  (Hex 0xFFFA8F56) Sie können Knoten nicht hinzufügen, wenn der OPC-UA-Server ausgeführt wird.
+</nierror>
+<nierror code="-356521">
+OPC UA Toolkit:  (Hex 0xFFFA8F57) Sie können Knoten nicht löschen, wenn der OPC-UA-Server ausgeführt wird.
+</nierror>
+<nierror code="-356520">
+OPC UA Toolkit:  (Hex 0xFFFA8F58) Mindestens eine Zertifikatsdatei konnte nicht entfernt werden.
+</nierror>
+<nierror code="-356519">
+OPC UA Toolkit:  (Hex 0xFFFA8F59) Mindestens eine Zertifikatsdatei konnte nicht hinzugefügt werden.
+</nierror>
+<nierror code="-356517">
+OPC UA Toolkit:  (Hex 0xFFFA8F5B) <b>OPC UA client refnum in</b> ist ungültig.
+</nierror>
+<nierror code="-356516">
+OPC UA Toolkit:  (Hex 0xFFFA8F5C) <b>OPC UA server refnum in</b> ist ungültig.
+</nierror>
+<nierror code="-356515">
+OPC UA Toolkit:  (Hex 0xFFFA8F5D) Der Datentyp des Knotens entspricht nicht dem Typ des zu schreibenden Werts.
+</nierror>
+<nierror code="-356514">
+OPC UA Toolkit:  (Hex 0xFFFA8F5E) Der Datentyp des Knotens stimmt nicht mit dem erwarteten Datentyp überein.
+</nierror>
+<nierror code="-356512">
+OPC UA Toolkit:  (Hex 0xFFFA8F60) Beim Schreiben in den Knoten trat ein Fehler auf.
+</nierror>
+<nierror code="-356511">
+OPC UA Toolkit:  (Hex 0xFFFA8F61) Beim Lesen des Knotens trat ein Fehler auf.
+</nierror>
+<nierror code="-356510">
+OPC UA Toolkit:  (Hex 0xFFFA8F62) Der OPC-UA-Server unterstützt diese Funktion nicht.
+</nierror>
+<nierror code="-356509">
+OPC UA Toolkit:  (Hex 0xFFFA8F63) Der Knoten befindet sich bereits im Adressraum.
+</nierror>
+<nierror code="-356508">
+OPC UA Toolkit:  (Hex 0xFFFA8F64) Knoten konnte nicht zum Adressraum hinzugefügt werden.
+</nierror>
+<nierror code="-356507">
+OPC UA Toolkit:  (Hex 0xFFFA8F65) Eigenschaft konnte nicht zum Adressraum hinzugefügt werden.
+</nierror>
+<nierror code="-356506">
+OPC UA Toolkit:  (Hex 0xFFFA8F66) Objekt konnte nicht zum Adressraum hinzugefügt werden.
+</nierror>
+<nierror code="-356505">
+OPC UA Toolkit:  (Hex 0xFFFA8F67) Ordner konnte nicht zum Adressraum hinzugefügt werden.
+</nierror>
+<nierror code="-356504">
+OPC UA Toolkit:  (Hex 0xFFFA8F68) Im Adressraum konnte kein Knoten gefunden werden.
+</nierror>
+<nierror code="-356503">
+OPC UA Toolkit:  (Hex 0xFFFA8F69) Dieser Knoten unterstützt keine Lese- oder Schreiboperationen.
+</nierror>
+<nierror code="-356502">
+OPC UA Toolkit:  (Hex 0xFFFA8F6A) Nicht genügend Speicher zum Abschließen dieser Operation.
+</nierror>
+<nierror code="-356500">
+OPC UA Toolkit:  (Hex 0xFFFA8F6C) Aufgrund eines Programmier- oder Konfigurationsfehlers ist ein interner Fehler aufgetreten.
+</nierror>
+<nierror code="356501">
+OPC UA Toolkit:  Da der Zugriff auf die historischen Daten (Historical Access) nicht aktiviert ist, wird der Zugriff auf die historischen Daten nicht durch Festlegen der Queue-Größe aktviert.
+</nierror>
+<nierror code="356502">
+OPC UA Toolkit:  Der Bereich für den Schweregrad liegt zwischen 1 und 1000. Werte, die kleiner sind als 1 werden auf 1 gesetzt. Werte, die größer sind als 1000 werden auf 1000 gesetzt.
+</nierror>
+<nierror code="356503">
+OPC UA Toolkit:  Der Schweregrad "besonders hoch" sollte höher sein als der Schweregrad "hoch" und der Schweregrad "besonders gering" sollte geringer sein als "gering".
+</nierror>
+</nidocument>

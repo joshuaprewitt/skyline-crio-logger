@@ -1,0 +1,385 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="OPC UA Toolkit" displayname="OPC UA Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-356740">
+OPC UA Toolkit:  The input LV variant is NULL or invalid.
+</nierror>
+<nierror code="-356739">
+OPC UA Toolkit:  An OPC UA server is already created. The LabVIEW OPC UA Toolkit only supports one server application per process.
+</nierror>
+<nierror code="-356738">
+OPC UA Toolkit:  The data type or node type of the normal state node is invalid.
+</nierror>
+<nierror code="-356737">
+OPC UA Toolkit:  The data type or node type of the input node is invalid.
+</nierror>
+<nierror code="-356736">
+OPC UA Toolkit:  The data type or node type of the setpoint node is invalid.
+</nierror>
+<nierror code="-356735">
+OPC UA Toolkit:  The data type or node type of the source node is invalid.
+</nierror>
+<nierror code="-356734">
+OPC UA Toolkit:  The node ID of the notifier does not exist.
+</nierror>
+<nierror code="-356733">
+OPC UA Toolkit:  The node name is invalid. Possible reasons: the node name is empty or there is '@' in the node name.
+</nierror>
+<nierror code="-356732">
+OPC UA Toolkit:  The data type of the input node does not match the data type of the normal state node.
+</nierror>
+<nierror code="-356731">
+OPC UA Toolkit:  The ID of the input node is invalid.
+</nierror>
+<nierror code="-356730">
+OPC UA Toolkit:  The ID of the normal state node is invalid.
+</nierror>
+<nierror code="-356729">
+OPC UA Toolkit:  The ID of the setpoint node is invalid.
+</nierror>
+<nierror code="-356727">
+OPC UA Toolkit:  The license is not activated.
+</nierror>
+<nierror code="-356726">
+OPC UA Toolkit:  The limit values do not follow: highhighLimit > highLimit > lowLimit > lowlowLimit.
+</nierror>
+<nierror code="-356725">
+OPC UA Toolkit:  The historical data queue size must be larger than 0.
+</nierror>
+<nierror code="-356724">
+OPC UA Toolkit:  The condition type is not supported.
+</nierror>
+<nierror code="-356723">
+OPC UA Toolkit:  The condition type is unknown.
+</nierror>
+<nierror code="-356722">
+OPC UA Toolkit:  The event ID is invalid.
+</nierror>
+<nierror code="-356721">
+OPC UA Toolkit:  The parent node is not a notifier node.
+</nierror>
+<nierror code="-356720">
+OPC UA Toolkit:  The parent node is not a folder node.
+</nierror>
+<nierror code="-356719">
+OPC UA Toolkit:  The unregister refnum failed.
+</nierror>
+<nierror code="-356718">
+OPC UA Toolkit:  The register refnum failed.
+</nierror>
+<nierror code="-356717">
+OPC UA Toolkit:  The property value cannot be written after the OPC UA server starts.
+</nierror>
+<nierror code="-356716">
+OPC UA Toolkit:  Internal error. The property node ID is invalid.
+</nierror>
+<nierror code="-356715">
+OPC UA Toolkit:  Internal error. The condition node refnum is invalid.
+</nierror>
+<nierror code="-356714">
+OPC UA Toolkit:  The subscription ID refers to other types of subscription.
+</nierror>
+<nierror code="-356706">
+OPC UA Toolkit:  Failed to copy the certificate file to the certificate store because access is denied.
+</nierror>
+<nierror code="-356705">
+OPC UA Toolkit:  Failed to create certificate store because access is denied.
+</nierror>
+<nierror code="-356704">
+OPC UA Toolkit:  Failed to create certificate files because access is denied. Please check whether only one of the public/private key file exists and is not writable.
+</nierror>
+<nierror code="-356702">
+OPC UA Toolkit:  (Hex 0xFFFA8EA2) The OPC UA server has reached the maximum number of subscriptions allowed. 
+</nierror>
+<nierror code="-356701">
+OPC UA Toolkit:  (Hex 0xFFFA8EA3) The port you specified for creating the server is occupied.
+</nierror>
+<nierror code="-356700">
+OPC UA Toolkit:  (Hex 0xFFFA8EA4) The OPC UA server is not running.
+</nierror>
+<nierror code="-356699">
+OPC UA Toolkit:  (Hex 0xFFFA8EA5) LabVIEW cannot find the certificate or private key file. Ensure the file exists and the specified file path is valid.
+</nierror>
+<nierror code="-356698">
+OPC UA Toolkit:  (Hex 0xFFFA8EA6) Unable to locate the host. Ensure the hostname is valid or use the IP address.
+</nierror>
+<nierror code="-356697">
+OPC UA Toolkit:  (Hex 0xFFFA8EA7) The OPC UA client failed to establish a secure connection to the OPC UA server. Either the OPC UA server does not trust the certificate file that the OPC UA client uses or the system time of the server machine is out of the valid time range of the certificate file that the OPC UA client uses. You must ensure that the OPC UA server trusts the certificate file that the OPC UA client uses. If you do not specify a certificate file for the OPC UA client to use, ensure that the OPC UA server trusts the default certificate file of the OPC UA client. You must also ensure that the system time of the server machine is within the valid time range of the certificate file. You can find the valid time range by opening the certificate file.
+</nierror>
+<nierror code="-356696">
+OPC UA Toolkit:  (Hex 0xFFFA8EA8) Value in the OPC UA server contains a syntax error.
+</nierror>
+<nierror code="-356695">
+OPC UA Toolkit:  (Hex 0xFFFA8EA9) The OPC UA server does not support the specified security policy .
+</nierror>
+<nierror code="-356694">
+OPC UA Toolkit:  (Hex 0xFFFA8EAA) The OPC UA server does not support the specified message mode.
+</nierror>
+<nierror code="-356688">
+OPC UA Toolkit:  The ID of the source node is invalid.
+</nierror>
+<nierror code="-356683">
+OPC UA Toolkit:  (Hex 0xFFFA8EB5) The requested operation is not supported or one or more parameter specified in the requested operation are not supported.
+</nierror>
+<nierror code="-356677">
+OPC UA Toolkit:  (Hex 0xFFFA8EBB) The node path refers to a node that does not exist in the server address space.
+</nierror>
+<nierror code="-356676">
+OPC UA Toolkit:  (Hex 0xFFFA8EBC) The OPC UA server cannot recognize the node in the request of the OPC UA client.
+</nierror>
+<nierror code="-356659">
+OPC UA Toolkit:  The input continuation point is invalid.
+</nierror>
+<nierror code="-356653">
+OPC UA Toolkit:  (Hex 0xFFFA8ED3) The status of the OPC UA server is uncertain.
+</nierror>
+<nierror code="-356650">
+OPC UA Toolkit:  (Hex 0xFFFA8ED6) The view version is not available or is not supported.
+</nierror>
+<nierror code="-356649">
+OPC UA Toolkit:  (Hex 0xFFFA8ED7) The view parameters must be consistent with each other.
+</nierror>
+<nierror code="-356648">
+OPC UA Toolkit:  (Hex 0xFFFA8ED8) The view timestamp is not available or is not supported.
+</nierror>
+<nierror code="-356647">
+OPC UA Toolkit:  (Hex 0xFFFA8ED9) The view ID does not refer to a valid view node.
+</nierror>
+<nierror code="-356646">
+OPC UA Toolkit:  (Hex 0xFFFA8EDA) The user does not have permission to perform the requested operation.
+</nierror>
+<nierror code="-356645">
+OPC UA Toolkit:  (Hex 0xFFFA8EDB) The OPC UA client cannot recognize the response from the OPC UA server.
+</nierror>
+<nierror code="-356644">
+OPC UA Toolkit:  (Hex 0xFFFA8EDC) An unexpected error occurred.
+</nierror>
+<nierror code="-356643">
+OPC UA Toolkit:  (Hex 0xFFFA8EDD) The request cannot be processed because the request specified too many operations.
+</nierror>
+<nierror code="-356642">
+OPC UA Toolkit:  (Hex 0xFFFA8EDE) Invalid timestamp in the OPC UA client request.
+</nierror>
+<nierror code="-356641">
+OPC UA Toolkit:  (Hex 0xFFFA8EDF) The operation timed out.
+</nierror>
+<nierror code="-356640">
+OPC UA Toolkit:  (Hex 0xFFFA8EE0) The subscription ID is not valid. Ensure the ID refers to a subscription that you have already created.
+</nierror>
+<nierror code="-356639">
+OPC UA Toolkit:  (Hex 0xFFFA8EE1) The operation was cancelled because the application is shutting down.
+</nierror>
+<nierror code="-356638">
+OPC UA Toolkit:  (Hex 0xFFFA8EE2) The session cannot be used because you have not activated this session.
+</nierror>
+<nierror code="-356637">
+OPC UA Toolkit:  (Hex 0xFFFA8EE3) The session has been closed by the OPC UA client.
+</nierror>
+<nierror code="-356636">
+OPC UA Toolkit:  (Hex 0xFFFA8EE4) The OPC UA client failed to close a session. Verify that the session is active.
+</nierror>
+<nierror code="-356635">
+OPC UA Toolkit:  (Hex 0xFFFA8EE5) The OPC UA server does not support the requested service.
+</nierror>
+<nierror code="-356634">
+OPC UA Toolkit:  (Hex 0xFFFA8EE6) The server URI is not valid.
+</nierror>
+<nierror code="-356633">
+OPC UA Toolkit:  (Hex 0xFFFA8EE7) You cannot complete the operation before you connect the OPC UA client to the OPC UA server.
+</nierror>
+<nierror code="-356632">
+OPC UA Toolkit:  (Hex 0xFFFA8EE8) The OPC UA server has stopped and cannot process any requests.
+</nierror>
+<nierror code="-356631">
+OPC UA Toolkit:  (Hex 0xFFFA8EE9) An error occurred when the OPC UA server was verifying the security policy.
+</nierror>
+<nierror code="-356630">
+OPC UA Toolkit:  (Hex 0xFFFA8EEA) The secure channel you specified is no longer valid.
+</nierror>
+<nierror code="-356629">
+OPC UA Toolkit:  (Hex 0xFFFA8EEB) An operating system resource is not available.
+</nierror>
+<nierror code="-356628">
+OPC UA Toolkit:  (Hex 0xFFFA8EEC) The header for the request is missing or invalid.
+</nierror>
+<nierror code="-356627">
+OPC UA Toolkit:  (Hex 0xFFFA8EED) The OPC UA client cannot read the response message from the OPC UA server, because the message size exceeds the specified limits.
+</nierror>
+<nierror code="-356626">
+OPC UA Toolkit:  (Hex 0xFFFA8EEE) The OPC UA server cannot read the request message from the OPC UA client, because the message size exceeds the specified limits.
+</nierror>
+<nierror code="-356625">
+OPC UA Toolkit:  (Hex 0xFFFA8EEF) The OPC UA client has cancelled the request.
+</nierror>
+<nierror code="-356624">
+OPC UA Toolkit:  (Hex 0xFFFA8EF0) Not enough memory to complete this operation.
+</nierror>
+<nierror code="-356623">
+OPC UA Toolkit:  (Hex 0xFFFA8EF1) No operation executed because the OPC UA client passed a list of operations with no elements.
+</nierror>
+<nierror code="-356622">
+OPC UA Toolkit:  (Hex 0xFFFA8EF2) The nonce does not appear to be a random value or is not correct in length.
+</nierror>
+<nierror code="-356621">
+OPC UA Toolkit:  (Hex 0xFFFA8EF3) The timestamp is out of the range the OPC UA server allows.
+</nierror>
+<nierror code="-356620">
+OPC UA Toolkit:  (Hex 0xFFFA8EF4) The operation cannot complete. Possible reason is that the OPC UA server is shut down.
+</nierror>
+<nierror code="-356619">
+OPC UA Toolkit:  (Hex 0xFFFA8EF5) The OPC UA server failed to validate one or more parameters in the OPC UA client request.
+</nierror>
+<nierror code="-356618">
+OPC UA Toolkit:  (Hex 0xFFFA8EF6) The OPC UA client cannot connect to the OPC UA server because the OPC UA server rejected the security policy, username, or password.
+</nierror>
+<nierror code="-356617">
+OPC UA Toolkit:  (Hex 0xFFFA8EF7) The OPC UA client cannot connect to the OPC UA server because the security policy, username, or password is invalid.
+</nierror>
+<nierror code="-356616">
+OPC UA Toolkit:  (Hex 0xFFFA8EF8) The message encoding and decoding limits imposed by the stack have been exceeded.
+</nierror>
+<nierror code="-356615">
+OPC UA Toolkit:  (Hex 0xFFFA8EF9) Encoding halted because of invalid data in the serialized objects.
+</nierror>
+<nierror code="-356614">
+OPC UA Toolkit:  (Hex 0xFFFA8EFA) Decoding halted because of invalid data in the stream.
+</nierror>
+<nierror code="-356613">
+OPC UA Toolkit:  (Hex 0xFFFA8EFB) The extension object cannot be serialized or deserialized because the data type ID is not recognized.
+</nierror>
+<nierror code="-356612">
+OPC UA Toolkit:  (Hex 0xFFFA8EFC) A communication problem occurred. Ensure that the OPC UA server that you specify in the server endpoint URL is running and the network between the OPC UA server and the OPC UA client is connectable. 
+</nierror>
+<nierror code="-356611">
+OPC UA Toolkit:  (Hex 0xFFFA8EFD) You cannot use the certificate for the requested operation.
+</nierror>
+<nierror code="-356610">
+OPC UA Toolkit:  (Hex 0xFFFA8EFE) The certificate is not trusted.
+</nierror>
+<nierror code="-356609">
+OPC UA Toolkit:  (Hex 0xFFFA8EFF) The certificate URI in the OPC UA client request does not match the certificate URI that the OPC UA server expects.
+</nierror>
+<nierror code="-356608">
+OPC UA Toolkit:  (Hex 0xFFFA8F00) The certificate has expired or is not yet valid.
+</nierror>
+<nierror code="-356607">
+OPC UA Toolkit:  (Hex 0xFFFA8F01) The certificate has been revoked.
+</nierror>
+<nierror code="-356606">
+OPC UA Toolkit:  (Hex 0xFFFA8F02) Unable to determine if the certificate has been revoked.
+</nierror>
+<nierror code="-356605">
+OPC UA Toolkit:  (Hex 0xFFFA8F03) The certificate provided by OPC UA server is not valid. Ensure the OPC UA client trusts the OPC UA server certificate.
+</nierror>
+<nierror code="-356604">
+OPC UA Toolkit:  (Hex 0xFFFA8F04) The issuer certificate has been revoked.
+</nierror>
+<nierror code="-356603">
+OPC UA Toolkit:  (Hex 0xFFFA8F05) An issuer certificate has expired or is not yet valid.
+</nierror>
+<nierror code="-356602">
+OPC UA Toolkit:  (Hex 0xFFFA8F06) You cannot use the issuer certificate for the requested operation.
+</nierror>
+<nierror code="-356601">
+OPC UA Toolkit:  (Hex 0xFFFA8F07) Unable to determine if the issuer certificate has been revoked.
+</nierror>
+<nierror code="-356600">
+OPC UA Toolkit:  (Hex 0xFFFA8F08) The host name that you use to connect to an OPC UA server does not match a host name in the certificate.
+</nierror>
+<nierror code="-356530">
+OPC UA Toolkit:  (Hex 0xFFFA8F4E) The syntax of <b>node path</b> is incorrect. 
+</nierror>
+<nierror code="-356529">
+OPC UA Toolkit:  (Hex 0xFFFA8F4F) You must select at least one security policy.
+</nierror>
+<nierror code="-356528">
+OPC UA Toolkit:  (Hex 0xFFFA8F50) You cannot remove a certificate when the OPC UA server is running.
+</nierror>
+<nierror code="-356527">
+OPC UA Toolkit:  (Hex 0xFFFA8F51) You cannot add a certificate when the OPC UA server is running.
+</nierror>
+<nierror code="-356526">
+OPC UA Toolkit:  (Hex 0xFFFA8F52) The initial value of a node in the OPC UA server address space is uncertain.
+</nierror>
+<nierror code="-356525">
+OPC UA Toolkit:  (Hex 0xFFFA8F53) The sensor from which the value is derived by the device or data source failed.
+</nierror>
+<nierror code="-356524">
+OPC UA Toolkit:  (Hex 0xFFFA8F54) The device or data source that generates the value failed.
+</nierror>
+<nierror code="-356523">
+OPC UA Toolkit:  (Hex 0xFFFA8F55) The node you want to delete does not exist in the address space.
+</nierror>
+<nierror code="-356522">
+OPC UA Toolkit:  (Hex 0xFFFA8F56) You cannot add a node when the OPC UA server is running.
+</nierror>
+<nierror code="-356521">
+OPC UA Toolkit:  (Hex 0xFFFA8F57) You cannot delete a node when the OPC UA server is running.
+</nierror>
+<nierror code="-356520">
+OPC UA Toolkit:  (Hex 0xFFFA8F58) Unable to remove one or more certificate files.
+</nierror>
+<nierror code="-356519">
+OPC UA Toolkit:  (Hex 0xFFFA8F59) Unable to add one or more certificate files.
+</nierror>
+<nierror code="-356517">
+OPC UA Toolkit:  (Hex 0xFFFA8F5B) <b>OPC UA client refnum in</b> is not valid.
+</nierror>
+<nierror code="-356516">
+OPC UA Toolkit:  (Hex 0xFFFA8F5C) <b>OPC UA server refnum in</b> is not valid.
+</nierror>
+<nierror code="-356515">
+OPC UA Toolkit:  (Hex 0xFFFA8F5D) The data type of the node does not match the data type of the value to write.
+</nierror>
+<nierror code="-356514">
+OPC UA Toolkit:  (Hex 0xFFFA8F5E) The data type of the node does not match the expected data type.
+</nierror>
+<nierror code="-356512">
+OPC UA Toolkit:  (Hex 0xFFFA8F60) An error occurred when writing to the node.
+</nierror>
+<nierror code="-356511">
+OPC UA Toolkit:  (Hex 0xFFFA8F61) An error occurred when reading the node.
+</nierror>
+<nierror code="-356510">
+OPC UA Toolkit:  (Hex 0xFFFA8F62) The OPC UA server does not support this feature.
+</nierror>
+<nierror code="-356509">
+OPC UA Toolkit:  (Hex 0xFFFA8F63) The node you want to add already exists in the address space.
+</nierror>
+<nierror code="-356508">
+OPC UA Toolkit:  (Hex 0xFFFA8F64) Unable to add a node to the address space.
+</nierror>
+<nierror code="-356507">
+OPC UA Toolkit:  (Hex 0xFFFA8F65) Unable to add a property to the address space.
+</nierror>
+<nierror code="-356506">
+OPC UA Toolkit:  (Hex 0xFFFA8F66) Unable to add an item to the address space.
+</nierror>
+<nierror code="-356505">
+OPC UA Toolkit:  (Hex 0xFFFA8F67) Unable to add a folder to the address space.
+</nierror>
+<nierror code="-356504">
+OPC UA Toolkit:  (Hex 0xFFFA8F68) Unable to find a node in the address space.
+</nierror>
+<nierror code="-356503">
+OPC UA Toolkit:  (Hex 0xFFFA8F69) This node does not support read and write operations.
+</nierror>
+<nierror code="-356502">
+OPC UA Toolkit:  (Hex 0xFFFA8F6A) Not enough memory to complete this operation.
+</nierror>
+<nierror code="-356500">
+OPC UA Toolkit:  (Hex 0xFFFA8F6C) An internal error occurred as a result of a programming or configuration error.
+</nierror>
+<nierror code="356501">
+OPC UA Toolkit:  Because historical access is not enabled, setting the queue size does not activate historical access.
+</nierror>
+<nierror code="356502">
+OPC UA Toolkit:  The severity level range is from 1 to 1000. Any value less than 1 will be coerced to 1 and any value greater than 1000 will be coerced to 1000.
+</nierror>
+<nierror code="356503">
+OPC UA Toolkit:  The high high severity level should be greater than the high severity level while the low low severity level should be less than the low severity level.
+</nierror>
+</nidocument>
