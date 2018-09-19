@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="17008000">
+<Project Type="Project" LVVersion="18008000">
 	<Property Name="varPersistentID:{0B426A69-9454-4E84-8FCC-9F8511011C22}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO5</Property>
 	<Property Name="varPersistentID:{17A2B531-B9FC-424B-AF7D-2AC79E3FE034}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO7</Property>
 	<Property Name="varPersistentID:{2722BB6B-FE32-472A-B158-1E1E08057BAB}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO1</Property>
@@ -22,6 +22,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Delete Logged Files.vi" Type="VI" URL="../Delete Logged Files.vi"/>
 		<Item Name="Tag Viewer.vi" Type="VI" URL="../Tag Viewer.vi"/>
 		<Item Name="Trigger Send File.vi" Type="VI" URL="../Trigger Send File.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -31,16 +32,20 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="LabVIEWHTTPClient.lvlib" Type="Library" URL="/&lt;vilib&gt;/httpClient/LabVIEWHTTPClient.lvlib"/>
-				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="NI Skyline Auto Writable File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/Auto Writable File/NI Skyline Auto Writable File.lvclass"/>
 				<Item Name="NI Skyline Configuration AMQP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration AMQP_class/NI Skyline Configuration AMQP.lvclass"/>
 				<Item Name="NI Skyline Configuration HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration HTTP_class/NI Skyline Configuration HTTP.lvclass"/>
 				<Item Name="NI Skyline Configuration Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Configuration/HTTP/NI Skyline Configuration Library.lvlib"/>
 				<Item Name="NI Skyline Configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_class/NI Skyline Configuration.lvclass"/>
+				<Item Name="NI Skyline File Filter.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/Filter/NI Skyline File Filter.lvclass"/>
+				<Item Name="NI Skyline File Packet Event.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/Packet Event/NI Skyline File Packet Event.lvclass"/>
+				<Item Name="NI Skyline File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/File/NI Skyline File.lvclass"/>
 				<Item Name="NI Skyline JSON.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/JSON/NI Skyline JSON.lvlib"/>
 				<Item Name="NI Skyline Message AMQP (Async).lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/AMQP/NI Skyline Message AMQP (Async).lvclass"/>
 				<Item Name="NI Skyline Message AMQP (Sync).lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/AMQP/NI Skyline Message AMQP (Sync).lvclass"/>
 				<Item Name="NI Skyline Message HTTP Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Message/HTTP/NI Skyline Message HTTP Library.lvlib"/>
 				<Item Name="NI Skyline Message HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/HTTP Wrapper/NI Skyline Message HTTP.lvclass"/>
+				<Item Name="NI Skyline Message Library Path.vi" Type="VI" URL="/&lt;vilib&gt;/Skyline/Message/AMQP/NI Skyline Message Library Path.vi"/>
 				<Item Name="NI Skyline Message Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/sync/NI Skyline Message Sync.lvclass"/>
 				<Item Name="NI Skyline Message.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Message/NI Skyline Message.lvclass"/>
 				<Item Name="NI Skyline Tag AMQP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Tag/Wrapper/Wrapper AMQP_class/NI Skyline Tag AMQP.lvclass"/>
@@ -49,15 +54,14 @@
 				<Item Name="NI Skyline Tag.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Tag/Wrapper/Wrapper_class/NI Skyline Tag.lvclass"/>
 				<Item Name="NI Skyline Tag.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Tag/Shared/NI Skyline Tag.lvlib"/>
 				<Item Name="NI Skyline Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Utilities/NI Skyline Utilities.lvlib"/>
+				<Item Name="NI Skyline Writable File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/Writable File/NI Skyline Writable File.lvclass"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="niSkylineFileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/File/niSkylineFileIngestion.lvlib"/>
 				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-			</Item>
-			<Item Name="niskyline_message.dll" Type="Document" URL="niskyline_message.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -211,7 +215,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!"=!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI1" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -225,7 +229,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!"=!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI2" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -239,7 +243,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!"=!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI3" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -253,7 +257,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!"=!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!"A!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 				</Item>
 				<Item Name="Mod2" Type="RIO C Series Module">
@@ -290,7 +294,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"=!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO1" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -304,7 +308,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"=!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO2" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -318,7 +322,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"=!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO3" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -332,7 +336,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"=!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO4" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -346,7 +350,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"=!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO5" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -360,7 +364,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"=!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO6" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -374,7 +378,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"=!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO7" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -388,7 +392,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"=!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!"A!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 				</Item>
 			</Item>
@@ -418,7 +422,6 @@ AddOutputFilter chunkFilter
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
-				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="NI Skyline Configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_class/NI Skyline Configuration.lvclass"/>
 				<Item Name="niSkylineFileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/File/niSkylineFileIngestion.lvlib"/>
 				<Item Name="NI Skyline File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/File/NI Skyline File.lvclass"/>
@@ -442,12 +445,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NI Skyline Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Utilities/NI Skyline Utilities.lvlib"/>
 				<Item Name="NI Skyline Message HTTP Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Message/HTTP/NI Skyline Message HTTP Library.lvlib"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-			</Item>
-			<Item Name="niskyline_message.dll" Type="Document" URL="niskyline_message.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="niskyline_file.dll" Type="Document" URL="niskyline_file.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+				<Item Name="NI Skyline Message Library Path.vi" Type="VI" URL="/&lt;vilib&gt;/Skyline/Message/AMQP/NI Skyline Message Library Path.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -469,7 +467,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">122</Property>
+				<Property Name="Bld_version.build" Type="Int">128</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -506,9 +504,19 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
-				<Property Name="PKG_buildNumber" Type="Int">91</Property>
+				<Property Name="PKG_buildNumber" Type="Int">6</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Temp Logger Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">other-package</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">Package</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
 				<Property Name="PKG_destinations.Count" Type="Int">0</Property>
 				<Property Name="PKG_displayName" Type="Str">Temperature Test Logger</Property>
@@ -527,7 +535,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/Build Specifications/Temp Logger Application</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">RTEXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">Reports test cell temperature data</Property>
-				<Property Name="PKG_version" Type="Str">17.0.1</Property>
+				<Property Name="PKG_version" Type="Str">18.0.1</Property>
 			</Item>
 		</Item>
 	</Item>
