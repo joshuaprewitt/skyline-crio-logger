@@ -36,6 +36,7 @@
 				<Item Name="LabVIEWHTTPClient.lvlib" Type="Library" URL="/&lt;vilib&gt;/httpClient/LabVIEWHTTPClient.lvlib"/>
 				<Item Name="NI Skyline Auto Writable File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/Auto Writable File/NI Skyline Auto Writable File.lvclass"/>
 				<Item Name="NI Skyline Configuration AMQP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration AMQP_class/NI Skyline Configuration AMQP.lvclass"/>
+				<Item Name="NI Skyline Configuration HTTP Default.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_HTTP_Default/NI Skyline Configuration HTTP Default.lvclass"/>
 				<Item Name="NI Skyline Configuration HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration HTTP_class/NI Skyline Configuration HTTP.lvclass"/>
 				<Item Name="NI Skyline Configuration Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Configuration/HTTP/NI Skyline Configuration Library.lvlib"/>
 				<Item Name="NI Skyline Configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_class/NI Skyline Configuration.lvclass"/>
@@ -217,7 +218,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="cRIO Temp Monitor.vi" Type="VI" URL="../cRIO Temp Monitor.vi"/>
-		<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 		<Item Name="Chassis" Type="cRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">express</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
@@ -493,6 +493,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NI Skyline File HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/HTTP/NI Skyline File HTTP.lvclass"/>
 				<Item Name="NI Skyline Tag History Window.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Tag/Wrapper/History Window/NI Skyline Tag History Window.lvclass"/>
 				<Item Name="NI SystemLink File Filter.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/File/Filter_Lib/NI SystemLink File Filter.lvlib"/>
+				<Item Name="NI Skyline Configuration HTTP Default.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_HTTP_Default/NI Skyline Configuration HTTP Default.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -504,7 +505,7 @@ AddOutputFilter chunkFilter
 				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{A2A59E7A-34C0-44E2-AFFC-804F870D6C5F}</Property>
-				<Property Name="Bld_buildSpecDescription" Type="Str">Publishes 4 temperature channels using Skyline Tags and transfers a TDMS file containing all of the buffered data every 10 minutes using Skyline File Transfer.</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Publishes 4 temperature channels using SystemLink Tags and transfers a TDMS file containing all of the buffered data every 10 minutes using SystemLink File Transfer.</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Temp Logger Application</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
@@ -514,7 +515,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">134</Property>
+				<Property Name="Bld_version.build" Type="Int">139</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -525,7 +526,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A6D971B7-C4B7-4A2C-AF84-851E1720C5DE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{89654F5A-8C9D-4B6B-A6B3-387BCFD589EB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>
@@ -541,7 +542,7 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 			</Item>
 			<Item Name="Temp Logger Package" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
-				<Property Name="IPK_lastBuiltPackage" Type="Str">crio-temp-logger_19.0.1-6_armv7a-vfp.ipk</Property>
+				<Property Name="IPK_lastBuiltPackage" Type="Str">crio-temp-logger_19.0.3-6_armv7a-vfp.ipk</Property>
 				<Property Name="IPK_startup.Child" Type="Str">{E5FD18B0-FFEB-49EE-8E62-33F15C8EFCE8}</Property>
 				<Property Name="IPK_startup.Destination" Type="Str">root_0</Property>
 				<Property Name="IPK_startup.Restart" Type="Bool">true</Property>
@@ -672,14 +673,14 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
 				<Property Name="PKG_feedName" Type="Str">cRIO Temp Logger</Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
-				<Property Name="PKG_hostname" Type="Str">http://demo.systemlink.io</Property>
+				<Property Name="PKG_hostname" Type="Str">http://test.systemlink.io</Property>
 				<Property Name="PKG_lvrteTracking" Type="Bool">false</Property>
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Temp Logger Package</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="PKG_packageName" Type="Str">crio-temp-logger</Property>
 				<Property Name="PKG_ProviderVersion" Type="Int">1810</Property>
-				<Property Name="PKG_publishToSystemLink" Type="Bool">true</Property>
+				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Application Software</Property>
 				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
 				<Property Name="PKG_sources.Count" Type="Int">1</Property>
@@ -687,7 +688,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/Build Specifications/Temp Logger Application</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">RTEXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">Reports test cell temperature data</Property>
-				<Property Name="PKG_version" Type="Str">19.0.1</Property>
+				<Property Name="PKG_version" Type="Str">19.0.3</Property>
 			</Item>
 		</Item>
 	</Item>
