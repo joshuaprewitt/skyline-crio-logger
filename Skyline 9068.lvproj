@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="19008000">
+<Project Type="Project" LVVersion="20008000">
 	<Property Name="varPersistentID:{0B426A69-9454-4E84-8FCC-9F8511011C22}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO5</Property>
 	<Property Name="varPersistentID:{17A2B531-B9FC-424B-AF7D-2AC79E3FE034}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO7</Property>
 	<Property Name="varPersistentID:{2722BB6B-FE32-472A-B158-1E1E08057BAB}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO1</Property>
@@ -36,7 +36,6 @@
 				<Item Name="LabVIEWHTTPClient.lvlib" Type="Library" URL="/&lt;vilib&gt;/httpClient/LabVIEWHTTPClient.lvlib"/>
 				<Item Name="NI Skyline Auto Writable File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/Auto Writable File/NI Skyline Auto Writable File.lvclass"/>
 				<Item Name="NI Skyline Configuration AMQP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration AMQP_class/NI Skyline Configuration AMQP.lvclass"/>
-				<Item Name="NI Skyline Configuration HTTP Default.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_HTTP_Default/NI Skyline Configuration HTTP Default.lvclass"/>
 				<Item Name="NI Skyline Configuration HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration HTTP_class/NI Skyline Configuration HTTP.lvclass"/>
 				<Item Name="NI Skyline Configuration Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Configuration/HTTP/NI Skyline Configuration Library.lvlib"/>
 				<Item Name="NI Skyline Configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_class/NI Skyline Configuration.lvclass"/>
@@ -60,6 +59,7 @@
 				<Item Name="NI Skyline Tag HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Tag/Wrapper/Wrapper HTTP_class/NI Skyline Tag HTTP.lvclass"/>
 				<Item Name="NI Skyline Tag.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Tag/Wrapper/Wrapper_class/NI Skyline Tag.lvclass"/>
 				<Item Name="NI Skyline Tag.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Tag/Shared/NI Skyline Tag.lvlib"/>
+				<Item Name="NI Skyline Utilities Report Library Not Found Error.vi" Type="VI" URL="/&lt;vilib&gt;/Skyline/Utilities/NI Skyline Utilities Report Library Not Found Error.vi"/>
 				<Item Name="NI Skyline Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Utilities/NI Skyline Utilities.lvlib"/>
 				<Item Name="NI Skyline Writable File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/Writable File/NI Skyline Writable File.lvclass"/>
 				<Item Name="NI SystemLink File Filter.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/File/Filter_Lib/NI SystemLink File Filter.lvlib"/>
@@ -139,7 +139,7 @@
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
-		<Property Name="alias.value" Type="Str">josh-9068</Property>
+		<Property Name="alias.value" Type="Str">Josh-9068</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76D6;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76D6</Property>
 		<Property Name="DisableAutoDeployVariables" Type="Bool">false</Property>
@@ -257,7 +257,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!"E!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI1" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -271,7 +271,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!"E!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI2" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -285,7 +285,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!"E!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI3" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -299,7 +299,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!"E!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 				</Item>
 				<Item Name="Mod2" Type="RIO C Series Module">
@@ -336,7 +336,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"E!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO1" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -350,7 +350,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"E!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO2" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -364,7 +364,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"E!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO3" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -378,7 +378,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"E!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO4" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -392,7 +392,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"E!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO5" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -406,7 +406,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"E!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO6" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -420,7 +420,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"E!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO7" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -434,12 +434,13 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!"E!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 				</Item>
 			</Item>
 		</Item>
 		<Item Name="Logger.lvclass" Type="LVClass" URL="../logger/Logger.lvclass"/>
+		<Item Name="config.json" Type="Document" URL="../config.json"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -493,7 +494,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NI Skyline File HTTP.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/HTTP/NI Skyline File HTTP.lvclass"/>
 				<Item Name="NI Skyline Tag History Window.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Tag/Wrapper/History Window/NI Skyline Tag History Window.lvclass"/>
 				<Item Name="NI SystemLink File Filter.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/File/Filter_Lib/NI SystemLink File Filter.lvlib"/>
-				<Item Name="NI Skyline Configuration HTTP Default.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Configuration_HTTP_Default/NI Skyline Configuration HTTP Default.lvclass"/>
+				<Item Name="NI Skyline Utilities Report Library Not Found Error.vi" Type="VI" URL="/&lt;vilib&gt;/Skyline/Utilities/NI Skyline Utilities Report Library Not Found Error.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -502,6 +503,7 @@ AddOutputFilter chunkFilter
 				<Property Name="App_INI_aliasGUID" Type="Str">{506124D4-571D-4516-BAF2-2591B59A75D6}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{1F9FFACE-88A3-4C39-A6CC-7300CEE59D5D}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{A2A59E7A-34C0-44E2-AFFC-804F870D6C5F}</Property>
@@ -515,7 +517,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">139</Property>
+				<Property Name="Bld_version.build" Type="Int">147</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -526,7 +528,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{89654F5A-8C9D-4B6B-A6B3-387BCFD589EB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4BD34AF8-904C-45BB-A0B9-049BCC557CC3}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/cRIO Temp Monitor.vi</Property>
@@ -542,7 +544,7 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 			</Item>
 			<Item Name="Temp Logger Package" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
-				<Property Name="IPK_lastBuiltPackage" Type="Str">crio-temp-logger_19.0.3-6_armv7a-vfp.ipk</Property>
+				<Property Name="IPK_lastBuiltPackage" Type="Str">crio-temp-logger_20.0.3-27_armv7a-vfp.ipk</Property>
 				<Property Name="IPK_startup.Child" Type="Str">{E5FD18B0-FFEB-49EE-8E62-33F15C8EFCE8}</Property>
 				<Property Name="IPK_startup.Destination" Type="Str">root_0</Property>
 				<Property Name="IPK_startup.Restart" Type="Bool">true</Property>
@@ -553,15 +555,15 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
-				<Property Name="PKG_buildNumber" Type="Int">7</Property>
+				<Property Name="PKG_buildNumber" Type="Int">28</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Temp Logger Package</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">10</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">3</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-crio</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-crio-ioscan</Property>
 				<Property Name="PKG_dependencies[0].Package.Section" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
@@ -571,7 +573,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-crio-ioscan</Property>
+				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-labview-http-client</Property>
 				<Property Name="PKG_dependencies[1].Package.Section" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
@@ -591,7 +593,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[2].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[2].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-labview-http-client</Property>
+				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-labview-realtime</Property>
 				<Property Name="PKG_dependencies[2].Package.Section" Type="Str"></Property>
 				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[2].Relationship" Type="Str">Required Dependency</Property>
@@ -671,9 +673,9 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_displayName" Type="Str">Test Cell Temperature Logger</Property>
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
-				<Property Name="PKG_feedName" Type="Str">cRIO Temp Logger</Property>
+				<Property Name="PKG_feedName" Type="Str">Temp Logger</Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
-				<Property Name="PKG_hostname" Type="Str">http://test.systemlink.io</Property>
+				<Property Name="PKG_hostname" Type="Str">http://jprewitt5:9090</Property>
 				<Property Name="PKG_lvrteTracking" Type="Bool">false</Property>
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Temp Logger Package</Property>
@@ -688,7 +690,41 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/Build Specifications/Temp Logger Application</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">RTEXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">Reports test cell temperature data</Property>
-				<Property Name="PKG_version" Type="Str">19.0.3</Property>
+				<Property Name="PKG_version" Type="Str">20.0.3</Property>
+			</Item>
+			<Item Name="Configuration A" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
+				<Property Name="IPK_lastBuiltPackage" Type="Str">configa_1.0.0-1_armv7a-vfp.ipk</Property>
+				<Property Name="IPK_startup.Restart" Type="Bool">true</Property>
+				<Property Name="IPK_startup.Target.Child" Type="Str"></Property>
+				<Property Name="IPK_startup.Target.Destination" Type="Str"></Property>
+				<Property Name="IPK_startup.Target.Source" Type="Str"></Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
+				<Property Name="PKG_buildNumber" Type="Int">2</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">Configuration A</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_description" Type="Str"></Property>
+				<Property Name="PKG_destinations.Count" Type="Int">0</Property>
+				<Property Name="PKG_displayName" Type="Str">Configuration A</Property>
+				<Property Name="PKG_displayVersion" Type="Str"></Property>
+				<Property Name="PKG_feedDescription" Type="Str"></Property>
+				<Property Name="PKG_feedName" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str"></Property>
+				<Property Name="PKG_hostname" Type="Str"></Property>
+				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;&gt;</Property>
+				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Configuration A/Package</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="PKG_packageName" Type="Str">configa</Property>
+				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
+				<Property Name="PKG_section" Type="Str">Application Software</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
+				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">root_3</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/config.json</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">File</Property>
+				<Property Name="PKG_synopsis" Type="Str">Application configuration A</Property>
+				<Property Name="PKG_version" Type="Str">1.0.0</Property>
 			</Item>
 		</Item>
 	</Item>
