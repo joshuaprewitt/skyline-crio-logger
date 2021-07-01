@@ -63,6 +63,7 @@
 				<Item Name="NI Skyline Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/Utilities/NI Skyline Utilities.lvlib"/>
 				<Item Name="NI Skyline Writable File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/File/Writable File/NI Skyline Writable File.lvclass"/>
 				<Item Name="NI SystemLink File Filter.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/File/Filter_Lib/NI SystemLink File Filter.lvlib"/>
+				<Item Name="NI SystemLink Workspace.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Workspace_class/NI SystemLink Workspace.lvclass"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="niSkylineFileIngestion.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/File/niSkylineFileIngestion.lvlib"/>
@@ -495,6 +496,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NI Skyline Tag History Window.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Tag/Wrapper/History Window/NI Skyline Tag History Window.lvclass"/>
 				<Item Name="NI SystemLink File Filter.lvlib" Type="Library" URL="/&lt;vilib&gt;/Skyline/File/Filter_Lib/NI SystemLink File Filter.lvlib"/>
 				<Item Name="NI Skyline Utilities Report Library Not Found Error.vi" Type="VI" URL="/&lt;vilib&gt;/Skyline/Utilities/NI Skyline Utilities Report Library Not Found Error.vi"/>
+				<Item Name="NI SystemLink Workspace.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Skyline/Configuration/Workspace_class/NI SystemLink Workspace.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -517,7 +519,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">147</Property>
+				<Property Name="Bld_version.build" Type="Int">151</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -544,7 +546,7 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 			</Item>
 			<Item Name="Temp Logger Package" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
-				<Property Name="IPK_lastBuiltPackage" Type="Str">crio-temp-logger_20.0.3-27_armv7a-vfp.ipk</Property>
+				<Property Name="IPK_lastBuiltPackage" Type="Str">crio-temp-logger_20.0.3-31_armv7a-vfp.ipk</Property>
 				<Property Name="IPK_startup.Child" Type="Str">{E5FD18B0-FFEB-49EE-8E62-33F15C8EFCE8}</Property>
 				<Property Name="IPK_startup.Destination" Type="Str">root_0</Property>
 				<Property Name="IPK_startup.Restart" Type="Bool">true</Property>
@@ -555,7 +557,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
-				<Property Name="PKG_buildNumber" Type="Int">28</Property>
+				<Property Name="PKG_buildNumber" Type="Int">32</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Temp Logger Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">3</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -675,7 +677,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
 				<Property Name="PKG_feedName" Type="Str">Temp Logger</Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
-				<Property Name="PKG_hostname" Type="Str">http://jprewitt5:9090</Property>
+				<Property Name="PKG_hostname" Type="Str"></Property>
 				<Property Name="PKG_lvrteTracking" Type="Bool">false</Property>
 				<Property Name="PKG_maintainer" Type="Str">National Instruments &lt;&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Temp Logger Package</Property>
@@ -693,7 +695,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_version" Type="Str">20.0.3</Property>
 			</Item>
 			<Item Name="Configuration A" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
-				<Property Name="IPK_lastBuiltPackage" Type="Str">configa_1.0.0-1_armv7a-vfp.ipk</Property>
+				<Property Name="IPK_lastBuiltPackage" Type="Str">configa_1.0.0-5_armv7a-vfp.ipk</Property>
 				<Property Name="IPK_startup.Restart" Type="Bool">true</Property>
 				<Property Name="IPK_startup.Target.Child" Type="Str"></Property>
 				<Property Name="IPK_startup.Target.Destination" Type="Str"></Property>
@@ -701,7 +703,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
-				<Property Name="PKG_buildNumber" Type="Int">2</Property>
+				<Property Name="PKG_buildNumber" Type="Int">6</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Configuration A</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
