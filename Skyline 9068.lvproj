@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="20008000">
+<Project Type="Project" LVVersion="21008000">
 	<Property Name="varPersistentID:{0B426A69-9454-4E84-8FCC-9F8511011C22}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO5</Property>
 	<Property Name="varPersistentID:{17A2B531-B9FC-424B-AF7D-2AC79E3FE034}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO7</Property>
 	<Property Name="varPersistentID:{2722BB6B-FE32-472A-B158-1E1E08057BAB}" Type="Ref">/RT CompactRIO Target/Chassis/Real-Time Scan Resources/Mod2/DO1</Property>
@@ -140,9 +140,9 @@
 	</Item>
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
-		<Property Name="alias.value" Type="Str">Josh-9068</Property>
-		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76D6;</Property>
-		<Property Name="crio.ControllerPID" Type="Str">76D6</Property>
+		<Property Name="alias.value" Type="Str">C-NI-cRIO-9064-030900a2</Property>
+		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,7741;</Property>
+		<Property Name="crio.ControllerPID" Type="Str">7741</Property>
 		<Property Name="DisableAutoDeployVariables" Type="Bool">false</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
@@ -258,7 +258,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!#%!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI1" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -272,7 +272,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!#%!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI2" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -286,7 +286,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!#%!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="AI3" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -300,7 +300,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">(1!!!#!!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">(1!!!#%!A!!!!!!"!!5!#A!!!1!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
 				</Item>
 				<Item Name="Mod2" Type="RIO C Series Module">
@@ -337,7 +337,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#%!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO1" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -351,7 +351,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#%!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO2" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -365,7 +365,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#%!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO3" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -379,7 +379,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#%!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO4" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -393,7 +393,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#%!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO5" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -407,7 +407,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#%!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO6" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -421,7 +421,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#%!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 					<Item Name="DO7" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
@@ -435,7 +435,7 @@ AddOutputFilter chunkFilter
 						<Property Name="Network:UseBuffering" Type="Str">False</Property>
 						<Property Name="numTypedefs" Type="UInt">0</Property>
 						<Property Name="type" Type="Str">Industrial</Property>
-						<Property Name="typeDesc" Type="Bin">&amp;1!!!#!!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
+						<Property Name="typeDesc" Type="Bin">&amp;1!!!#%!A!!!!!!"!!1!)1!"!!!!!!!!!!</Property>
 					</Item>
 				</Item>
 			</Item>
@@ -519,7 +519,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5CE62C77-2D7D-41B8-B6CE-6D2E7B0897D9}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">151</Property>
+				<Property Name="Bld_version.build" Type="Int">152</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -546,7 +546,7 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 			</Item>
 			<Item Name="Temp Logger Package" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
-				<Property Name="IPK_lastBuiltPackage" Type="Str">crio-temp-logger_20.0.3-31_armv7a-vfp.ipk</Property>
+				<Property Name="IPK_lastBuiltPackage" Type="Str">crio-temp-logger_20.1.0-1_armv7a-vfp.ipk</Property>
 				<Property Name="IPK_startup.Child" Type="Str">{E5FD18B0-FFEB-49EE-8E62-33F15C8EFCE8}</Property>
 				<Property Name="IPK_startup.Destination" Type="Str">root_0</Property>
 				<Property Name="IPK_startup.Restart" Type="Bool">true</Property>
@@ -557,7 +557,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
-				<Property Name="PKG_buildNumber" Type="Int">32</Property>
+				<Property Name="PKG_buildNumber" Type="Int">2</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Temp Logger Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">3</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -692,10 +692,10 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_sources[0].ID" Type="Ref">/RT CompactRIO Target/Build Specifications/Temp Logger Application</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">RTEXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">Reports test cell temperature data</Property>
-				<Property Name="PKG_version" Type="Str">20.0.3</Property>
+				<Property Name="PKG_version" Type="Str">20.1.0</Property>
 			</Item>
 			<Item Name="Configuration A" Type="{CED73189-3D7D-4B2F-B6C9-EA03FBC59E14}">
-				<Property Name="IPK_lastBuiltPackage" Type="Str">configa_1.0.0-5_armv7a-vfp.ipk</Property>
+				<Property Name="IPK_lastBuiltPackage" Type="Str">configa_1.0.0-6_armv7a-vfp.ipk</Property>
 				<Property Name="IPK_startup.Restart" Type="Bool">true</Property>
 				<Property Name="IPK_startup.Target.Child" Type="Str"></Property>
 				<Property Name="IPK_startup.Target.Destination" Type="Str"></Property>
@@ -703,7 +703,7 @@ AddOutputFilter chunkFilter
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
-				<Property Name="PKG_buildNumber" Type="Int">6</Property>
+				<Property Name="PKG_buildNumber" Type="Int">7</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">Configuration A</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_description" Type="Str"></Property>
